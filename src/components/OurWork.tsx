@@ -8,7 +8,7 @@ const OurWork = () => {
           </div>
           <div className="flex flex-col gap-5">
             <h2 className="text-[45px] lg:text-[50px] 2xl:text-[60px]">
-              Who we are
+              Who we are whweywefadosfhoasdkh
             </h2>
             <div>
               Born from a passion for denim, Moseley Road is a clothing
