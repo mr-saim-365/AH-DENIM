@@ -5,9 +5,7 @@ const OurServices = () => {
         <div className="px-5 py-10 text-[15px] md:text-[16px] text-[#4D4D4D] 2xl:w-[70%] mx-auto flex flex-col gap-12 items-center">
           <div className="flex flex-col gap-12">
             <div>
-              <h1 className="text-[45px] 2xl:text-[50px] mb-3">
-                Our Services sedasdfasd
-              </h1>
+              <h1 className="text-[45px] 2xl:text-[50px] mb-3">Our Services</h1>
 
               <div>
                 With nearly 2 decades of clothing manufacturing experience,
