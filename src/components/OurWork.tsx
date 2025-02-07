@@ -3,8 +3,8 @@ import gif from "../../public/images/gifImage.gif";
 const OurWork = () => {
   return (
     <>
-      <div className="lg:flex lg:gap-[60px] lg:px-5 2xl:w-[70%] 2xl:mx-auto">
-        <div className="text-[#4D4D4D] text-[15px] 2xl:text-[20px] px-5 py-10 lg:px-0 lg:w-[65%]">
+      <div className="lg:flex lg:gap-[60px] lg:px-5 2xl:w-[70%] 2xl:mx-auto mt-10">
+        <div className="text-[#4D4D4D] text-[15px] 2xl:text-[20px] px-5 py-10 lg:px-0 lg:w-[70%]">
           <div className="text-[18px] text-[#8E8E8E] 2xl:text-[22px]">
             The short sweet on us
           </div>
@@ -31,8 +31,8 @@ const OurWork = () => {
           </div>
         </div>
 
-        <div>
-          <img src={gif} alt="" className="h-[65vh] w-full object-cover" />
+        <div className="w-[30%] 2xl:w-auto">
+          <img src={gif} alt="" className="h-[70vh] w-full object-cover" />
         </div>
       </div>
     </>
