@@ -1,8 +1,10 @@
+import gif from "../../public/images/gifImage.gif";
+
 const OurWork = () => {
   return (
     <>
       <div className="lg:flex lg:gap-[60px] lg:px-5 2xl:w-[70%] 2xl:mx-auto">
-        <div className="text-[#4D4D4D] text-[15px] 2xl:text-[20px] px-5 py-10 lg:px-0 lg:w-[50%]">
+        <div className="text-[#4D4D4D] text-[15px] 2xl:text-[20px] px-5 py-10 lg:px-0 lg:w-[65%]">
           <div className="text-[18px] text-[#8E8E8E] 2xl:text-[22px]">
             The short sweet on us
           </div>
@@ -30,11 +32,7 @@ const OurWork = () => {
         </div>
 
         <div>
-          <img
-            src="https://cdn.prod.website-files.com/6464150e1f3bf0e607e67cb9/6556b71c68ecd8d26ea9a486_02dba3e4-481c-4788-b990-68b4e7efca56-p-800.jpg"
-            alt=""
-            className="h-[65vh] w-full object-cover"
-          />
+          <img src={gif} alt="" className="h-[65vh] w-full object-cover" />
         </div>
       </div>
     </>

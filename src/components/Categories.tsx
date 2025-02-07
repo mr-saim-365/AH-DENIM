@@ -39,10 +39,10 @@ const Categories = () => {
           Our Collections (Region Based)
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-3 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-3 ">
           {Object.values(categories).map((category) => (
-            <div key={category.title} className="group flex  justify-center">
-              <div className="relative overflow-hidden w-[85%] sm:w-[60%] md:w-full rounded-lg mb-6">
+            <div key={category.title} className="group flex justify-center">
+              <div className="relative overflow-hidden w-[85%] sm:w-full md:w-full rounded-lg mb-6">
                 <img
                   src={category.image}
                   alt={category.title}
