@@ -33,7 +33,7 @@ const categories = {
 
 const Categories = () => {
   return (
-    <section className="py-16 px-0 sm:px-4">
+    <section className="py-16 px-0 sm:px-4 font-poppins w-[90%] mx-auto">
       <div>
         <h2 className="text-3xl font-bold mb-12 text-center">
           Our Collections (Region Based)

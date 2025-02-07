@@ -27,39 +27,29 @@ const ContactUs = () => {
     setCellNumber(value);
   };
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-  };
-
   return (
     <>
-      <div className="mb-[50px] mx-3 lg:mx-[5%]">
-        <div className="font-bebas flex flex-col rounded-lg py-8 border border-gray-200 shadow-lg items-center gap-[6px] px-2  md:px-8 md:justify-center md:gap-[120px] text-[15px] md:flex-row md:items-start">
+      <div className="mb-[50px] mx-3 lg:mx-[5%] font-poppins">
+        <div className="font-bebas flex flex-col rounded-lg py-8 bg-[rgb(20,20,20)] text-[#ffffff] border border-gray-200 shadow-lg items-center gap-[6px] px-2  md:px-8 md:justify-center md:gap-[120px] text-[15px] md:flex-row md:items-start">
           <div className="flex flex-col gap-5 justify-center">
             <div className="text-center">
-              <h1 className="text-[#111111] text-3xl font-bold mb-3">
-                Contact Us
-              </h1>
+              <h1 className="text-3xl font-bold mb-3">Contact Us</h1>
               <span className="text-gray-400 text-[15px]">
                 Any question? We would be happy to help you!
               </span>
             </div>
 
-            <div className="flex gap-2 items-center border border-gray-200 p-3 rounded-lg">
+            <div className="flex gap-2 items-center bg-[#ffffff] text-[#222222] border border-gray-200 p-3 rounded-lg">
               <FaPhoneAlt size={20} />
               +92 324 8270610
             </div>
 
-            <div className="flex gap-2 items-center text-[#ffffff] bg-[rgb(53,49,49)] border border-gray-200 p-3 rounded-lg">
+            <div className="flex gap-2 items-center text-[#ffffff] bg-[rgb(20,20,20)] border border-gray-200 p-3 rounded-lg">
               <LuMail size={20} />
               example@email.com
             </div>
 
-            <div className="flex gap-2 items-center border border-gray-200 p-3 rounded-lg">
+            <div className="flex gap-2 items-center border bg-[#ffffff] text-[#222222] border-gray-200 p-3 rounded-lg">
               <PiMapPinBold size={20} />
               Plot No. 19/5, Sector No. 12-C North Karachi,
               <br />
@@ -71,6 +61,7 @@ const ContactUs = () => {
                 <div>
                   <FaFacebookF
                     size={35}
+                    style={{ color: "black" }}
                     className="bg-slate-500 rounded-[50%] p-2"
                   />
                 </div>
@@ -100,7 +91,7 @@ const ContactUs = () => {
                       type="text"
                       id="text"
                       placeholder="Your first name"
-                      className="p-3 border border-gray-200 rounded-lg w-full focus:outline-indigo-900"
+                      className="p-3 border border-gray-200 text-[#222222] rounded-lg w-full focus:outline-gray-600"
                     />
                   </div>
                   <div>
@@ -111,7 +102,7 @@ const ContactUs = () => {
                       type="text"
                       id="text"
                       placeholder="Your last name"
-                      className="p-3 border border-gray-200 rounded-lg w-full focus:outline-indigo-900"
+                      className="p-3 border border-gray-200 text-[#222222]  rounded-lg w-full focus:outline-gray-600"
                     />
                   </div>
                 </div>
@@ -124,7 +115,7 @@ const ContactUs = () => {
                     type="text"
                     id="email"
                     placeholder="youremail@gmail.com"
-                    className="p-3 border border-gray-200 rounded-lg w-full focus:outline-indigo-900"
+                    className="p-3 border border-gray-200 text-[#222222]  rounded-lg w-full focus:outline-gray-600"
                   />
                 </div>
                 <div>
@@ -137,7 +128,7 @@ const ContactUs = () => {
                     id="number"
                     onChange={handleCellNumber}
                     placeholder="0333-2979540"
-                    className="p-3 border border-gray-200 rounded-lg w-full focus:outline-indigo-900"
+                    className="p-3 border border-gray-200 text-[#222222]  rounded-lg w-full focus:outline-gray-600"
                   />
                 </div>
                 <div>
@@ -145,7 +136,7 @@ const ContactUs = () => {
                     Message:
                   </label>
                   <textarea
-                    className="p-3 border border-gray-200 rounded-lg w-full h-[100px] focus:outline-indigo-900"
+                    className="p-3 border border-gray-200 text-[#222222] rounded-lg w-full h-[100px] focus:outline-gray-600"
                     placeholder="Type your message here..."
                     name="message"
                   ></textarea>
@@ -153,7 +144,7 @@ const ContactUs = () => {
                 <div>
                   <button
                     type="button"
-                    className="flex gap-[10px] items-center p-3 rounded-lg bg-[rgb(53,49,49)] text-[#ffffff] w-full justify-center"
+                    className="flex gap-[10px] items-center p-3 rounded-lg bg-[#ffffff] text-[#222222] w-full justify-center"
                   >
                     Send Message
                     <FiSend size={17} />

@@ -2,7 +2,6 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
-import AboutUs from "../components/AboutUs";
 import WorldAndUs from "../components/WorldAndUs";
 import Footer from "../components/Footer";
 import ContactUs from "../components/ContactUs";
@@ -17,10 +16,9 @@ const Home = () => {
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main>
         <Hero />
-        <Categories />
-        <AboutUs />
         <OurWork />
         <OurServices />
+        <Categories />
         <WorldAndUs />
         <ContactUs />
         <Questions />
