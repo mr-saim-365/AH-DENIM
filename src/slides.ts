@@ -8,39 +8,38 @@ import Jeans3 from "../public/images/jeans3.jpg";
 
 export const slides = [
     {
-        src: Jacket1,
+        id: "jacket1",  // ✅ String id for consistency
+        src: [Jacket1, Jacket2 , Jeans1 , Jeans3],
         title: "Slide Title Open",
         disc: "Jacket1",
     },
-
     {
-        src: Jacket2,
+        id: "jacket2",  
+        src: [Jacket2, Jeans1, Jeans2, Jacket1],
         title: "Slide Title Open",
         disc: "Jacket2",
     },
-
     {
-        src: Jacket3,
+        id: "jacket3",  
+        src: [Jacket3, Jeans2],
         title: "Slide Title Open",
         disc: "Jacket3",
     },
-
-    
     {
-        src: Jeans1,
+        id: "jeans1",  // ✅ Added missing id
+        src: [Jeans1, Jacket1],
         title: "Slide Title Open",
         disc: "Jeans1",
     },
-
-    
     {
-        src: Jeans2,
+        id: "jeans2",  
+        src: [Jeans2, Jacket2],
         title: "Slide Title Open",
         disc: "Jeans2",
     },
-
     {
-        src: Jeans3,
+        id: "jeans3",  
+        src: [Jeans3, Jacket3],
         title: "Slide Title Open",
         disc: "Jeans3",
     }

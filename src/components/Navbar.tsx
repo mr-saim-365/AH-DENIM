@@ -10,7 +10,9 @@ interface NavbarProps {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   // const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [open, setOpen] = useState<boolean>(false);
@@ -86,6 +88,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             <Link to="#">About Us</Link>
             <Link to="#">Our Factory</Link>
             <Link to="#">World & Us</Link>
+            <Link to="/ContactUS">Contact Us</Link>
           </div>
         </div>
       </div>
@@ -140,6 +143,9 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => {
           </Link>
           <Link to="#" className="block p-4">
             World & Us
+          </Link>
+          <Link to="/ContactUs" className="block p-4">
+            Contact US
           </Link>
         </div>
       </div>
