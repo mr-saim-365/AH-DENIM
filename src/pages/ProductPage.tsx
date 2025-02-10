@@ -26,6 +26,12 @@ const ProductPage = () => {
 
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setCurrentIndex(index); // Set clicked image index
+    setOpen(true); // Open lightbox
+  };
+
   return (
     <>
       <div>
@@ -46,6 +52,7 @@ const ProductPage = () => {
             close={() => setOpen(false)}
             slides={images.map((img) => ({ src: img }))}
             open={open}
+            index={currentIndex}
           />
 
           {/* 🖼️ Image Grid */}
@@ -53,7 +60,7 @@ const ProductPage = () => {
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {images.map((img: string, idx: number) => (
                 <img
-                  onClick={() => setOpen(true)}
+                  onClick={() => openLightbox(idx)}
                   key={idx}
                   src={img}
                   alt={`Product Image ${idx}`}

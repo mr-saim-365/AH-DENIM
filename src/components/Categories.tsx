@@ -26,7 +26,7 @@ const categories = {
   },
 
   China: {
-    title: "China",
+    title: "Europe",
     image: image7,
   },
 };

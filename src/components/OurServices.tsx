@@ -42,10 +42,18 @@ const OurServices = () => {
       <h1 className="text-[45px] 2xl:text-[50px] mb-8 text-center">
         Our Services
       </h1>
-      <p className="text-center mb-12 max-w-2xl mx-auto">
-        With nearly 2 decades of clothing manufacturing experience, we’re more
-        than happy to walk you through the process, from development to
-        production.
+      <p className=" mb-12 max-w-2xl mx-auto">
+        At AH DENIM, we pride ourselves on delivering exceptional denim products
+        with a focus onquality, communication, and timely service. Our dedicated
+        quality checking department ensuresthat every item meets the highest
+        standards before it reaches our clients. We emphasize
+        strongrelationships through proactive communication, with our skilled
+        merchandisers working closelywith buyers to address any concerns and
+        avoid inconveniences. Our commitment to on-timedelivery ensures that
+        orders arrive as scheduled, while our team remains readily available
+        toprovide tailored support throughout the process. With a keen eye on
+        market trends and apassion for innovation, we strive to meet the diverse
+        needs of our global clientele.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
