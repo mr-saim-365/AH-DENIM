@@ -10,7 +10,8 @@ export default {
         oswald: ["Oswald", "sans-serif"],
         anton: ["Anton", "sans-serif"],
         Lato: ["Lato", "sans-serif"],
-        Inter: ["Inter", "sans-serif"]
+        Inter: ["Inter", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"]
       }
     },
   },

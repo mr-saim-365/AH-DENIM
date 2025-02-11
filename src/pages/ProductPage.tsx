@@ -18,18 +18,20 @@ const ProductPage = () => {
   const navigate = useNavigate();
   console.log(location.state);
 
-  const product = location.state; // ✅ Get product from state
+  const product = location.state;
+  const category = location.state?.category || "Man";
+
   if (!product)
     return <div className="text-center mt-10 text-2xl">Product not found</div>;
 
-  const images: string[] = product.src || []; // ✅ Get images from product
+  const images: string[] = product.src || [];
 
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const openLightbox = (index: number) => {
-    setCurrentIndex(index); // Set clicked image index
-    setOpen(true); // Open lightbox
+    setCurrentIndex(index);
+    setOpen(true);
   };
 
   return (
@@ -37,11 +39,11 @@ const ProductPage = () => {
       <div>
         <Navbar />
 
-        <div className="min-h-screen my-[5rem] ">
+        <div className="min-h-screen my-[5rem] font-Roboto ">
           {/* 🔙 Back Button */}
           <button
             onClick={() => navigate(-1)}
-            className="text-lg px-4 py-2 bg-gray-200 rounded-lg shadow hover:bg-gray-300 m-10"
+            className="text-base p-2  md:text-lg  bg-gray-200 rounded-lg shadow hover:bg-gray-300 m-10"
           >
             ← Go Back
           </button>
@@ -68,7 +70,7 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <h2 className="text-3xl font-semibold mb-5">{product.disc}</h2>
+            <h2 className="text-3xl mb-5">{product.disc}</h2>
           </div>
 
           <div className="md:hidden flex flex-col items-center gap-4 px-3 sm:px-4">
@@ -96,7 +98,7 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <h2 className="mt-5 text-3xl font-semibold">{product.disc}</h2>
+            <h2 className="mt-5 text-3xl">{product.disc}</h2>
           </div>
         </div>
         <Footer />

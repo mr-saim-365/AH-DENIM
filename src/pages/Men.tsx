@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FiSearch } from "react-icons/fi";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -10,8 +10,16 @@ import {
 import { Link } from "react-router-dom";
 
 const Men = () => {
-  const [category, setCategory] = useState("Man");
+  const [category, setCategory] = useState(
+    localStorage.getItem("selectedCategory") || "Man"
+  );
   const [searchTerm, setSearchTerm] = useState("");
+
+  // ✅ Save category to localStorage when it changes
+  useEffect(() => {
+    localStorage.setItem("selectedCategory", category);
+  }, [category]);
+
   const filteredSlides = slides.filter(
     (slide) =>
       slide.category.trim().toLowerCase() === category.trim().toLowerCase() &&
@@ -46,11 +54,11 @@ const Men = () => {
     <>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <div className="mt-[5rem]">
+        <div className="mt-[5rem] font-Roboto">
           <div className="mensWear flex flex-col my-10 gap-10 z-50 px-12 md:px-20 w-full mx-auto">
             <div className="flex flex-col gap-10 items-start md:flex-row md:justify-between md:items-center">
               {/* ✅ Category Toggle */}
-              <ul className="flex gap-5 text-[#000000] text-lg uppercase font-poppins cursor-pointer">
+              <ul className="flex gap-5 text-[#000000] text-lg uppercase cursor-pointer">
                 {["Man", "Woman", "Kids"].map((cat) => (
                   <li key={cat}>
                     <button
@@ -82,7 +90,7 @@ const Men = () => {
           </div>
 
           {/* ✅ Product Grid */}
-          <div className="md:px-0 flex flex-col gap-10 mb-12 font-Lato">
+          <div className="md:px-0 flex flex-col gap-10 mb-12 ">
             <h2 className="text-[#000000] px-8 my-7 uppercase font-poppins text-[20px] font-semibold">
               <span>You are interested in {category}</span>
             </h2>
