@@ -9,24 +9,20 @@ const OurWork = () => {
             The short sweet on us
           </div>
           <div className="flex flex-col gap-5">
-            <h2 className="text-[45px] lg:text-[50px] 2xl:text-[60px]">
+            <h2 className="text-[45px] lg:text-[50px] 2xl:text-[60px] text-[#4D4D4D]">
               Who we are
             </h2>
             <div>
-              Born from a passion for denim, Moseley Road is a clothing
-              manufacturer based in the UK, dedicated to serving creatives and
-              boutique brands. With expertise in custom denim apparel, we offer
-              low order quantities, making manufacturing accessible to emerging
-              labels.
-              <br />
-              <br />
-              Being the brain of{" "}
-              <span className="text-[#222222] font-semibold">Chantuque</span>, a
-              renowned denim manufacturer in the industry and having served the
-              likes of Good American, Urban Outfitters and The Gap to name a
-              few, reflects our commitment to quality and craftsmanship. Join us
-              on the journey to bring unique visions to life through tailored
-              denim production.
+              AH Denim is a premier denim manufacturer with over 20 years of
+              expertise, exporting high-quality denim to the UK and Dubai. With
+              two state-of-the-art manufacturing units and in-house washing and
+              finishing facilities, we ensure precision, innovation, and
+              sustainability. Specializing in woven garments for men, women, and
+              kids, we produce 150,000 garments monthly. Our streamlined
+              communication, in-house fabric availability, and certified trims
+              guarantee efficiency and premium quality. With a low MOQ policy,
+              we empower brands—emerging and established—to bring their vision
+              to life with speed, reliability, and sustainability at the core.
             </div>
           </div>
         </div>

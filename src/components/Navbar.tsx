@@ -85,7 +85,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <Link to="#">About Us</Link>
+            <Link to="/AboutUS">About Us</Link>
             <Link to="#">Our Factory</Link>
             <Link to="#">World & Us</Link>
             <Link to="/ContactUS">Contact Us</Link>
@@ -135,7 +135,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Link to="#" className="block p-4">
+          <Link to="/AboutUS" className="block p-4">
             About Us
           </Link>
           <Link to="#" className="block p-4">
