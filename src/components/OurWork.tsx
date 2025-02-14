@@ -3,16 +3,16 @@ import gif from "../../public/images/gifImage.gif";
 const OurWork = () => {
   return (
     <>
-      <div className=" md:flex md:gap-[60px] font-poppins md:px-5 lg:w-[80%] lg:mx-auto 2xl:w-[70%] my-10">
+      <div className=" md:flex md:gap-[60px] font-poppins md:px-5 2xl:mx-auto 2xl:w-[70%] my-10">
         <div className="text-[#4D4D4D] text-[15px] 2xl:text-[20px] px-5 py-10 md:w-[60%] lg:px-0 lg:w-[70%]">
           <div className="text-[18px] text-[#8E8E8E] 2xl:text-[22px]">
             The short sweet on us
           </div>
           <div className="flex flex-col gap-5">
-            <h2 className="text-[45px] lg:text-[50px] 2xl:text-[60px] text-[#4D4D4D]">
+            <h2 className="text-[45px] lg:text-[50px] font-bold 2xl:text-[60px] text-[#4D4D4D]">
               Who we are
             </h2>
-            <div>
+            <div className="text-[#4B5563]">
               AH Denim is a premier denim manufacturer with over 20 years of
               expertise, exporting high-quality denim to the UK and Dubai. With
               two state-of-the-art manufacturing units and in-house washing and

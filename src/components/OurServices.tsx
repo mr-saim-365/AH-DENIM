@@ -38,11 +38,11 @@ const OurServices = () => {
   ];
 
   return (
-    <div className="px-5 py-10 text-[15px] font-poppins max-w-7xl mx-auto">
-      <h1 className="text-[45px] 2xl:text-[50px] mb-4 text-[#4D4D4D]">
+    <div className="px-5 py-10 text-[15px] font-poppins 2xl:w-[70%] mx-auto">
+      <h1 className="text-[45px] 2xl:text-[50px] mb-4 text-[#4D4D4D] font-bold">
         Our Services
       </h1>
-      <p className=" mb-12 text-lg md:text-xl">
+      <p className=" mb-12 text-lg md:text-xl text-[#4B5563]">
         At AH Denim, we deliver premium denim with a commitment to quality,
         seamless communication, and timely service. Our dedicated quality
         control team ensures every piece meets the highest standards, while our

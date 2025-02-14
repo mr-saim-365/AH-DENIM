@@ -68,7 +68,7 @@ const Questions = () => {
   return (
     <div className="bg-gray-100 font-poppins">
       <div className="px-3 sm:px-5 pt-10 pb-20 text-[14px] md:text-[16px] text-[#4D4D4D] lg:w-[75%] 2xl:w-[50%] mx-auto flex flex-col gap-8 items-center">
-        <h1 className="text-[30px] 2xl:text-[50px] text-center text-[#4D4D4D]">
+        <h1 className="text-[30px] 2xl:text-[50px] text-center font-bold text-[#4D4D4D]">
           Frequently Asked Questions
         </h1>
 

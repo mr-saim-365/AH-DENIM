@@ -77,7 +77,7 @@ const Navbar = () => {
                 <Link className="hover:scale-110" to="/Men">
                   Men
                 </Link>
-                <Link className="hover:scale-110" to="#">
+                <Link className="hover:scale-110" to="/Men">
                   Women
                 </Link>
                 <Link className="hover:scale-110" to="#">
@@ -126,7 +126,7 @@ const Navbar = () => {
               <Link className="hover:scale-110 block p-2" to="/Men">
                 Men
               </Link>
-              <Link className="hover:scale-110 block p-2" to="#">
+              <Link className="hover:scale-110 block p-2" to="/Men">
                 Women
               </Link>
               <Link className="hover:scale-110 block p-2" to="#">

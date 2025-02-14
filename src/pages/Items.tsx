@@ -9,7 +9,7 @@ import {
 } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const Men = () => {
+const Items = () => {
   const [category, setCategory] = useState(
     localStorage.getItem("selectedCategory") || "Man"
   );
@@ -167,4 +167,4 @@ const Men = () => {
   );
 };
 
-export default Men;
+export default Items;

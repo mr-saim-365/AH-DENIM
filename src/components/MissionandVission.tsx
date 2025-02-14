@@ -5,12 +5,9 @@ const MissionandVission = () => {
         className="relative py-20 flex items-center justify-center bg-fixed bg-cover bg-center"
         style={{ backgroundImage: "url('/denim-bg.jpg')" }}
       >
-        <div className="flex flex-col gap-10 2xl:gap-10 font-poppins max-w-7xl mx-auto px-5">
+        <div className="flex flex-col gap-10 2xl:gap-10 font-poppins 2xl:w-[70%] mx-auto px-5">
           <div>
-            <h1
-              className="text-4xl
-             2xl:text-5xl font-semibold text-[#4D4D4D]"
-            >
+            <h1 className="text-4xl md:text-5xl font-semibold text-[#4D4D4D]">
               Vission & Mission
             </h1>
             <div className="my-4 text-gray-400 2xl:text-xl">

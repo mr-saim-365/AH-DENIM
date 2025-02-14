@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
+import Certificate1 from "../../public/images/Certificate1.jpg";
+import Certificate2 from "../../public/images/Certificate2.jpg";
 
 const certificates = [
-  "https://www.w3.org/WAI/WCAG2AA-Conformance.png",
-  "https://www.bsigroup.com/medialibrary/Certs/ISO-9001-Certificate.png",
-  "https://www.cdc.gov/diabetes/images/preventionprograms/sample-certificate.jpg",
-  "https://www.trainingexpress.org.uk/wp-content/uploads/2019/09/sample-certificate.jpg",
-  "https://www.haccpcanada.net/images/HACCP_Certificate.jpg",
-  "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100438_large.jpg",
+  Certificate1,
+  Certificate2,
+  Certificate1,
+  Certificate2,
+  Certificate1,
+  Certificate2,
 ];
 
 const Certificates = () => {
   return (
-    <div className="py-20 flex flex-col max-w-7xl mx-auto px-5">
+    <div className="py-20 flex flex-col 2xl:w-[70%] mx-auto px-5">
       <h2 className="text-4xl md:text-5xl font-bold my-6 text-[#4D4D4D]">
         Our Certifications
       </h2>
@@ -25,7 +27,7 @@ const Certificates = () => {
             ease: "linear",
           }}
         >
-          {[...certificates, ...certificates].map((cert, index) => (
+          {[...certificates].map((cert, index) => (
             <img
               key={index}
               src={cert}
