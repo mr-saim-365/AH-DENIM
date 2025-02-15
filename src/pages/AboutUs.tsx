@@ -1,6 +1,16 @@
 import { FaPlay } from "react-icons/fa";
+import { motion } from "framer-motion";
+import Client1 from "../../public/images/clients/1.jpeg";
+import Client2 from "../../public/images/clients/2.jpeg";
+import Client3 from "../../public/images/clients/3.jpeg";
+import Client4 from "../../public/images/clients/4.jpeg";
+import Client5 from "../../public/images/clients/5.jpeg";
+import Client6 from "../../public/images/clients/6.jpeg";
+import Client7 from "../../public/images/clients/7.jpeg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
+const clients = [Client1, Client2, Client3, Client4, Client5, Client6, Client7];
 
 const AboutUs = () => {
   return (
@@ -77,10 +87,25 @@ const AboutUs = () => {
         <h2 className="text-3xl font-bold mb-6 pb-2 text-[#4D4D4D]">
           Our Partners
         </h2>
-        <div className="flex flex-wrap gap-6 justify-center">
-          <img src="/assets/partner1.png" alt="Partner 1" className="w-32" />
-          <img src="/assets/partner2.png" alt="Partner 2" className="w-32" />
-          <img src="/assets/partner3.png" alt="Partner 3" className="w-32" />
+        <div className="flex flex-wrap gap-6">
+          <motion.div
+            className="flex space-x-10"
+            animate={{ x: ["40%", "-120%"] }}
+            transition={{
+              repeat: Infinity,
+              duration: 20,
+              ease: "linear",
+            }}
+          >
+            {[...clients].map((client, index) => (
+              <img
+                key={index}
+                src={client}
+                alt={`Clients ${index + 1}`}
+                className="w-36"
+              />
+            ))}
+          </motion.div>
         </div>
       </section>
 

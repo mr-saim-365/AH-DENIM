@@ -42,7 +42,7 @@ const ProductPage = () => {
         <div className="min-h-screen my-[5rem] font-Roboto ">
           {/* 🔙 Back Button */}
           <button
-            onClick={() => navigate(-1)}
+            onClick={() => navigate(`/items?category=${category}`)}
             className="text-base p-2  md:text-lg  bg-gray-200 rounded-lg shadow hover:bg-gray-300 m-10"
           >
             ← Go Back

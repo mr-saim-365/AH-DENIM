@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -10,15 +11,18 @@ import {
 import { Link } from "react-router-dom";
 
 const Items = () => {
-  const [category, setCategory] = useState(
-    localStorage.getItem("selectedCategory") || "Man"
-  );
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const selectedCategory = queryParams.get("category") || "Men"; // Default to "Men"
   const [searchTerm, setSearchTerm] = useState("");
 
   // ✅ Save category to localStorage when it changes
+  const [category, setCategory] = useState(selectedCategory);
+
   useEffect(() => {
-    localStorage.setItem("selectedCategory", category);
-  }, [category]);
+    setCategory(selectedCategory);
+    localStorage.setItem("selectedCategory", selectedCategory);
+  }, [selectedCategory]);
 
   const filteredSlides = slides.filter(
     (slide) =>
@@ -91,13 +95,13 @@ const Items = () => {
 
           {/* ✅ Product Grid */}
           <div className="md:px-0 flex flex-col gap-10 mb-12 ">
-            <h2 className="text-[#000000] px-8 my-7 uppercase font-poppins text-[20px] font-semibold">
+            <h2 className="text-[#4D4D4D] px-8 my-7 uppercase font-poppins text-[18px] sm:text-[20px] font-bold">
               <span>You are interested in {category}</span>
             </h2>
 
             {/* ✅ Check if products exist */}
             {filteredSlides.length > 0 ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 2xl:gap-8 px-4 md:px-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 2xl:gap-8 px-4 md:px-8">
                 {filteredSlides.map((product, index) => {
                   return (
                     <div

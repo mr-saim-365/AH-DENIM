@@ -5,11 +5,6 @@ import { X } from "lucide-react";
 import logo from "../../public/images/logo2.png";
 import { Link } from "react-router-dom";
 
-interface NavbarProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -74,13 +69,13 @@ const Navbar = () => {
               <span>Catalog</span>
               <RiArrowDownSLine size={16} className="mt-1" />
               <div className="bg-[#ffffff] text-[#222222] py-4 px-2 w-[150px] rounded-lg shadow-lg flex flex-col items-center gap-3 absolute top-[3rem] left-[-45px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <Link className="hover:scale-110" to="/Men">
+                <Link className="hover:scale-110" to="/Items?category=Man">
                   Men
                 </Link>
-                <Link className="hover:scale-110" to="/Men">
+                <Link className="hover:scale-110 " to="/Items?category=Woman">
                   Women
                 </Link>
-                <Link className="hover:scale-110" to="#">
+                <Link className="hover:scale-110" to="/Items?category=Kids">
                   Kid
                 </Link>
               </div>
@@ -123,13 +118,22 @@ const Navbar = () => {
                   : "bg-[#ffffff] text-[#222222]"
               }`}
             >
-              <Link className="hover:scale-110 block p-2" to="/Men">
+              <Link
+                className="hover:scale-110 block p-2"
+                to="/Items?category=Man"
+              >
                 Men
               </Link>
-              <Link className="hover:scale-110 block p-2" to="/Men">
+              <Link
+                className="hover:scale-110 block p-2"
+                to="/Items?category=Woman"
+              >
                 Women
               </Link>
-              <Link className="hover:scale-110 block p-2" to="#">
+              <Link
+                className="hover:scale-110 block p-2"
+                to="/Items?category=Kids"
+              >
                 Kid
               </Link>
             </div>

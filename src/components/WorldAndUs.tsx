@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 interface RegionData {
   name: string;
@@ -16,6 +16,9 @@ const regions: RegionData[] = [
 
 const WorldAndUs: React.FC = () => {
   const [activeRegion, setActiveRegion] = useState<string | null>(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const size = 300;
   const center = size / 2;
   const strokeWidth = 40;
@@ -40,18 +43,34 @@ const WorldAndUs: React.FC = () => {
   let startAngle = 0;
 
   return (
-    <section className="py-16 bg-white font-poppins">
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      className="py-16 bg-white font-poppins"
+    >
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#4D4D4D]">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#4D4D4D]"
+        >
           Global Operations Distribution
-        </h2>
+        </motion.h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-          <div className="relative w-[300px] h-[300px]">
+          {/* Pie Chart Animation */}
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: isInView ? 1 : 0.8, opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="relative w-[300px] h-[300px]"
+          >
             <svg width={size} height={size} className="transform -rotate-90">
-              {regions.map((region, index) => {
+              {regions.map((region) => {
                 const path = calculatePath(region.percentage, startAngle);
-                const currentStartAngle = startAngle;
                 startAngle += (region.percentage / 100) * 360;
 
                 return (
@@ -62,8 +81,8 @@ const WorldAndUs: React.FC = () => {
                     strokeWidth={strokeWidth}
                     fill="none"
                     initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    animate={{ pathLength: isInView ? 1 : 0 }}
+                    transition={{ duration: 1.2, ease: "easeInOut" }}
                     onMouseEnter={() => setActiveRegion(region.name)}
                     onMouseLeave={() => setActiveRegion(null)}
                     className="cursor-pointer transition-all duration-200 hover:filter hover:brightness-110"
@@ -89,16 +108,27 @@ const WorldAndUs: React.FC = () => {
                 <p className="text-2xl font-bold text-gray-800">Presence</p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Legend */}
-          <div className="grid grid-cols-2 gap-4">
-            {regions.map((region) => (
+          {/* Legend Animation */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 30 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+            className="grid grid-cols-2 gap-4"
+          >
+            {regions.map((region, index) => (
               <motion.div
                 key={region.name}
                 className="flex items-center space-x-2 cursor-pointer"
                 onMouseEnter={() => setActiveRegion(region.name)}
                 onMouseLeave={() => setActiveRegion(null)}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: isInView ? 1 : 0,
+                  y: isInView ? 0 : 20,
+                }}
+                transition={{ duration: 0.6, delay: 0.2 * index }}
                 whileHover={{ scale: 1.05 }}
               >
                 <div
@@ -111,10 +141,10 @@ const WorldAndUs: React.FC = () => {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

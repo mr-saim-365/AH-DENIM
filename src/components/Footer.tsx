@@ -18,17 +18,26 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Categories</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
+                <Link
+                  to="/Items?category=Man"
+                  className="text-gray-400 hover:text-white"
+                >
                   Men's Collection
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
+                <Link
+                  to="/Items?category=Woman"
+                  className="text-gray-400 hover:text-white"
+                >
                   Women's Collection
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
+                <Link
+                  to="/Items?category=Kids"
+                  className="text-gray-400 hover:text-white"
+                >
                   Kids' Collection
                 </Link>
               </li>
@@ -59,7 +68,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
+                <Link
+                  to="/ContactUs"
+                  className="text-gray-400 hover:text-white"
+                >
                   Contact Us
                 </Link>
               </li>
