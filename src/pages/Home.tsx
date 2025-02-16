@@ -9,6 +9,7 @@ import OurWork from "../components/OurWork";
 import MissionandVission from "../components/MissionandVission";
 import Overview from "../components/Overview";
 import Certificates from "../components/Certificates";
+import ImageCollage from "../components/Collage";
 
 const Home = () => {
   return (
@@ -16,11 +17,14 @@ const Home = () => {
       <Navbar />
       <main>
         <Hero />
-        <OurWork />
-        <OurServices />
-        <MissionandVission />
-        <Overview />
-        <Certificates />
+        {/* <ImageCollage /> */}
+        <div className="lg:w-[95%] 2xl:w-full mx-auto flex flex-col items-center justify-center">
+          <OurWork />
+          <OurServices />
+          <MissionandVission />
+          <Overview />
+          <Certificates />
+        </div>
         <WorldAndUs />
         <Categories />
         <Questions />

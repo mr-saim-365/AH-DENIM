@@ -11,7 +11,12 @@ export default {
         anton: ["Anton", "sans-serif"],
         Lato: ["Lato", "sans-serif"],
         Inter: ["Inter", "sans-serif"],
-        Roboto: ["Roboto", "sans-serif"]
+        Roboto: ["Roboto", "sans-serif"],
+        Aptos: ['Aptos', 'sans-serif'],
+        aptosNarrow: ['Aptos Narrow', 'sans-serif'],
+        aptosDisplay: ['Aptos Display', 'sans-serif'],
+        aptosMono: ['Aptos Mono', 'monospace'],
+        aptosSerif: ['Aptos Serif', 'serif'],
       }
     },
   },

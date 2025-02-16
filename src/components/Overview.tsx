@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Overview = () => {
   return (
-    <section className="py-20 flex flex-col 2xl:w-[70%] mx-auto px-5">
+    <section className="py-20 flex flex-col 2xl:w-[90%] mx-auto px-5">
       <motion.h2
         className="text-4xl md:text-5xl font-bold mb-6 text-[#4D4D4D]"
         initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ const Overview = () => {
 
       <motion.a
         href="#about"
-        className="bg-[#222222] text-[#ffffff] px-6 py-3 text-lg font-semibold rounded-full transition w-[150px] text-center"
+        className="bg-[#222222] text-[#ffffff] px-6 py-3 text-lg font-semibold rounded-full transition w-[150px] "
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}

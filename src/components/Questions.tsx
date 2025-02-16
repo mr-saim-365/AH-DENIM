@@ -9,47 +9,48 @@ const Questions = () => {
 
   const faqData = [
     {
-      question: "What's your minimum order quantity?",
+      question: "What types of denim products do you manufacture?",
       answer:
-        "Our MOQ has always been 1. We believe it’s important to have our services accessible from the smallest to the largest request.",
+        "We specialize in manufacturing denim and non-denim woven garments for men, women, and kids. Our product range includes jeans, jackets, shirts, skirts, and custom styles tailored to client requirements.",
     },
     {
-      question: "Do I need to have prior knowledge or experience with denim?",
+      question: "Do you offer low MOQ or no minimum order quantity?",
       answer:
-        "Absolutely none, that’s what we’re here for. We have decades worth of experience, and we would love to share our knowledge with you.",
+        "Yes! We offer low MOQ for fashion-forward styles and even no minimum order quantity for select designs, making it easier for startups and small brands to bring their vision to life",
     },
     {
-      question: "What kinds of garments do you produce?",
+      question: "Can you develop custom fabrics and washes?",
       answer:
-        "If it can be made in denim, we can make it. From jeans, to jackets, to dresses, whatever you need we can most certainly do.",
+        "Absolutely! We provide custom fabric development and an extensive range of sustainable wash techniques, including laser distressing, ozone washing, and enzyme washes.",
     },
     {
-      question: "What range of sizes do you guys do?",
+      question: "What sustainability practices do you follow?",
       answer:
-        "We have no restrictions on size, starting from 0 onwards, we're happy to meet your needs and your customers.",
-    },
-
-    {
-      question: "Do you follow ethical practices as a clothing manufacturer?",
-      answer:
-        "Sustainable practices are ingrained in the way we work, and every step of the production process. We recycle and re-spin any off cuts, and use industry leading Jeanologia laundries, allowing us to use 80% less water. We're also proud members of the Ellen McArthur foundation, doing our part to be a part of the circular economy.",
+        "Sustainability is at our core. We utilize eco-friendly washing processes, water recycling, low-impact dyes, and sustainable fabric sourcing to reduce our environmental footprint.",
     },
 
     {
-      question: "From time of designing, what’s the turn around time",
+      question: "Do you offer private label and OEM services?",
       answer:
-        "Average sampling time is 2 weeks. But this can vary based on the design complexity. Rest assured we thrive to get things turned around in a timely manner, as well as to the highest standard.",
+        "Yes, we provide private label and OEM manufacturing services, allowing brands to customize designs, trims, labels, and packaging.",
     },
 
     {
-      question: "Where are you based?",
-      answer: "We work worldwide but we're based in Shoreditch, London.",
+      question: "What is your production capacity?",
+      answer:
+        "Yes, we export worldwide, with a strong presence in the UK, Dubai, and other global markets. We handle logistics efficiently to ensure timely deliveries.",
     },
 
     {
-      question: "Do you provide pattern making?",
+      question: "How long does production take?",
       answer:
-        "Whether you have a unique design concept or need assistance in translating your ideas into patterns, our pattern making services can help bring your vision to life.",
+        "Production timelines vary based on order size and customization. However, we prioritize efficient turnaround times, ensuring timely delivery without compromising quality.",
+    },
+
+    {
+      question: "Can you help with design and technical development?",
+      answer:
+        "Yes! Our team provides end-to-end guidance, from concept development to fabric selection, pattern making, and finishing touches.",
     },
 
     {
@@ -59,9 +60,15 @@ const Questions = () => {
     },
 
     {
-      question: "What clients do you work with?",
+      question: "How can I get a quote or place an order?",
       answer:
-        "We work with many clients, both on a smaller scale as Moseley Road and a larger scale as Chantuque. Please feel free to reach out for more detailed information and we will be happy to discuss.",
+        "Simply contact us with your requirements, and our team will provide a tailored quote and guide you through the process.",
+    },
+
+    {
+      question: "How does the washing process affect the durability of denim?",
+      answer:
+        "The washing process can impact denim's durability. Aggressive washing techniques may weaken the fabric, while gentler methods like enzyme or ozone washing preserve the denim's strength. Properly executed, washing enhances the denim's aesthetic without compromising its longevity.",
     },
   ];
 
