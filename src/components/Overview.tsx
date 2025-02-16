@@ -1,39 +1,52 @@
 import { motion } from "framer-motion";
+import OverviewImage from "../../public/images/OverviewImage.jpeg";
 
 const Overview = () => {
   return (
-    <section className="py-20 flex flex-col 2xl:w-[90%] mx-auto px-5">
-      <motion.h2
-        className="text-4xl md:text-5xl font-bold mb-6 text-[#4D4D4D]"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        Elevating Denim Craftsmanship
-      </motion.h2>
+    <section className="flex flex-col md:flex-row gap-10 md:gap-5  md:items-center 2xl:w-[90%] mx-auto px-5">
+      <div className="md:w-[60%] lg:w-[70%]">
+        <motion.h2
+          className="text-4xl md:text-5xl font-Montserrat font-bold mb-6 text-[#4D4D4D]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Elevating Denim Craftsmanship
+        </motion.h2>
 
-      <motion.p
-        className="text-lg md:text-xl max-w-3xl mb-8 text-[#4B5563]"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        AH Denim is a pioneer in sustainable and high-quality denim
-        manufacturing. With over two decades of expertise, we specialize in
-        crafting premium woven garments for men, women, and kids. Our
-        state-of-the-art facilities, in-house fabric reserves, and sustainable
-        practices ensure excellence with efficiency.
-      </motion.p>
+        <motion.p
+          className="text-lg md:text-xl font-OpenSans max-w-3xl mb-8 text-[#4B5563]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          AH Denim is sustainable and high-quality denim manufacturing. With
+          over two decades of expertise, we specialize in crafting premium woven
+          garments for men, women, and kids. Our state-of-the-art facilities,
+          in-house fabric reserves, and sustainable practices ensure excellence
+          with efficiency.
+        </motion.p>
 
-      <motion.a
-        href="#about"
-        className="bg-[#222222] text-[#ffffff] px-6 py-3 text-lg font-semibold rounded-full transition w-[150px] "
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        Learn More
-      </motion.a>
+
+          <motion.a
+            href="#about"
+            className="bg-[#222222] text-[#ffffff] text-[16px] md:px-6 py-3 px-4 md:text-lg font-semibold rounded-full transition w-[150px] "
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            Learn More
+          </motion.a>
+      
+      </div>
+
+      <div className="md:w-[40%] lg:w-[30%]">
+        <img
+          src={OverviewImage}
+          className="h-[70vh] w-full object-cover"
+          alt="OverviewImage"
+        />
+      </div>
     </section>
   );
 };

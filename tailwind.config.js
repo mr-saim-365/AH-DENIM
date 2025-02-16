@@ -17,6 +17,8 @@ export default {
         aptosDisplay: ['Aptos Display', 'sans-serif'],
         aptosMono: ['Aptos Mono', 'monospace'],
         aptosSerif: ['Aptos Serif', 'serif'],
+        Montserrat: ['Montserrat', "sans-serif"],
+        OpenSans: ['Open Sans', "sans-serif"]
       }
     },
   },
