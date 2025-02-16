@@ -1,6 +1,7 @@
-import { FaPlay } from "react-icons/fa";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { motion } from "framer-motion";
-import AboutVideo from "../../public/About Video.mp4";
+import AboutVideo from "../../public/About Video.mp4"; // Ensure the correct path
 import Client1 from "../../public/images/clients/1.jpeg";
 import Client2 from "../../public/images/clients/2.jpeg";
 import Client3 from "../../public/images/clients/3.jpeg";
@@ -12,8 +13,6 @@ import Client7 from "../../public/images/clients/7.jpeg";
 import ExpoImage1 from "../../public/images/ExpoImage1.jpeg";
 import ExpoImage2 from "../../public/images/ExpoImage2.jpeg";
 import ExpoImage3 from "../../public/images/ExpoImage3.jpeg";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -42,19 +41,11 @@ const AboutUs = () => {
       <Navbar />
 
       {/* Video Section */}
-      <section className="relative h-[80vh] mt-[4rem] flex items-center justify-center">
-        <div className="absolute inset-0 opacity-40"></div>
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={AboutVideo}
-        ></video>
-        <button className="relative z-10 text-black px-6 py-3 flex items-center gap-2 font-semibold uppercase rounded-full shadow-md">
-          <FaPlay /> Watch Our Story
-        </button>
+      <section className="relative  mt-[4rem] flex items-center justify-center">
+        {/* Video Background */}
+        <video height={720} width={1920} controls>
+          <source src={AboutVideo} type="video/mp4" />
+        </video>
       </section>
 
       {/* About Section */}

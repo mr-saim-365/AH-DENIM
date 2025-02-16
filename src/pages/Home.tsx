@@ -17,7 +17,7 @@ const Home = () => {
       <Navbar />
       <main>
         <Hero />
-        {/* <ImageCollage /> */}
+        <ImageCollage />
         <div className="lg:w-[95%] 2xl:w-full mx-auto flex flex-col items-center justify-center">
           <OurWork />
           <OurServices />
