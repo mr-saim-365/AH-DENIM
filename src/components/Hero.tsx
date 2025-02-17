@@ -1,5 +1,5 @@
 // import { ArrowRight } from 'lucide-react';
-import heroImage from "../../public/images/Hero-image.jpg";
+import heroImage from "/images/Hero-image.jpg";
 import BlurText from "./UI/BlurText";
 
 const Hero = () => {

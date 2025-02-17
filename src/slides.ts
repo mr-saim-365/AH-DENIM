@@ -1,27 +1,27 @@
 // Mens images
-import image01 from "../public/images/man/01.jpg";
-import image02 from "../public/images/man/02.jpg";
-import image03 from "../public/images/man/03.jpg";
-import image04 from "../public/images/man/04.jpg";
-import image05 from "../public/images/man/05.jpg";
-import image06 from "../public/images/man/06.jpg";
-import image07 from "../public/images/man/07.jpg";
-import image08 from "../public/images/man/08.jpg";
-import image09 from "../public/images/man/09.jpg";
-import image010 from "../public/images/man/10.jpg";
-import image011 from "../public/images/man/11.jpg";
-import image012 from "../public/images/man/12.jpg";
+import image01 from "/images/man/01.jpg";
+import image02 from "/images/man/02.jpg";
+import image03 from "/images/man/03.jpg";
+import image04 from "/images/man/04.jpg";
+import image05 from "/images/man/05.jpg";
+import image06 from "/images/man/06.jpg";
+import image07 from "/images/man/07.jpg";
+import image08 from "/images/man/08.jpg";
+import image09 from "/images/man/09.jpg";
+import image010 from "/images/man/10.jpg";
+import image011 from "/images/man/11.jpg";
+import image012 from "/images/man/12.jpg";
 
 // Women Images
-import image1 from "../public/images/woman/01.jpg"
-import image2 from "../public/images/woman/02.jpg"
-import image3 from "../public/images/woman/03.jpg"
-import image4 from "../public/images/woman/04.jpg"
-import image5 from "../public/images/woman/05.jpg"
-import image6 from "../public/images/woman/06.jpg"
-import image7 from "../public/images/woman/07.jpg"
-import image8 from "../public/images/woman/08.jpg"
-import image9 from "../public/images/woman/09.jpg"
+import image1 from "/images/woman/01.jpg"
+import image2 from "/images/woman/02.jpg"
+import image3 from "/images/woman/03.jpg"
+import image4 from "/images/woman/04.jpg"
+import image5 from "/images/woman/05.jpg"
+import image6 from "/images/woman/06.jpg"
+import image7 from "/images/woman/07.jpg"
+import image8 from "/images/woman/08.jpg"
+import image9 from "/images/woman/09.jpg"
 
 
 export const slides = [

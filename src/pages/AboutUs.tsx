@@ -1,18 +1,20 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
-import AboutVideo from "../../public/About Video.mp4"; // Ensure the correct path
-import Client1 from "../../public/images/clients/1.jpeg";
-import Client2 from "../../public/images/clients/2.jpeg";
-import Client3 from "../../public/images/clients/3.jpeg";
-import Client4 from "../../public/images/clients/4.jpeg";
-import Client5 from "../../public/images/clients/5.jpeg";
-import Client6 from "../../public/images/clients/6.jpeg";
-import Client7 from "../../public/images/clients/7.jpeg";
+import AboutVideo from "/About Video.mp4";
+import Client1 from "/images/clients/1.jpeg";
+import Client2 from "/images/clients/2.jpeg";
+import Client3 from "/images/clients/3.jpeg";
+import Client4 from "/images/clients/4.jpeg";
+import Client5 from "/images/clients/5.jpeg";
+import Client6 from "/images/clients/6.jpeg";
+import Client7 from "/images/clients/7.jpeg";
 
-import ExpoImage1 from "../../public/images/ExpoImage1.jpeg";
-import ExpoImage2 from "../../public/images/ExpoImage2.jpeg";
-import ExpoImage3 from "../../public/images/ExpoImage3.jpeg";
+import ExpoImage1 from "/images/ExpoImage1.jpeg";
+import ExpoImage2 from "/images/ExpoImage2.jpeg";
+import ExpoImage3 from "/images/ExpoImage3.jpeg";
+
+import Buyers from "/images/Buyers.jpeg";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -41,9 +43,9 @@ const AboutUs = () => {
       <Navbar />
 
       {/* Video Section */}
-      <section className="relative  mt-[4rem] flex items-center justify-center">
+      <section className="relative mt-[4.2rem] flex items-center justify-center">
         {/* Video Background */}
-        <video height={720} width={1920} controls>
+        <video className="w-full h-[75vh]" controls>
           <source src={AboutVideo} type="video/mp4" />
         </video>
       </section>
@@ -196,32 +198,41 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="px-6 md:px-16 lg:px-24 py-16 bg-gray-100">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
-          Our Partners
-        </h2>
+      <section className="px-6 md:px-16 lg:px-24 py-16 flex flex-col gap-20 bg-gray-100">
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
+            Our Partners
+          </h2>
 
-        {/* Scrolling container */}
-        <div className="w-full overflow-hidden relative">
-          <motion.div
-            className="flex space-x-10 min-w-max"
-            animate={{ x: ["0%", "-100%"] }} // Moves left infinitely
-            transition={{
-              repeat: Infinity,
-              duration: 10, // Adjust speed as needed
-              ease: "linear",
-            }}
-          >
-            {/* Duplicate images for smooth loop */}
-            {[...clients].map((client, index) => (
-              <img
-                key={index}
-                src={client}
-                alt={`Client ${index + 1}`}
-                className="w-24 sm:w-28 md:w-32 lg:w-36 transition-transform transform hover:scale-110"
-              />
-            ))}
-          </motion.div>
+          {/* Scrolling container */}
+          <div className="w-full overflow-hidden relative">
+            <motion.div
+              className="flex space-x-10 min-w-max"
+              animate={{ x: ["0%", "-100%"] }} // Moves left infinitely
+              transition={{
+                repeat: Infinity,
+                duration: 10, // Adjust speed as needed
+                ease: "linear",
+              }}
+            >
+              {/* Duplicate images for smooth loop */}
+              {[...clients].map((client, index) => (
+                <img
+                  key={index}
+                  src={client}
+                  alt={`Client ${index + 1}`}
+                  className="w-24 sm:w-28 md:w-32 lg:w-36 transition-transform transform hover:scale-110"
+                />
+              ))}
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-10 items-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800">
+            Our Buyers
+          </h2>
+          <img src={Buyers} alt="Buyers" className="w-[80%] h-[20vh]" />
         </div>
       </section>
 

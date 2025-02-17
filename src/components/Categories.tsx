@@ -1,8 +1,8 @@
-import image4 from "../../public/images/image4.jpeg";
-import image6 from "../../public/images/image6.jpeg";
-import image2 from "../../public/images/image2.jpeg";
-import image5 from "../../public/images/image5.jpeg";
-import image7 from "../../public/images/image7.jpeg";
+import image4 from "/images/image4.jpeg";
+import image6 from "/images/image6.jpeg";
+import image2 from "/images/image2.jpeg";
+import image5 from "/images/image5.jpeg";
+import image7 from "/images/image7.jpeg";
 
 const categories = {
   UK: {

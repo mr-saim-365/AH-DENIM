@@ -40,7 +40,7 @@ const OurServices = () => {
   ];
 
   return (
-    <div className="px-5 py-10 text-[15px]  2xl:w-[90%] mx-auto font-aptosNarrow">
+    <div className="px-5 py-10 text-[15px]  mx-auto font-aptosNarrow">
       <h1 className="text-[45px] 2xl:text-[50px] mb-4 text-[#4D4D4D] font-bold">
         Our Services
       </h1>

@@ -1,11 +1,11 @@
-import gif from "../../public/images/gifImage.gif";
+import gif from "/images/gifImage.gif";
 
 const OurWork = () => {
   return (
     <>
-      <div className=" md:flex md:gap-[60px] font-poppins md:px-5 2xl:mx-auto 2xl:w-[90%] my-10">
-        <div className="text-[#4D4D4D] text-[16px] md:text-[18px] lg:text-[20px]  px-5 py-10 md:w-[60%] lg:px-0 lg:w-[70%]">
-          <div className="flex flex-col gap-5">
+      <div className=" md:flex md:gap-[60px] font-poppins md:px-5 2xl:mx-auto  items-center justify-between my-10">
+        <div className="text-[#4D4D4D] text-[16px] md:text-[18px] lg:text-[20px] flex flex-col justify-center  px-5 py-10 md:w-[60%] lg:px-0 lg:w-[70%]">
+          <div className="flex flex-col gap-5 ">
             <h2 className="text-[45px] lg:text-[50px] font-bold 2xl:text-[60px] text-[#4D4D4D]">
               Who we are
             </h2>

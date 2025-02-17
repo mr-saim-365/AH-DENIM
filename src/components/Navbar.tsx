@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { IoMenuOutline } from "react-icons/io5";
 import { X } from "lucide-react";
-import logo from "../../public/images/logo2.png";
+import logo from "/images/logo2.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
