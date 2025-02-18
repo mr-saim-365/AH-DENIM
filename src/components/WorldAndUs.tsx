@@ -55,7 +55,7 @@ const WorldAndUs: React.FC = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-4xl md:text-5xl font-bold text-center mb-12 text-[#4D4D4D]"
+          className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold text-center mb-12 text-[#4D4D4D]"
         >
           Global Operations Distribution
         </motion.h2>

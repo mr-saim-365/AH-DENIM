@@ -35,7 +35,7 @@ const Categories = () => {
   return (
     <section className="py-16 px-0 sm:px-4 font-poppins w-[90%] mx-auto">
       <div>
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#4D4D4D] ">
+        <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold mb-12 text-center text-[#4D4D4D] ">
           Our Collections (Region Based)
         </h2>
 

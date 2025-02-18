@@ -61,7 +61,9 @@ const ContactUs = () => {
 
         <div className="font-bebas flex flex-col rounded-lg py-8 bg-gradient-to-br from-gray-700 via-gray-900 to-black text-white shadow-lg items-center gap-[6px] px-2 md:px-8 md:justify-center md:gap-[120px] text-[15px] md:flex-row md:items-start">
           <div className="flex flex-col gap-5 justify-center">
-            <h1 className="text-3xl font-bold mb-3">Contact Us</h1>
+            <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold mb-3">
+              Contact Us
+            </h1>
             <span className="text-gray-400 text-[15px]">
               Any question? We would be happy to help you!
             </span>

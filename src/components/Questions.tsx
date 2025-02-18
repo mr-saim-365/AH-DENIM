@@ -74,17 +74,19 @@ const Questions = () => {
 
   return (
     <div className="bg-gray-100 font-poppins">
-      <div className="px-3 sm:px-5 pt-10 pb-20 text-[14px] md:text-[16px] text-[#4D4D4D] lg:w-[75%] 2xl:w-[50%] mx-auto flex flex-col gap-8 items-center">
-        <h1 className="text-[30px] 2xl:text-[50px] text-center font-bold text-[#4D4D4D]">
-          Frequently Asked Questions
-        </h1>
+      <div className="px-3 sm:px-5 pt-10 pb-20 text-[#4D4D4D] lg:w-[75%] 2xl:w-[50%] mx-auto flex flex-col gap-8 items-center">
+        <div>
+          <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] my-5 text-center font-bold text-[#4D4D4D]">
+            Frequently Asked Questions
+          </h1>
+        </div>
 
         <div className="flex flex-col gap-[40px] w-full">
           {faqData.map((item, index) => (
             <div key={index}>
               <div
                 onClick={() => handleExpand(index)}
-                className="mb-[10px] text-[15px] md:text-[18px]  flex sm:justify-between items-start cursor-pointer"
+                className="mb-[10px] md:text-[18px] flex sm:justify-between items-start cursor-pointer"
               >
                 <div className="w-full">{item.question}</div>
 

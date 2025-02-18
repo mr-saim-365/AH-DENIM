@@ -4,9 +4,9 @@ const OurWork = () => {
   return (
     <>
       <div className=" md:flex md:gap-[60px] font-poppins md:px-5 2xl:mx-auto  items-center justify-between my-10">
-        <div className="text-[#4D4D4D] text-[16px] md:text-[18px] lg:text-[20px] flex flex-col justify-center  px-5 py-10 md:w-[60%] lg:px-0 lg:w-[70%]">
+        <div className="text-[#4D4D4D] flex flex-col justify-center  px-5 py-10 md:w-[60%] lg:px-0 lg:w-[70%]">
           <div className="flex flex-col gap-5 ">
-            <h2 className="text-[45px] lg:text-[50px] font-bold 2xl:text-[60px] text-[#4D4D4D]">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold text-[#4D4D4D]">
               Who we are
             </h2>
             <div className="text-[#4B5563]">

@@ -18,7 +18,8 @@ export default {
         aptosMono: ['Aptos Mono', 'monospace'],
         aptosSerif: ['Aptos Serif', 'serif'],
         Montserrat: ['Montserrat', "sans-serif"],
-        OpenSans: ['Open Sans', "sans-serif"]
+        OpenSans: ['Open Sans', "sans-serif"],
+        fangsong: ["FangSong", "serif"],
       }
     },
   },

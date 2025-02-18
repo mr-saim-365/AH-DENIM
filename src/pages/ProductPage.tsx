@@ -70,7 +70,9 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <h2 className="text-3xl mb-5">{product.disc}</h2>
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-5">
+              {product.disc}
+            </h2>
           </div>
 
           <div className="md:hidden flex flex-col items-center gap-4 px-3 sm:px-4">
@@ -98,7 +100,9 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <h2 className="mt-5 text-3xl">{product.disc}</h2>
+            <h2 className="mt-5 text-[26px] sm:text-3xl 2xl:text-[40px]">
+              {product.disc}
+            </h2>
           </div>
         </div>
         <Footer />

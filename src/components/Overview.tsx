@@ -6,7 +6,7 @@ const Overview = () => {
     <section className="flex flex-col md:flex-row gap-10 md:gap-5  md:items-center px-5">
       <div className="md:w-[60%] lg:w-[70%]">
         <motion.h2
-          className="text-4xl md:text-5xl font-Montserrat font-bold mb-6 text-[#4D4D4D]"
+          className="text-2xl sm:text-3xl 2xl:text-[40px] font-bold mb-6 text-[#4D4D4D]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -15,7 +15,7 @@ const Overview = () => {
         </motion.h2>
 
         <motion.p
-          className="text-lg md:text-xl font-OpenSans max-w-3xl 2xl:max-w-4xl mb-8 text-[#4B5563]"
+          className="font-OpenSans max-w-3xl 2xl:max-w-4xl mb-8 text-[#4B5563]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -28,7 +28,7 @@ const Overview = () => {
         </motion.p>
         <motion.a
           href="#about"
-          className="bg-[#222222] text-[#ffffff] text-[16px] md:px-6 py-3 px-4 md:text-lg font-semibold rounded-full transition w-[150px] "
+          className="bg-[#222222] text-[#ffffff] md:px-6 py-3 px-4 font-semibold rounded-full transition w-[150px] "
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
