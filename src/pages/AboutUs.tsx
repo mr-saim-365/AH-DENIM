@@ -88,7 +88,7 @@ const AboutUs = () => {
         </section>
 
         {/* Expo Section */}
-        <section className="px-8 md:px-20 py-16">
+        <section className="px-8 md:px-20 pb-16">
           <div className="flex flex-col">
             <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold mb-6 pb-2 text-[#4D4D4D]">
               Our Expo
@@ -127,7 +127,7 @@ const AboutUs = () => {
               </div>
 
               {/* Expo Content */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 mt-10 2xl:w-[80%]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 2xl:w-[80%]">
                 <div className="text-black p-6 rounded-lg shadow-lg border">
                   <h3 className="text-xl font-semibold text-[#4D4D4D]">
                     Expo Exhibitions
@@ -202,30 +202,56 @@ const AboutUs = () => {
         </section>
 
         <section className="px-6 md:px-16 lg:px-24 py-16 flex flex-col gap-20 bg-gray-100">
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col items-center gap-10">
             <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold text-center text-gray-800">
               Our Partners
             </h2>
-            <div className="w-full overflow-hidden relative">
-              <motion.div
-                className="flex space-x-10 min-w-max"
-                animate={{ x: ["0%", "-100%"] }} // Moves left infinitely
-                transition={{
-                  repeat: Infinity,
-                  duration: 10, // Adjust speed as needed
-                  ease: "linear",
-                }}
-              >
-                {/* Duplicate images for smooth loop */}
-                {[...clients].map((client, index) => (
-                  <img
-                    key={index}
-                    src={client}
-                    alt={`Client ${index + 1}`}
-                    className="w-24 sm:w-28 md:w-32 lg:w-36 transition-transform transform hover:scale-110"
-                  />
-                ))}
-              </motion.div>
+
+            <div className="w-[80%] overflow-hidden relative py-8 bg-gray-50">
+              <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+
+              <div className="flex w-max space-x-10">
+                {/* First motion div */}
+                <motion.div
+                  className="flex space-x-10"
+                  animate={{ x: ["0%", "-100%"] }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 10,
+                    ease: "linear",
+                  }}
+                >
+                  {clients.map((client, index) => (
+                    <img
+                      key={`first-${index}`}
+                      src={client}
+                      alt={`Client ${index + 1}`}
+                      className="w-24 sm:w-28 md:w-32 lg:w-36 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
+                    />
+                  ))}
+                </motion.div>
+
+                {/* Second motion div (identical images following the first) */}
+                <motion.div
+                  className="flex space-x-10"
+                  animate={{ x: ["0%", "-100%"] }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 10,
+                    ease: "linear",
+                  }}
+                >
+                  {clients.map((client, index) => (
+                    <img
+                      key={`second-${index}`}
+                      src={client}
+                      alt={`Client ${index + 1}`}
+                      className="w-24 sm:w-28 md:w-32 lg:w-36 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
+                    />
+                  ))}
+                </motion.div>
+              </div>
             </div>
           </div>
 
