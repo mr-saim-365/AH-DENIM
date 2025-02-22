@@ -39,7 +39,7 @@ const ProductPage = () => {
       <div>
         <Navbar />
 
-        <div className="min-h-screen my-[5rem] font-Roboto ">
+        <div className="min-h-screen mt-[5rem] font-Roboto ">
           {/* 🔙 Back Button */}
           <button
             onClick={() => navigate(`/items?category=${category}`)}
@@ -58,8 +58,12 @@ const ProductPage = () => {
           />
 
           {/* 🖼️ Image Grid */}
-          <div className="hidden md:flex gap-10 md:px-5 lg:p-12 2xl:p-16">
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="hidden md:flex gap-20 md:px-5 lg:p-12 2xl:p-16">
+            <div
+              className={`grid ${
+                images.length > 1 ? "grid-cols-2" : "grid-cols-1"
+              } gap-8`}
+            >
               {images.map((img: string, idx: number) => (
                 <img
                   onClick={() => openLightbox(idx)}

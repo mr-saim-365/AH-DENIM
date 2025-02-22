@@ -117,18 +117,22 @@ const Items = () => {
                             className="w-full h-full object-cover transition-all duration-300"
                             src={product.src[imageIndices[product.id] || 0]} // 👈 Fix applied
                             alt={`Product ${index + 1}`}
-                            onMouseEnter={() =>
-                              setImageIndices((prev) => ({
-                                ...prev,
-                                [product.id]: 1,
-                              }))
-                            }
-                            onMouseLeave={() =>
-                              setImageIndices((prev) => ({
-                                ...prev,
-                                [product.id]: 0,
-                              }))
-                            }
+                            onMouseEnter={() => {
+                              if (product.src.length > 1) {
+                                setImageIndices((prev) => ({
+                                  ...prev,
+                                  [product.id]: 1,
+                                }));
+                              }
+                            }}
+                            onMouseLeave={() => {
+                              if (product.src.length > 1) {
+                                setImageIndices((prev) => ({
+                                  ...prev,
+                                  [product.id]: 0,
+                                }));
+                              }
+                            }}
                           />
                         </Link>
                         <button

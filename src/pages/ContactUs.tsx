@@ -19,6 +19,11 @@ const ContactUs = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (!firstName || !lastName || !email || !cellNumber || !message) {
+      setStatus("error");
+      return;
+    }
+
     const serviceId = "service_rmw1h2s";
     const templateId = "template_f6exg3r";
     const publicKey = "1T9xbZKxb37vbLUVd";
@@ -120,7 +125,7 @@ const ContactUs = () => {
                       value={firstName}
                       onChange={(e) => setFirstName(e.target.value)}
                       placeholder="Your first name"
-                      className="p-3 border border-gray-200 text-[#222222]  rounded-lg w-full focus:outline-gray-600"
+                      className="p-3 border border-gray-200 text-[#222222] rounded-lg w-full focus:outline-gray-600"
                     />
                   </div>
                   <div>
@@ -132,7 +137,7 @@ const ContactUs = () => {
                       value={lastName}
                       onChange={(e) => setLastName(e.target.value)}
                       placeholder="Your last name"
-                      className="p-3 border border-gray-200 text-[#222222]  rounded-lg w-full focus:outline-gray-600"
+                      className="p-3 border border-gray-200 text-[#222222] rounded-lg w-full focus:outline-gray-600"
                     />
                   </div>
                 </div>
@@ -144,7 +149,7 @@ const ContactUs = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="youremail@gmail.com"
-                    className="p-3 border border-gray-200 text-[#222222]  rounded-lg w-full focus:outline-gray-600"
+                    className="p-3 border border-gray-200 text-[#222222] rounded-lg w-full focus:outline-gray-600"
                   />
                 </div>
 
@@ -157,19 +162,13 @@ const ContactUs = () => {
                     value={cellNumber}
                     onChange={(e) => {
                       let value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-
-                      if (value.length > 4) {
+                      if (value.length > 4)
                         value = value.slice(0, 4) + "-" + value.slice(4);
-                      }
-
-                      if (value.length > 12) {
-                        value = value.slice(0, 12);
-                      }
-
+                      if (value.length > 12) value = value.slice(0, 12);
                       setCellNumber(value);
                     }}
                     placeholder="0333-2979540"
-                    className="p-3 border border-gray-200 text-[#222222]  rounded-lg w-full focus:outline-gray-600"
+                    className="p-3 border border-gray-200 text-[#222222] rounded-lg w-full focus:outline-gray-600"
                   />
                 </div>
 
@@ -183,9 +182,20 @@ const ContactUs = () => {
                   ></textarea>
                 </div>
 
+                {status === "success" && (
+                  <p className="text-green-600 font-semibold">
+                    Message sent successfully!
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-red-600 font-semibold">
+                    Please fill out all fields.
+                  </p>
+                )}
+
                 <button
                   type="submit"
-                  className="flex gap-[10px] items-center p-3 rounded-lg bg-white text-[#222] w-full justify-center"
+                  className="flex gap-[10px] items-center p-3 rounded-lg bg-white text-[#222] w-full justify-center border border-gray-300 hover:bg-gray-100 transition"
                 >
                   Send Message <FiSend size={17} />
                 </button>

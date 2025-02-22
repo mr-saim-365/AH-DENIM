@@ -28,6 +28,7 @@ import image022 from "/images/man/22.jpg";
 import image023 from "/images/man/23.jpg";
 
 // Women Images
+
 import image1 from "/images/woman/01.jpg"
 import image2 from "/images/woman/02.jpg"
 import image3 from "/images/woman/03.jpg"
@@ -40,7 +41,6 @@ import image9 from "/images/woman/09.jpg"
 import image10 from "/images/woman/10.jpg"
 import image11 from "/images/woman/11.jpg"
 import image12 from "/images/woman/12.jpg"
-
 
 // Kids  Images
 
@@ -56,49 +56,49 @@ import image006 from "/images/Kids/06.jpg"
 export const slides = [
     {
         id: "1", 
-        src: [image01,image02,image03,image04],
+        src: [image01],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Man"
     },
     {
         id: "2",  
-        src: [image02,image03,image04,image05],
+        src: [image02],
         title: "Slide Title Open",
         disc: "Jacket2",
         category :"Man"
     },
     {
         id: "3",  
-        src: [image03,image04,image05,image06],
+        src: [image03],
         title: "Slide Title Open",
         disc: "Jacket3",
         category :"Man"
     },
     {
         id: "4",
-        src: [image04,image05,image06,image07],
+        src: [image04],
         title: "Slide Title Open",
         disc: "Jeans1",
         category :"Man"
     },
     {
         id: "5",  
-        src: [image05,image06,image07,image08],
+        src: [image05],
         title: "Slide Title Open",
         disc: "Jeans2",
         category :"Man"
     },
     {
         id: "6",  
-        src: [image06,image07,image08,image09],
+        src: [image06],
         title: "Slide Title Open",
         disc: "Jeans3",
         category :"Man"
     },
     {
         id: "7",  
-        src: [image07,image08,image09,image010],
+        src: [image07],
         title: "Slide Title Open",
         disc: "Jeans3",
         category :"Man"
@@ -106,35 +106,35 @@ export const slides = [
 
     {
         id: "8",  
-        src: [image08,image09,image010,image011],
+        src: [image08],
         title: "Slide Title Open",
         disc: "Jeans3",
         category :"Man"
     },
     {
         id: "9",  
-        src: [image09,image010,image011,image012],
+        src: [image09],
         title: "Slide Title Open",
         disc: "Jeans3",
         category :"Man"
     },
     {
         id: "10",  
-        src: [image010,image011,image012,image01],
+        src: [image010],
         title: "Slide Title Open",
         disc: "Jeans3",
         category :"Man"
     },
     {
         id: "11",  
-        src: [image011,image012,image01,image02],
+        src: [image011],
         title: "Slide Title Open",
         disc: "Jeans3",
         category :"Man"
     },
     {
         id: "12",  
-        src: [image012,image01,image02,image03],
+        src: [image012],
         title: "Slide Title Open",
         disc: "Jeans3",
         category :"Man"
@@ -224,14 +224,14 @@ export const slides = [
     // Woman Category
     {
         id: "28", 
-        src: [image1,image2,image3,image4],
+        src: [image1],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "29", 
-        src: [image2,image3,image4,image5],
+        src: [image2],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
@@ -239,49 +239,49 @@ export const slides = [
 
     {
         id: "30", 
-        src: [image3,image4,image5,image6],
+        src: [image3],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "31", 
-        src: [image4,image5,image6,image7],
+        src: [image4],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "32", 
-        src: [image5,image6,image7,image8],
+        src: [image5],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "33", 
-        src: [image6,image7,image8,image9],
+        src: [image6],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "34", 
-        src: [image7,image8,image9,image1],
+        src: [image7],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "35", 
-        src: [image8,image9,image1,image2],
+        src: [image8],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "36", 
-        src: [image9,image1,image2,image3],
+        src: [image9],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
@@ -352,7 +352,6 @@ export const slides = [
         disc: "Jacket1",
         category :"Kids"
     },
-
 
     
 ]
