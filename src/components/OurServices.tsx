@@ -1,3 +1,9 @@
+import ServiceImage1 from "/images/ServiceImage1.jpeg";
+import ServiceImage2 from "/images/ServiceImage2.jpeg";
+import ServiceImage3 from "/images/ServiceImage3.jpeg";
+import ServiceImage4 from "/images/ServiceImage4.jpeg";
+import ServiceImage5 from "/images/ServiceImage5.jpeg";
+
 const OurServices = () => {
   const services = [
     {
@@ -5,21 +11,21 @@ const OurServices = () => {
       title: "Fabric Sourcing",
       description:
         "We offer a wide selection of premium denim and non-denim fabrics, providing the perfect base for your designs. Our expert in-house team guides you through textures, weights, and compositions, making it easy to experiment with silhouettes and finishes. We source sustainable and innovative fabrics, ensuring your brand stands out in both quality and environmental responsibility.",
-      img: "https://cdn.prod.website-files.com/6464150e1f3bf0e607e67cb9/6515e5eea8a22e1449fa6e01_Screen%20Shot%202023-05-31%20at%2013.55new-min-p-800.jpg",
+      img: ServiceImage1,
     },
     {
       id: "02",
       title: "No Minimum Order",
       description:
         "We proudly offer no minimum order quantity, making premium denim manufacturing accessible to brands of all sizes. Our fully integrated in-house process—from design to production—empowers startups and small businesses to create high-quality, trend-driven denim without the constraints of large MOQs. Whether you're launching a new line or scaling up, we support your growth with flexibility and efficiency.",
-      img: "https://cdn.prod.website-files.com/6464150e1f3bf0e607e67cb9/6515e5ee008c48e205fd0ffd_DSC_0007new-min-p-800.jpg",
+      img: ServiceImage2,
     },
     {
       id: "03",
       title: "High Quality",
       description:
         "As a vertically integrated manufacturer, we control every stage of production, ensuring unmatched quality at every step. With rigorous QC checks from fabric inspection to finishing, we guarantee precision, durability, and consistency. Our in-house expertise eliminates third-party involvement, streamlining the process to deliver premium denim that meets global standards with reliability and efficiency.",
-      img: "https://cdn.prod.website-files.com/6464150e1f3bf0e607e67cb9/6515e5ee0ff2d772680649d0_sleeve_up_close%201new-min-p-800.jpg",
+      img: ServiceImage3,
     },
 
     {
@@ -27,7 +33,7 @@ const OurServices = () => {
       title: "Bespoke Design",
       description:
         "We provide comprehensive solutions for custom denim, ensuring each piece aligns with your brand’s vision. From fabric selection to garment construction, wash techniques, and trim customization, every detail is crafted to your specifications. Whether you need vintage fades, modern silhouettes, or unique detailing, we execute each step with precision and sustainability in mind.",
-      img: "https://cdn.prod.website-files.com/6464150e1f3bf0e607e67cb9/6515e5eef444e4a686640f2d_raey_cotton_twill_pant%202new-min-p-500.jpg",
+      img: ServiceImage4,
     },
 
     {
@@ -35,12 +41,12 @@ const OurServices = () => {
       title: "Efficient Process",
       description:
         "Our seamless in-house production process eliminates third-party dependencies and delays, optimizing workflow for maximum efficiency. From design and fabric selection to cutting, stitching, and finishing, every stage is meticulously managed. With real-time quality control, advanced machinery, and streamlined operations, we guarantee faster turnarounds, reduced waste, and a hassle-free experience.",
-      img: "https://cdn.prod.website-files.com/6464150e1f3bf0e607e67cb9/6515e5eea9da14dcb4886efc_pexels-cottonbro-studio-6764143new-min-p-800.jpg",
+      img: ServiceImage5,
     },
   ];
 
   return (
-    <div className="px-5 py-10 mx-auto font-aptosNarrow">
+    <div className="px-5 py-20 mx-auto font-aptosNarrow">
       <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-4 text-[#4D4D4D] font-bold">
         Our Services
       </h1>

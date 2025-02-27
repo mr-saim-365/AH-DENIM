@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import Categories from "../components/Categories";
 import WorldAndUs from "../components/WorldAndUs";
 import Footer from "../components/Footer";
 import Questions from "../components/Questions";
@@ -26,7 +25,6 @@ const Home = () => {
           <Certificates />
         </div>
         <WorldAndUs />
-        <Categories />
         <Questions />
       </main>
       <Footer />

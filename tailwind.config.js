@@ -19,7 +19,7 @@ export default {
         aptosSerif: ['Aptos Serif', 'serif'],
         Montserrat: ['Montserrat', "sans-serif"],
         OpenSans: ['Open Sans', "sans-serif"],
-        fangsong: ["FangSong", "serif"],
+        fangsong: ["FangSong", "sans-serif"],
       }
     },
   },
