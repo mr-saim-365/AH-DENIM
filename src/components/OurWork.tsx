@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const OurWork = () => {
   return (
     <>
-      <div className=" md:flex md:gap-[60px] font-poppins md:px-5 2xl:mx-auto items-center py-20 justify-between">
+      <div className=" md:flex md:gap-[60px] md:px-5 2xl:mx-auto items-center py-20 justify-between">
         <div className="text-[#4D4D4D] flex flex-col px-5 py-10 md:w-[60%] md:h-[50vh] lg:px-0 lg:w-[70%]">
           <div className="flex flex-col gap-8">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-fangsong text-[#4D4D4D]">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D]">
               Who we are
             </h2>
             <div className="text-[#4B5563]">

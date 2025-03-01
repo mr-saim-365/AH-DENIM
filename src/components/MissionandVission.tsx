@@ -8,9 +8,9 @@ const MissionandVission = () => {
         className="relative py-20 flex items-center justify-center bg-fixed bg-cover bg-center"
         style={{ backgroundImage: "url('/denim-bg.jpg')" }}
       >
-        <div className="flex flex-col gap-10 2xl:gap-10 font-aptosNarrow mx-auto px-5">
+        <div className="flex flex-col gap-10 2xl:gap-10 mx-auto px-5">
           <div>
-            <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-semibold text-[#4D4D4D]">
+            <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D]">
               Vission & Mission
             </h1>
             <div className="my-4 text-gray-400 2xl:text-xl">
@@ -28,7 +28,7 @@ const MissionandVission = () => {
                 />
               </div>
               <div className="lg:w-[90%]  2xl:w-[70%]">
-                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-semibold text-[#4D4D4D] text-center">
+                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D] text-center">
                   Our Mission
                 </h2>
                 <p className="mt-6 text-justify text-[#4B5563]">
@@ -47,13 +47,13 @@ const MissionandVission = () => {
             <div className="flex flex-col gap-10 items-center justify-between">
               <div>
                 <img
-                  className="rounded-[50%] h-[250px] w-[250px]  object-cover"
+                  className="rounded-[50%] h-[250px] w-[250px] object-cover"
                   src={image1}
                   alt="MissionImage"
                 />
               </div>
               <div className="lg:w-[90%] 2xl:w-[70%]">
-                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-semibold text-[#4D4D4D] text-center">
+                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D] text-center">
                   Our Vission
                 </h2>
                 <p className="mt-6 text-justify text-[#4B5563]">

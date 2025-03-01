@@ -95,7 +95,7 @@ const Items = () => {
 
           {/* ✅ Product Grid */}
           <div className="md:px-0 flex flex-col gap-10 mb-12 ">
-            <h2 className="text-[#4D4D4D] px-8 my-7 uppercase font-poppins text-[20px] font-bold">
+            <h2 className="text-[#4D4D4D] px-8 my-7 uppercase font-bold font-Arabic text-[20px] font-bold">
               <span>You are interested in {category}</span>
             </h2>
 

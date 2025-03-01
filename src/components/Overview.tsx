@@ -6,7 +6,7 @@ const Overview = () => {
     <section className="flex flex-col md:flex-row gap-10 md:gap-5 py-20 items-center px-5">
       <div className="md:w-[60%] md:h-[30vh] lg:w-[70%]">
         <motion.h2
-          className="text-2xl sm:text-3xl 2xl:text-[40px] font-bold mb-10 text-[#4D4D4D]"
+          className="text-2xl sm:text-3xl 2xl:text-[40px] font-bold font-Arabic mb-10 text-[#4D4D4D]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -15,7 +15,7 @@ const Overview = () => {
         </motion.h2>
 
         <motion.p
-          className="font-OpenSans max-w-3xl 2xl:max-w-4xl mb-8 text-[#4B5563]"
+          className="max-w-3xl 2xl:max-w-4xl mb-8 text-[#4B5563]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

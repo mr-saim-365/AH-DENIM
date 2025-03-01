@@ -20,6 +20,7 @@ export default {
         Montserrat: ['Montserrat', "sans-serif"],
         OpenSans: ['Open Sans', "sans-serif"],
         fangsong: ["FangSong", "sans-serif"],
+        Arabic: ['Simplified Arabic', "sans-serif"]
       }
     },
   },

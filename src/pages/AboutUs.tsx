@@ -53,7 +53,7 @@ const AboutUs = () => {
 
         {/* About Section */}
         <section className="px-8 md:px-20 py-16">
-          <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold mb-2 pb-4 text-[#4D4D4D]">
+          <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic mb-2 pb-4 text-[#4D4D4D]">
             About Us
           </h2>
           <p className="leading-relaxed">
@@ -129,7 +129,7 @@ const AboutUs = () => {
               {/* Expo Content */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 2xl:w-[80%]">
                 <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-semibold text-[#4D4D4D]">
+                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
                     Expo Exhibitions
                   </h3>
                   <p className="mt-2 text-justify ">
@@ -143,7 +143,7 @@ const AboutUs = () => {
                   </p>
                 </div>
                 <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-semibold text-[#4D4D4D]">
+                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
                     Our Presence at Karachi TEXPO
                   </h3>
                   <p className="mt-2  text-justify ">
@@ -157,7 +157,7 @@ const AboutUs = () => {
                   </p>
                 </div>
                 <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-semibold text-[#4D4D4D]">
+                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
                     Connecting with the Global Market
                   </h3>
                   <p className="mt-2  text-justify ">
@@ -171,7 +171,7 @@ const AboutUs = () => {
                   </p>
                 </div>
                 <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-semibold text-[#4D4D4D]">
+                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
                     Join Us at Future Exhibitions!
                   </h3>
                   <p className="mt-2  text-justify ">
@@ -185,7 +185,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-semibold text-[#4D4D4D]">
+                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
                     Future Showcases & Innovation
                   </h3>
                   <p className="mt-2  text-justify">
@@ -203,7 +203,7 @@ const AboutUs = () => {
 
         <section className="px-6 md:px-16 lg:px-24 py-16 flex flex-col gap-20 bg-gray-100">
           <div className="flex flex-col items-center gap-10">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold text-center text-gray-800">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-center text-gray-800">
               Our Partners
             </h2>
 
@@ -256,7 +256,7 @@ const AboutUs = () => {
           </div>
 
           <div className="flex flex-col gap-10 items-center">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold text-center text-gray-800">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-center text-gray-800">
               Our Buyers
             </h2>
             <img src={Buyers} alt="Buyers" className="w-[80%] h-[18vh]" />

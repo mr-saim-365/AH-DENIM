@@ -39,7 +39,7 @@ const ProductPage = () => {
       <div>
         <Navbar />
 
-        <div className="min-h-screen mt-[5rem] font-Roboto ">
+        <div className="min-h-screen mt-[5rem]">
           {/* 🔙 Back Button */}
           <button
             onClick={() => navigate(`/items?category=${category}`)}
