@@ -48,9 +48,9 @@ const WorldAndUs: React.FC = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="py-20 bg-white font-poppins"
+      className="py-20 bg-white"
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-3 md:px-4">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}

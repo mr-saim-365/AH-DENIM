@@ -54,7 +54,7 @@ const ContactUs = () => {
   return (
     <>
       <Navbar />
-      <div className="mb-[5rem] mt-[10rem] flex flex-col gap-8 2xl:flex-row 2xl:justify-between mx-3 2xl:mx-[2%] lg:mx-[5%]">
+      <div className="mb-[5rem] mt-[10rem] flex flex-col gap-8 2xl:flex-row 2xl:justify-between px-3 2xl:mx-[2%] lg:mx-[5%]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d904.1050144316846!2d67.08705906963222!3d24.985838714209358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDU5JzA5LjAiTiA2N8KwMDUnMTUuNyJF!5e0!3m2!1sen!2s!4v1739060046969!5m2!1sen!2s"
           style={{ border: 0 }}

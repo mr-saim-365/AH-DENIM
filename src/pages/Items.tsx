@@ -58,11 +58,11 @@ const Items = () => {
     <>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <div className="mt-[5rem] font-Roboto">
-          <div className="mensWear flex flex-col my-10 gap-10 z-50 px-12 md:px-20 w-full mx-auto">
+        <div className="mt-[5rem] ">
+          <div className="mensWear flex flex-col my-10 gap-10 z-50 px-4 md:px-20 w-full mx-auto">
             <div className="flex flex-col gap-10 items-start md:flex-row md:justify-between md:items-center">
               {/* ✅ Category Toggle */}
-              <ul className="flex gap-5 text-[#000000] text-lg uppercase cursor-pointer">
+              <ul className="flex gap-5 text-[#000000] text-[17px] sm:text-lg uppercase cursor-pointer">
                 {["Man", "Woman", "Kids"].map((cat) => (
                   <li key={cat}>
                     <button
@@ -95,13 +95,13 @@ const Items = () => {
 
           {/* ✅ Product Grid */}
           <div className="md:px-0 flex flex-col gap-10 mb-12 ">
-            <h2 className="text-[#4D4D4D] px-8 my-7 uppercase font-bold font-Arabic text-[20px] font-bold">
+            <h2 className="text-[#4D4D4D] px-4 my-7 uppercase font-Arabic text-[18px] font-bold">
               <span>You are interested in {category}</span>
             </h2>
 
             {/* ✅ Check if products exist */}
             {filteredSlides.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 2xl:gap-8 px-4 md:px-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 2xl:gap-8 px-3 md:px-8">
                 {filteredSlides.map((product, index) => {
                   return (
                     <div

@@ -10,21 +10,21 @@ const OurServices = () => {
       id: "01",
       title: "Fabric Sourcing",
       description:
-        "We offer a wide selection of premium denim and non-denim fabrics, providing the perfect base for your designs. Our expert in-house team guides you through textures, weights, and compositions, making it easy to experiment with silhouettes and finishes. We source sustainable and innovative fabrics, ensuring your brand stands out in both quality and environmental responsibility.",
+        "We offer premium denim and non-denim fabrics, including sustainable options. Our expert team guides you through textures, weights, and compositions, helping you create unique designs with quality and environmental responsibility.",
       img: ServiceImage1,
     },
     {
       id: "02",
       title: "No Minimum Order",
       description:
-        "We proudly offer no minimum order quantity, making premium denim manufacturing accessible to brands of all sizes. Our fully integrated in-house process—from design to production—empowers startups and small businesses to create high-quality, trend-driven denim without the constraints of large MOQs. Whether you're launching a new line or scaling up, we support your growth with flexibility and efficiency.",
+        "We proudly offer no minimum order quantity, making premium denim manufacturing accessible to brands of all sizes. Our fully integrated in-house process—from design to production—empowers startups and small businesses to create high-quality, trend-driven denim without the constraints of large MOQs.",
       img: ServiceImage2,
     },
     {
       id: "03",
       title: "High Quality",
       description:
-        "As a vertically integrated manufacturer, we control every stage of production, ensuring unmatched quality at every step. With rigorous QC checks from fabric inspection to finishing, we guarantee precision, durability, and consistency. Our in-house expertise eliminates third-party involvement, streamlining the process to deliver premium denim that meets global standards with reliability and efficiency.",
+        "As a vertically integrated manufacturer, we ensure unmatched quality through rigorous QC checks from fabric inspection to finishing. Our in-house expertise streamlines production, eliminating third-party involvement to deliver premium, globally compliant denim with precision and efficiency.",
       img: ServiceImage3,
     },
 
@@ -46,7 +46,7 @@ const OurServices = () => {
   ];
 
   return (
-    <div className="px-5 py-20 mx-auto">
+    <div className="px-3 md:px-5 py-20 mx-auto">
       <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-4 font-bold font-Arabic text-[#4D4D4D] ">
         Our Services
       </h1>

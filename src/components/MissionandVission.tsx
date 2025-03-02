@@ -8,8 +8,8 @@ const MissionandVission = () => {
         className="relative py-20 flex items-center justify-center bg-fixed bg-cover bg-center"
         style={{ backgroundImage: "url('/denim-bg.jpg')" }}
       >
-        <div className="flex flex-col gap-10 2xl:gap-10 mx-auto px-5">
-          <div>
+        <div className="flex flex-col gap-10 2xl:gap-10 mx-auto px-3 md:px-5">
+          <div className="text-center">
             <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D]">
               Vission & Mission
             </h1>

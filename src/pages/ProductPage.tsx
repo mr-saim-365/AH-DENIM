@@ -43,7 +43,7 @@ const ProductPage = () => {
           {/* 🔙 Back Button */}
           <button
             onClick={() => navigate(`/items?category=${category}`)}
-            className="text-base p-2  md:text-lg  bg-gray-200 rounded-lg shadow hover:bg-gray-300 m-10"
+            className="text-base p-2  md:text-lg  bg-gray-200 rounded-lg shadow hover:bg-gray-300 my-10 mx-4"
           >
             ← Go Back
           </button>

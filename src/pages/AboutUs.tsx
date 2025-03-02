@@ -52,7 +52,7 @@ const AboutUs = () => {
         </section>
 
         {/* About Section */}
-        <section className="px-8 md:px-20 py-16">
+        <section className="px-3 md:px-20 py-16">
           <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic mb-2 pb-4 text-[#4D4D4D]">
             About Us
           </h2>
@@ -88,7 +88,7 @@ const AboutUs = () => {
         </section>
 
         {/* Expo Section */}
-        <section className="px-8 md:px-20 pb-16">
+        <section className="px-3 md:px-20 pb-16">
           <div className="flex flex-col">
             <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold mb-6 pb-2 text-[#4D4D4D]">
               Our Expo
@@ -201,13 +201,13 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="px-6 md:px-16 lg:px-24 py-16 flex flex-col gap-20 bg-gray-100">
+        <section className="px-3 md:px-16 lg:px-24 py-16 flex flex-col gap-20 bg-gray-100">
           <div className="flex flex-col items-center gap-10">
             <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-center text-gray-800">
               Our Partners
             </h2>
 
-            <div className="w-[80%] overflow-hidden relative py-8 bg-gray-50">
+            <div className="w-full md:w-[80%] overflow-hidden relative py-8 bg-gray-50">
               <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
               <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
 
@@ -259,7 +259,11 @@ const AboutUs = () => {
             <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-center text-gray-800">
               Our Buyers
             </h2>
-            <img src={Buyers} alt="Buyers" className="w-[80%] h-[18vh]" />
+            <img
+              src={Buyers}
+              alt="Buyers"
+              className="md:w-[80%] w-full h-[18vh]"
+            />
           </div>
         </section>
       </div>

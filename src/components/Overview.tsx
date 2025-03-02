@@ -3,7 +3,7 @@ import OverviewImage from "/images/OverviewImage.jpeg";
 
 const Overview = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-10 md:gap-5 py-20 items-center px-5">
+    <section className="flex flex-col md:flex-row gap-10 md:gap-5 py-20 items-center px-3 md:px-5">
       <div className="md:w-[60%] md:h-[30vh] lg:w-[70%]">
         <motion.h2
           className="text-2xl sm:text-3xl 2xl:text-[40px] font-bold font-Arabic mb-10 text-[#4D4D4D]"

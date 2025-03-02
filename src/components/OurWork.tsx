@@ -1,14 +1,13 @@
-import OurWorkVideo from "/OurWorkVideo.mp4";
-import { motion } from "framer-motion";
+import OurWorkImage from "/images/OurWorkImage.jpeg";
 
 const OurWork = () => {
   return (
     <>
-      <div className=" md:flex md:gap-[60px] md:px-5 2xl:mx-auto items-center py-20 justify-between">
-        <div className="text-[#4D4D4D] flex flex-col px-5 py-10 md:w-[60%] md:h-[50vh] lg:px-0 lg:w-[70%]">
-          <div className="flex flex-col gap-8">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D]">
-              Who we are
+      <div className=" md:flex md:gap-[60px] md:px-5 px-3 2xl:mx-auto py-16 justify-between">
+        <div className="text-[#4D4D4D] flex flex-col  md:w-[60%] md:h-[50vh] lg:px-0 lg:w-[70%]">
+          <div className="flex flex-col gap-4 md:gap-8">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center font-bold font-Arabic text-[#4D4D4D]">
+              Who are we
             </h2>
             <div className="text-[#4B5563]">
               AH Denim is a premier denim manufacturer with over 20 years of
@@ -26,13 +25,10 @@ const OurWork = () => {
         </div>
 
         <div className="w-full md:w-[40%] lg:w-[50%] 2xl:w-auto">
-          <motion.video
-            src={OurWorkVideo}
-            autoPlay
-            loop
-            muted
+          <img
+            src={OurWorkImage}
             className="w-full h-[70vh] object-cover rounded-lg"
-          ></motion.video>
+          ></img>
         </div>
       </div>
     </>
