@@ -43,7 +43,7 @@ const ProductPage = () => {
           {/* 🔙 Back Button */}
           <button
             onClick={() => navigate(`/items?category=${category}`)}
-            className="text-base p-2  md:text-lg  bg-gray-200 rounded-lg shadow hover:bg-gray-300 my-10 mx-4"
+            className="text-base p-2  md:text-lg  bg-gray-200 rounded-lg shadow hover:bg-gray-300 my-10 mx-4 2xl:mx-16"
           >
             ← Go Back
           </button>
@@ -74,7 +74,7 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-5">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-5 font-bold font-serif">
               {product.disc}
             </h2>
           </div>
@@ -104,7 +104,7 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <h2 className="mt-5 text-[26px] sm:text-3xl 2xl:text-[40px]">
+            <h2 className="mt-5 text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif">
               {product.disc}
             </h2>
           </div>

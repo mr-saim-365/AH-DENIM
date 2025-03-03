@@ -47,10 +47,10 @@ const OurServices = () => {
 
   return (
     <div className="px-3 md:px-5 py-20 mx-auto">
-      <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-4 font-bold font-Arabic text-[#4D4D4D] ">
+      <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-4 font-bold font-serif text-[#4D4D4D] ">
         Our Services
       </h1>
-      <p className=" mb-12 text-[#4B5563]">
+      <p className=" mb-12 text-[#4B5563] font-normal">
         At AH Denim, we deliver premium denim with a commitment to quality,
         seamless communication, and timely service. Our dedicated quality
         control team ensures every piece meets the highest standards, while our
@@ -72,12 +72,12 @@ const OurServices = () => {
               alt={service.title}
               className="w-full h-[300px] sm:h-[250px] md:h-[250px] object-cover rounded-t-md "
             />
-            <div className="text-[#4D4D4D] p-4 text-lg font-semibold">
+            <div className="text-[#4D4D4D] p-4 text-lg">
               <div className="mb-1">{service.id}</div>
-              <h2 className="text-[22px] mb-3 font-semibold">
+              <h2 className="text-[22px] mb-3 font-bold font-serif">
                 {service.title}
               </h2>
-              <p className="text-[14px] text-justify  text-gray-600">
+              <p className="text-[14px] md:text-[16px] text-justify text-gray-600 font-normal">
                 {service.description}
               </p>
             </div>

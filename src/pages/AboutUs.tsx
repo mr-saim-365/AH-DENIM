@@ -53,10 +53,10 @@ const AboutUs = () => {
 
         {/* About Section */}
         <section className="px-3 md:px-20 py-16">
-          <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic mb-2 pb-4 text-[#4D4D4D]">
+          <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif mb-2 pb-4 text-[#4D4D4D]">
             About Us
           </h2>
-          <p className="leading-relaxed">
+          <p className="leading-relaxed font-normal">
             About AH Denim At AH Denim, we are more than just manufacturers—we
             are creators, innovators, and problem solvers in the world of denim
             and woven apparel. With over two decades of experience, we
@@ -90,7 +90,7 @@ const AboutUs = () => {
         {/* Expo Section */}
         <section className="px-3 md:px-20 pb-16">
           <div className="flex flex-col">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold mb-6 pb-2 text-[#4D4D4D]">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif mb-6 pb-2 text-[#4D4D4D]">
               Our Expo
             </h2>
 
@@ -127,12 +127,12 @@ const AboutUs = () => {
               </div>
 
               {/* Expo Content */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 2xl:w-[80%]">
-                <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 mt-10text-sm 2xl:w-[80%]">
+                <div className="text-white p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                  <h3 className="text-lg text-white font-bold font-serif">
                     Expo Exhibitions
                   </h3>
-                  <p className="mt-2 text-justify ">
+                  <p className="mt-2 text-justify font-normal">
                     At AH Denim, we actively participate in global trade shows
                     to showcase our expertise in denim innovation and
                     sustainable apparel manufacturing. Recently, we exhibited at
@@ -142,11 +142,11 @@ const AboutUs = () => {
                     our latest collections and innovations.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                  <h3 className="text-lg text-white font-semibold font-serif">
                     Our Presence at Karachi TEXPO
                   </h3>
-                  <p className="mt-2  text-justify ">
+                  <p className="mt-2 text-white text-justify font-normal">
                     At TEXPO Karachi, our booth attracted visitors from various
                     countries, including top retailers, fashion designers, and
                     sourcing professionals. We presented a range of sustainable
@@ -156,11 +156,13 @@ const AboutUs = () => {
                     market needs.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
-                    Connecting with the Global Market
-                  </h3>
-                  <p className="mt-2  text-justify ">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                  <div className="flex  gap-4 items-center">
+                    <h3 className="text-lg font-semibold text-white font-serif">
+                      Connecting with the Global Market
+                    </h3>
+                  </div>
+                  <p className="mt-2  text-justify font-normal text-white">
                     We introduced customization and low MOQ solutions, allowing
                     buyers to order tailored styles with flexible quantities.
                     Additionally, our state-of-the-art laundry and finishing
@@ -170,11 +172,11 @@ const AboutUs = () => {
                     prioritizing sustainability.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                  <h3 className="text-lg font-semibold text-white font-serif">
                     Join Us at Future Exhibitions!
                   </h3>
-                  <p className="mt-2  text-justify ">
+                  <p className="mt-2  text-justify font-normal text-white">
                     Participating in Karachi TEXPO strengthened our presence in
                     the global denim industry and created opportunities for
                     valuable networking. Engaging with international buyers and
@@ -184,11 +186,11 @@ const AboutUs = () => {
                   </p>
                 </div>
 
-                <div className="text-black p-6 rounded-lg shadow-lg border">
-                  <h3 className="text-xl font-bold font-Arabic text-[#4D4D4D]">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                  <h3 className="text-lg font-semibold text-white font-serif">
                     Future Showcases & Innovation
                   </h3>
-                  <p className="mt-2  text-justify">
+                  <p className="mt-2  text-justify font-normal text-white">
                     We look forward to unveiling more innovations at upcoming
                     trade shows and continuing to push the boundaries of denim
                     manufacturing. Stay tuned for updates on where you can visit
@@ -203,7 +205,7 @@ const AboutUs = () => {
 
         <section className="px-3 md:px-16 lg:px-24 py-16 flex flex-col gap-20 bg-gray-100">
           <div className="flex flex-col items-center gap-10">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-center text-gray-800">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-center text-gray-800">
               Our Partners
             </h2>
 
@@ -256,7 +258,7 @@ const AboutUs = () => {
           </div>
 
           <div className="flex flex-col gap-10 items-center">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-center text-gray-800">
+            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-center text-gray-800">
               Our Buyers
             </h2>
             <img

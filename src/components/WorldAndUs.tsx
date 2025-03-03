@@ -55,7 +55,7 @@ const WorldAndUs: React.FC = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -20 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-center mb-12 text-[#4D4D4D]"
+          className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-center mb-12 text-[#4D4D4D]"
         >
           Global Operations Distribution
         </motion.h2>
@@ -105,7 +105,7 @@ const WorldAndUs: React.FC = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <p className="text-sm font-medium text-gray-600">Global</p>
-                <p className="text-2xl font-bold text-gray-800">Presence</p>
+                <p className="text-2xl font-bold text-gray-800 ">Presence</p>
               </div>
             </div>
           </motion.div>

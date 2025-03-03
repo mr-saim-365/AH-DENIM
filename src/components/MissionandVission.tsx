@@ -10,10 +10,10 @@ const MissionandVission = () => {
       >
         <div className="flex flex-col gap-10 2xl:gap-10 mx-auto px-3 md:px-5">
           <div className="text-center">
-            <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D]">
+            <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-[#4D4D4D]">
               Vission & Mission
             </h1>
-            <div className="my-4 text-gray-400 2xl:text-xl">
+            <div className="my-4 text-gray-400 2xl:text-xl font-normal">
               <span>What we are doing,and why we are doing it.</span>
             </div>
           </div>
@@ -28,10 +28,10 @@ const MissionandVission = () => {
                 />
               </div>
               <div className="lg:w-[90%]  2xl:w-[70%]">
-                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D] text-center">
+                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-[#4D4D4D] text-center">
                   Our Mission
                 </h2>
-                <p className="mt-6 text-justify text-[#4B5563]">
+                <p className="mt-6 text-justify text-[#4B5563] font-normal">
                   At AH Denim, we redefine denim with sustainability, ethical
                   integrity, and innovation. Using organic cotton and
                   eco-conscious materials, we minimize waste, reduce our carbon
@@ -53,10 +53,10 @@ const MissionandVission = () => {
                 />
               </div>
               <div className="lg:w-[90%] 2xl:w-[70%]">
-                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-Arabic text-[#4D4D4D] text-center">
+                <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-[#4D4D4D] text-center">
                   Our Vission
                 </h2>
-                <p className="mt-6 text-justify text-[#4B5563]">
+                <p className="mt-6 text-justify text-[#4B5563] font-normal">
                   AH Denim envisions becoming a global leader in manufacturing
                   excellence, setting new standards in quality, efficiency, and
                   sustainability. Through innovation and ethical stewardship, we

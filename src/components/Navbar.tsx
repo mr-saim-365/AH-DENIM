@@ -60,7 +60,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`hidden md:flex md:w-full md:justify-center space-x-9 lg:space-x-12 2xl:space-x-20 ${
+            className={`hidden md:flex md:w-full md:justify-center font-normal space-x-9 lg:space-x-12 2xl:space-x-20 ${
               isScrolled ? "md:text-[#222222]" : "md:text-[#ffffff]"
             }`}
           >
@@ -94,7 +94,7 @@ const Navbar = () => {
             : "max-h-0 opacity-0 invisible transition-all duration-300 ease-out"
         } ${isScrolled ? "text-[#222222]" : "text-[#ffffff]"}`}
       >
-        <div className="px-2 pt-4 pb-4">
+        <div className="px-2 pt-4 pb-4 font-normal">
           <Link to="/" className="block p-4">
             Home
           </Link>

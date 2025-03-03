@@ -95,7 +95,7 @@ const Items = () => {
 
           {/* ✅ Product Grid */}
           <div className="md:px-0 flex flex-col gap-10 mb-12 ">
-            <h2 className="text-[#4D4D4D] px-4 my-7 uppercase font-Arabic text-[18px] font-bold">
+            <h2 className="text-[#4D4D4D] px-4 md:px-8 my-7 uppercase font-bold font-serif text-[18px]">
               <span>You are interested in {category}</span>
             </h2>
 
@@ -154,7 +154,10 @@ const Items = () => {
                           <MdOutlineKeyboardArrowRight size={25} />
                         </button>
                       </div>
-                      <div key={product.id} className="p-5 text-center">
+                      <div
+                        key={product.id}
+                        className="p-5 text-center font-normal"
+                      >
                         <div className="mb-3 text-2xl">{product.disc}</div>
                       </div>
                     </div>
@@ -162,7 +165,7 @@ const Items = () => {
                 })}
               </div>
             ) : (
-              <p className="text-center text-gray-500 text-xl">
+              <p className="text-center text-gray-500 text-xl font-normal">
                 No products found for "{category}"
               </p>
             )}
