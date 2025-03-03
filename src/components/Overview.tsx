@@ -1,10 +1,20 @@
 import { motion } from "framer-motion";
 import OverviewImage from "/images/OverviewImage.jpeg";
+import MensWear from "/images/mens wear.jpeg";
+import jeans from "/images/image3.jpeg";
 
 const Overview = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-10 md:gap-5 py-20 items-center px-3 md:px-5">
-      <div className="md:w-[60%] md:h-[30vh] lg:w-[70%]">
+    <section className="flex flex-col md:flex-row gap-10 md:gap-5 lg:gap-20 py-20 items-center  px-3 md:px-5">
+      <div className="md:w-[40%] lg:w-[30%] w-full">
+        <img
+          src={OverviewImage}
+          className="h-[70vh] w-full rounded-lg object-contain"
+          alt="OverviewImage"
+        />
+      </div>
+
+      <div className="md:w-[60%] md:h-[30vh] lg:w-[40%]">
         <motion.h2
           className="text-2xl sm:text-3xl 2xl:text-[40px] font-bold font-serif mb-10 text-[#4D4D4D]"
           initial={{ opacity: 0, y: 20 }}
@@ -37,12 +47,22 @@ const Overview = () => {
         </motion.a>
       </div>
 
-      <div className="md:w-[40%] lg:w-[30%]">
-        <img
-          src={OverviewImage}
-          className="h-[70vh] w-full object-cover rounded-lg"
-          alt="OverviewImage"
-        />
+      <div className="flex flex-col items-center gap-5">
+        <div>
+          <img
+            src={MensWear}
+            alt="Mens Wear"
+            className="rounded-[50%] object-cover h-[250px] w-[250px]"
+          />
+        </div>
+
+        <div>
+          <img
+            src={jeans}
+            alt=""
+            className="rounded-[50%] object-cover h-[250px] w-[250px]"
+          />
+        </div>
       </div>
     </section>
   );

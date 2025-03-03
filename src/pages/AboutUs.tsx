@@ -128,7 +128,7 @@ const AboutUs = () => {
 
               {/* Expo Content */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 mt-10text-sm 2xl:w-[80%]">
-                <div className="text-white p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                <div className="text-white p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 ">
                   <h3 className="text-lg text-white font-bold font-serif">
                     Expo Exhibitions
                   </h3>
@@ -142,7 +142,7 @@ const AboutUs = () => {
                     our latest collections and innovations.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
                   <h3 className="text-lg text-white font-semibold font-serif">
                     Our Presence at Karachi TEXPO
                   </h3>
@@ -156,7 +156,7 @@ const AboutUs = () => {
                     market needs.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
                   <div className="flex  gap-4 items-center">
                     <h3 className="text-lg font-semibold text-white font-serif">
                       Connecting with the Global Market
@@ -172,7 +172,7 @@ const AboutUs = () => {
                     prioritizing sustainability.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
                   <h3 className="text-lg font-semibold text-white font-serif">
                     Join Us at Future Exhibitions!
                   </h3>
@@ -186,7 +186,7 @@ const AboutUs = () => {
                   </p>
                 </div>
 
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 bg-gradient-to-r">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
                   <h3 className="text-lg font-semibold text-white font-serif">
                     Future Showcases & Innovation
                   </h3>
