@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import OverviewImage from "/images/OverviewImage.jpeg";
-import MensWear from "/images/image6.jpeg";
+import OverviewImage from "/images/image6.jpeg";
+import MensWear from "/images/image4.jpeg";
 
 const Overview = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-10 2xl:gap-20 py-20 items-start  px-3 md:px-5">
-      <div className="md:w-[40%] lg:w-[30%] w-full">
+    <section className="flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-10 2xl:gap-20 py-20 items-start px-3 md:px-5">
+      <div className="md:w-[40%] lg:w-[30%] w-full ">
         <img
           src={OverviewImage}
-          className="2xl:h-[70vh] md:h-[50vh] w-full rounded-lg object-contain md:object-fill"
+          className=" w-full h-[60vh] rounded-lg object-contain md:object-fill"
           alt="OverviewImage"
         />
       </div>
@@ -34,16 +34,6 @@ const Overview = () => {
           crafting premium woven garments for men, women, and kids. Our
           commitment to excellence is reflected in our meticulous craftsmanship,
           cutting-edge production techniques, and dedication to sustainability.
-          <br />
-          <div className="hidden md:hidden lg:block">
-            We prioritize ethical sourcing, responsible production, and quality
-            control at every stage, guaranteeing that our denim products meet
-            the highest industry standards. Whether it's classic denim jeans,
-            stylish jackets, or versatile everyday wear, AH Denim delivers
-            unparalleled comfort, durability, and style. Join us in redefining
-            denim fashion with a perfect blend of sustainability, efficiency,
-            and craftsmanship.
-          </div>
         </motion.p>
         <motion.a
           href="#about"
@@ -55,10 +45,10 @@ const Overview = () => {
           Learn More
         </motion.a>
       </div>
-      <div className="md:w-[40%] lg:w-[30%] w-full">
+      <div className="md:w-[40%] lg:w-[30%] w-full hidden lg:block h-full">
         <img
           src={MensWear}
-          className="2xl:h-[70vh] md:h-[50vh] h-auto w-full rounded-lg object-contain md:object-fill"
+          className=" w-full h-[60vh] rounded-lg object-contain md:object-fill"
           alt="MensWear"
         />
       </div>
