@@ -1,20 +1,19 @@
 import { motion } from "framer-motion";
 import OverviewImage from "/images/OverviewImage.jpeg";
-import MensWear from "/images/mens wear.jpeg";
-import jeans from "/images/image3.jpeg";
+import MensWear from "/images/image6.jpeg";
 
 const Overview = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-10 md:gap-5 lg:gap-20 py-20 items-center  px-3 md:px-5">
+    <section className="flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-10 2xl:gap-20 py-20 items-start  px-3 md:px-5">
       <div className="md:w-[40%] lg:w-[30%] w-full">
         <img
           src={OverviewImage}
-          className="h-[70vh] w-full rounded-lg object-contain"
+          className="2xl:h-[70vh] md:h-[50vh] w-full rounded-lg object-contain md:object-fill"
           alt="OverviewImage"
         />
       </div>
 
-      <div className="md:w-[60%] md:h-[30vh] lg:w-[40%]">
+      <div className="md:w-[60%] lg:w-[60%] mt-5">
         <motion.h2
           className="text-2xl sm:text-3xl 2xl:text-[40px] font-bold font-serif mb-10 text-[#4D4D4D]"
           initial={{ opacity: 0, y: 20 }}
@@ -30,11 +29,21 @@ const Overview = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          AH Denim is sustainable and high-quality denim manufacturing. With
-          over two decades of expertise, we specialize in crafting premium woven
-          garments for men, women, and kids. Our state-of-the-art facilities,
-          in-house fabric reserves, and sustainable practices ensure excellence
-          with efficiency.
+          AH Denim is a leading name in sustainable and high-quality denim
+          manufacturing. With over two decades of expertise, we take pride in
+          crafting premium woven garments for men, women, and kids. Our
+          commitment to excellence is reflected in our meticulous craftsmanship,
+          cutting-edge production techniques, and dedication to sustainability.
+          <br />
+          <div className="hidden md:hidden lg:block">
+            We prioritize ethical sourcing, responsible production, and quality
+            control at every stage, guaranteeing that our denim products meet
+            the highest industry standards. Whether it's classic denim jeans,
+            stylish jackets, or versatile everyday wear, AH Denim delivers
+            unparalleled comfort, durability, and style. Join us in redefining
+            denim fashion with a perfect blend of sustainability, efficiency,
+            and craftsmanship.
+          </div>
         </motion.p>
         <motion.a
           href="#about"
@@ -46,23 +55,12 @@ const Overview = () => {
           Learn More
         </motion.a>
       </div>
-
-      <div className="flex flex-col items-center gap-5">
-        <div>
-          <img
-            src={MensWear}
-            alt="Mens Wear"
-            className="rounded-[50%] object-cover h-[250px] w-[250px]"
-          />
-        </div>
-
-        <div>
-          <img
-            src={jeans}
-            alt=""
-            className="rounded-[50%] object-cover h-[250px] w-[250px]"
-          />
-        </div>
+      <div className="md:w-[40%] lg:w-[30%] w-full">
+        <img
+          src={MensWear}
+          className="2xl:h-[70vh] md:h-[50vh] h-auto w-full rounded-lg object-contain md:object-fill"
+          alt="MensWear"
+        />
       </div>
     </section>
   );
