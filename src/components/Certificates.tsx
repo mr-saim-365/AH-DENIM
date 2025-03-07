@@ -10,13 +10,13 @@ const Certificates = () => {
       <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif my-6 text-[#4D4D4D]">
         Our Certifications
       </h2>
-      <div className="relative grid grid-col-1 sm:grid-cols-3 sm:w-[80%] 2xl:w-[50%] mx-auto w-full gap-10 sm:gap-0  place-items-center overflow-hidden py-10">
+      <div className="relative grid grid-col-1 sm:grid-cols-3 sm:w-[80%] 2xl:w-[50%] mx-auto w-full  sm:gap-10 lg:gap-0  place-items-center overflow-hidden py-10">
         {[...certificates].map((cert, index) => (
           <img
             key={index}
             src={cert}
             alt={`Certificate ${index + 1}`}
-            className="w-[180px] h-[160px] object-contain"
+            className="2xl:w-[180px] 2xl:h-[140px] w-[160px] h-[140px] object-contain"
           />
         ))}
       </div>

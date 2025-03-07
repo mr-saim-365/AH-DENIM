@@ -2,26 +2,22 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import AboutVideo from "/About Video.mp4";
-import Client1 from "/images/clients/1.jpeg";
-import Client2 from "/images/clients/2.jpeg";
-import Client3 from "/images/clients/3.jpeg";
-import Client4 from "/images/clients/4.jpeg";
-import Client5 from "/images/clients/5.jpeg";
-import Client6 from "/images/clients/6.jpeg";
-import Client7 from "/images/clients/7.jpeg";
-
-import ExpoImage1 from "/images/ExpoImage1.jpeg";
-import ExpoImage2 from "/images/ExpoImage2.jpeg";
-import ExpoImage3 from "/images/ExpoImage3.jpeg";
-
-import Buyers from "/images/Buyers.jpeg";
+import CarouselImage1 from "/images/CarouselImage1.jpeg";
+import CarouselImage2 from "/images/CarouselImage2.jpeg";
+import CarouselImage3 from "/images/CarouselImage3.jpeg";
+import CarouselImage4 from "/images/CarouselImage4.jpeg";
+import CarouselImage5 from "/images/CarouselImage5.jpeg";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const clients = [Client1, Client2, Client3, Client4, Client5, Client6, Client7];
-
-const images = [ExpoImage1, ExpoImage2, ExpoImage3];
+const images = [
+  CarouselImage1,
+  CarouselImage2,
+  CarouselImage3,
+  CarouselImage4,
+  CarouselImage5,
+];
 
 const AboutUs = () => {
   const [index, setIndex] = useState(0);
@@ -43,9 +39,7 @@ const AboutUs = () => {
       <Navbar />
 
       <div className="text-[15px] sm:text-[16px]">
-        {/* Video Section */}
         <section className="relative mt-[4.2rem] flex items-center justify-center">
-          {/* Video Background */}
           <video className="w-full h-[75vh]" controls>
             <source src={AboutVideo} type="video/mp4" />
           </video>
@@ -127,12 +121,12 @@ const AboutUs = () => {
               </div>
 
               {/* Expo Content */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 mt-10text-sm 2xl:w-[80%]">
-                <div className="text-white p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600 ">
-                  <h3 className="text-lg text-white font-bold font-serif">
+              <div className="grid grid-cols-1  text-[15px] sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 mt-10text-sm 2xl:w-[80%]">
+                <div className="p-6 rounded-lg shadow-lg border bg-[#ffffff] ">
+                  <h3 className="text-lg font-bold font-serif">
                     Expo Exhibitions
                   </h3>
-                  <p className="mt-2 text-justify font-normal">
+                  <p className="mt-2  text-justify font-normal">
                     At AH Denim, we actively participate in global trade shows
                     to showcase our expertise in denim innovation and
                     sustainable apparel manufacturing. Recently, we exhibited at
@@ -142,11 +136,11 @@ const AboutUs = () => {
                     our latest collections and innovations.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
-                  <h3 className="text-lg text-white font-semibold font-serif">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-[#ffffff]">
+                  <h3 className="text-lg  font-semibold font-serif">
                     Our Presence at Karachi TEXPO
                   </h3>
-                  <p className="mt-2 text-white text-justify font-normal">
+                  <p className="mt-2  text-justify font-normal">
                     At TEXPO Karachi, our booth attracted visitors from various
                     countries, including top retailers, fashion designers, and
                     sourcing professionals. We presented a range of sustainable
@@ -156,13 +150,13 @@ const AboutUs = () => {
                     market needs.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-[#ffffff]">
                   <div className="flex  gap-4 items-center">
-                    <h3 className="text-lg font-semibold text-white font-serif">
+                    <h3 className="text-lg font-semibold font-serif">
                       Connecting with the Global Market
                     </h3>
                   </div>
-                  <p className="mt-2  text-justify font-normal text-white">
+                  <p className="mt-2  text-justify font-normal ">
                     We introduced customization and low MOQ solutions, allowing
                     buyers to order tailored styles with flexible quantities.
                     Additionally, our state-of-the-art laundry and finishing
@@ -172,11 +166,11 @@ const AboutUs = () => {
                     prioritizing sustainability.
                   </p>
                 </div>
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
-                  <h3 className="text-lg font-semibold text-white font-serif">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-[#ffffff]">
+                  <h3 className="text-lg font-semibold  font-serif">
                     Join Us at Future Exhibitions!
                   </h3>
-                  <p className="mt-2  text-justify font-normal text-white">
+                  <p className="mt-2  text-justify font-normal ">
                     Participating in Karachi TEXPO strengthened our presence in
                     the global denim industry and created opportunities for
                     valuable networking. Engaging with international buyers and
@@ -186,11 +180,11 @@ const AboutUs = () => {
                   </p>
                 </div>
 
-                <div className="text-black p-6 rounded-lg shadow-lg border bg-gradient-to-tl from-gray-900 to-gray-600">
-                  <h3 className="text-lg font-semibold text-white font-serif">
+                <div className="text-black p-6 rounded-lg shadow-lg border bg-[#ffffff]">
+                  <h3 className="text-lg font-semibold  font-serif">
                     Future Showcases & Innovation
                   </h3>
-                  <p className="mt-2  text-justify font-normal text-white">
+                  <p className="mt-2  text-justify font-normal ">
                     We look forward to unveiling more innovations at upcoming
                     trade shows and continuing to push the boundaries of denim
                     manufacturing. Stay tuned for updates on where you can visit
@@ -200,72 +194,6 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="px-3 md:px-16 lg:px-24 py-16 flex flex-col gap-20 bg-gray-100">
-          <div className="flex flex-col items-center gap-10">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-center text-gray-800">
-              Our Partners
-            </h2>
-
-            <div className="w-full md:w-[80%] overflow-hidden relative py-8 bg-gray-50">
-              <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
-              <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
-
-              <div className="flex w-max space-x-10">
-                {/* First motion div */}
-                <motion.div
-                  className="flex space-x-10"
-                  animate={{ x: ["0%", "-100%"] }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 10,
-                    ease: "linear",
-                  }}
-                >
-                  {clients.map((client, index) => (
-                    <img
-                      key={`first-${index}`}
-                      src={client}
-                      alt={`Client ${index + 1}`}
-                      className="w-24 sm:w-28 md:w-32 lg:w-36 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
-                    />
-                  ))}
-                </motion.div>
-
-                {/* Second motion div (identical images following the first) */}
-                <motion.div
-                  className="flex space-x-10"
-                  animate={{ x: ["0%", "-100%"] }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 10,
-                    ease: "linear",
-                  }}
-                >
-                  {clients.map((client, index) => (
-                    <img
-                      key={`second-${index}`}
-                      src={client}
-                      alt={`Client ${index + 1}`}
-                      className="w-24 sm:w-28 md:w-32 lg:w-36 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
-                    />
-                  ))}
-                </motion.div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-10 items-center">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif text-center text-gray-800">
-              Our Buyers
-            </h2>
-            <img
-              src={Buyers}
-              alt="Buyers"
-              className="md:w-[80%] w-full h-[18vh]"
-            />
           </div>
         </section>
       </div>

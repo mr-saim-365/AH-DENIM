@@ -4,18 +4,18 @@ import MensWear from "/images/image4.jpeg";
 
 const Overview = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-10 md:gap-8 lg:gap-10 2xl:gap-20 py-20 items-start px-3 md:px-5">
+    <section className="flex flex-col md:flex-row gap-5 md:gap-8 lg:gap-5 2xl:gap-20 py-20 items-start px-3 md:px-5">
       <div className="md:w-[40%] lg:w-[30%] w-full ">
         <img
           src={OverviewImage}
-          className=" w-full h-[60vh] rounded-lg object-contain md:object-fill"
+          className=" w-full h-[65vh] md:h-[60vh] rounded-lg "
           alt="OverviewImage"
         />
       </div>
 
       <div className="md:w-[60%] lg:w-[60%] mt-5">
         <motion.h2
-          className="text-2xl sm:text-3xl 2xl:text-[40px] font-bold font-serif mb-10 text-[#4D4D4D]"
+          className="text-2xl sm:text-[28px] 2xl:text-[40px] font-bold font-serif mb-5 text-center md:text-left text-[#4D4D4D]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

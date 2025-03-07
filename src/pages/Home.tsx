@@ -9,6 +9,7 @@ import MissionandVission from "../components/MissionandVission";
 import Overview from "../components/Overview";
 import Certificates from "../components/Certificates";
 import ImageCollage from "../components/Collage";
+import OurClients from "../components/OurClients";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
           <OurServices />
           <MissionandVission />
           <Overview />
+          <OurClients />
           <Certificates />
         </div>
         <Questions />

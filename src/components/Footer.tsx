@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-16 pb-8 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 text-[15px] sm:text-[16px]">
-        <div className="grid grid-cols-1 md:grid-cols-3 md:place-items-center gap-8 mb-12">
-          <div>
+    <footer className="bg-black text-white pt-12 pb-8 mt-auto">
+      <div className="max-w-[60rem] 2xl:max-w-[90rem] mx-auto px-4 text-[15px] sm:text-[16px]">
+        <div className="flex flex-col gap-12 md:flex-row md:justify-between mb-12">
+          <div className="w-[30%]">
             <h3 className="text-xl font-bold font-serif mb-4">AH DENIM</h3>
             <p className="text-gray-400 font-normal">
               Premium denim products crafted with excellence. Discover our
@@ -42,40 +42,6 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white"
                 >
                   Kids' Collection
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
-                  New Arrivals
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold font-serif mb-4">Customer Service</h4>
-            <ul className="space-y-2 font-normal">
-              <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
-                  Size Guide
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
-                  Shipping Info
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-gray-400 hover:text-white">
-                  Returns
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/ContactUs"
-                  className="text-gray-400 hover:text-white"
-                >
-                  Contact Us
                 </Link>
               </li>
             </ul>

@@ -3,7 +3,7 @@ import OurWorkImage from "/images/OurWorkImage.jpeg";
 const OurWork = () => {
   return (
     <>
-      <div className=" md:flex md:gap-[60px] md:px-5 px-3 2xl:mx-auto py-16 justify-between">
+      <div className="flex flex-col md:flex-row md:gap-[60px] gap-10 md:px-5 px-3 2xl:mx-auto py-16 md:justify-between">
         <div className="text-[#4D4D4D] flex flex-col  md:w-[60%] md:h-[50vh] lg:px-0 lg:w-[70%]">
           <div className="flex flex-col gap-4 md:gap-8">
             <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center font-bold font-serif text-[#4D4D4D]">
@@ -25,10 +25,7 @@ const OurWork = () => {
         </div>
 
         <div className="w-full md:w-[40%] lg:w-[50%] 2xl:w-auto">
-          <img
-            src={OurWorkImage}
-            className="w-full h-[70vh] object-cover rounded-lg"
-          ></img>
+          <img src={OurWorkImage} className="w-full h-[70vh] rounded-lg"></img>
         </div>
       </div>
     </>

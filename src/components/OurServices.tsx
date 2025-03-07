@@ -47,7 +47,7 @@ const OurServices = () => {
 
   return (
     <div className="px-3 md:px-5 py-20 mx-auto">
-      <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-4 font-bold font-serif text-[#4D4D4D] ">
+      <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-4 font-bold font-serif text-center md:text-left text-[#4D4D4D] ">
         Our Services
       </h1>
       <p className=" mb-12 text-[#4B5563] font-normal">
@@ -77,7 +77,7 @@ const OurServices = () => {
               <h2 className="text-[22px] mb-3 font-bold font-serif">
                 {service.title}
               </h2>
-              <p className="text-[14px] md:text-[16px] text-justify text-gray-600 font-normal">
+              <p className="text-[14px] md:text-[15px] text-left text-gray-600 font-normal">
                 {service.description}
               </p>
             </div>
