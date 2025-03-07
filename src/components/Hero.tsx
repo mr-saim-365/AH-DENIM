@@ -8,9 +8,9 @@ const Hero = () => {
       <div className="md:flex h-full w-full">
         {/* Left Text Section */}
         <div className="container md:w-[45%] lg:w-[40%] flex items-center justify-center px-6">
-          <div className=" md:py-6 mb-10 md:px-0 flex items-center flex-col md:block justify-center text-[#ffffff] lg:text-[#222222] absolute h-[48%] sm:h-[68%] md:h-auto mt-20 md:mt-0 top-0 bottom-0 left-0 right-0 md:static">
-            <h4 className="text-[1.2rem] sm:text-[2rem] mb-3 md:text-[2.5rem] lg:text-[3rem] 2xl:text-[3.5rem] font-extrabold uppercase leading-tight tracking-wide hover:scale-105 transition-transform duration-500 ease-in-out">
-              AH Denim
+          <div className=" md:p-6 mb-10 flex items-center flex-col md:block justify-center text-[#ffffff] lg:text-[#222222] absolute h-[48%] sm:h-[68%] md:h-auto mt-20 md:mt-0 top-0 bottom-0 left-0 right-0 md:static">
+            <h4 className="text-[1.2rem] sm:text-[2rem] mb-4 md:text-[2.5rem] lg:text-[3rem] 2xl:text-[3.5rem] font-extrabold uppercase leading-tight tracking-wide hover:scale-105 transition-transform duration-500 ease-in-out">
+              The Denim Renaissance
             </h4>
             <BlurText
               text="WHERE PASSION MEETS FABRIC"
@@ -25,7 +25,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="w-full h-full md:w-[70%] 2xl:w-[90%]">
+        <div className="w-full h-full md:w-[70%] 2xl:w-[80%]">
           <img src={heroImage} className="h-full w-full object-cover"></img>
         </div>
       </div>

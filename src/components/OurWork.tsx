@@ -25,7 +25,7 @@ const OurWork = () => {
         </div>
 
         <div className="w-full md:w-[40%] lg:w-[50%] 2xl:w-auto">
-          <img src={OurWorkImage} className="w-full h-[70vh] rounded-lg"></img>
+          <img src={OurWorkImage} className="w-full h-[70vh] rounded-lg "></img>
         </div>
       </div>
     </>

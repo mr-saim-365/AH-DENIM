@@ -2,21 +2,28 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import AboutVideo from "/About Video.mp4";
-import CarouselImage1 from "/images/CarouselImage1.jpeg";
-import CarouselImage2 from "/images/CarouselImage2.jpeg";
-import CarouselImage3 from "/images/CarouselImage3.jpeg";
-import CarouselImage4 from "/images/CarouselImage4.jpeg";
-import CarouselImage5 from "/images/CarouselImage5.jpeg";
+import AboutImage1 from "/images/AboutImage1.jpeg";
+import ExpoImage1 from "/images/ExpoImage1.jpeg";
+import ExpoImage2 from "/images/ExpoImage2.jpeg";
+import ExpoImage3 from "/images/ExpoImage3.jpeg";
+import ExpoImage4 from "/images/ExpoImage4.jpeg";
+import ExpoImage5 from "/images/ExpoImage5.jpeg";
+import ExpoImage6 from "/images/ExpoImage6.jpeg";
+import ExpoImage7 from "/images/ExpoImage7.jpeg";
+import ExpoImage8 from "/images/ExpoImage8.jpeg";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  CarouselImage1,
-  CarouselImage2,
-  CarouselImage3,
-  CarouselImage4,
-  CarouselImage5,
+  ExpoImage1,
+  ExpoImage2,
+  ExpoImage3,
+  ExpoImage4,
+  ExpoImage5,
+  ExpoImage6,
+  ExpoImage7,
+  ExpoImage8,
 ];
 
 const AboutUs = () => {
@@ -46,43 +53,81 @@ const AboutUs = () => {
         </section>
 
         {/* About Section */}
-        <section className="px-3 md:px-20 py-16">
-          <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center font-bold font-serif mb-5 pb-4 text-[#4D4D4D]">
-            About Us
-          </h2>
-          <p className="leading-relaxed font-normal">
-            About AH Denim At AH Denim, we are more than just manufacturers—we
-            are creators, innovators, and problem solvers in the world of denim
-            and woven apparel. With over two decades of experience, we
-            specialize in producing high-quality, fashion-forward garments that
-            meet the evolving needs of global brands. Our Journey What started
-            in 2000 as a passion for denim craftsmanship has grown into a
-            state-of-the-art manufacturing facility, delivering trend-driven,
-            sustainable apparel for men, women, and kids. With a strong
-            reputation in the industry, we have proudly been exporting to the UK
-            and Dubai for the last three years, helping brands bring their
-            vision to life. What We Offer Expertise in Woven & Denim Apparel –
-            From timeless classics to contemporary fashion pieces, we
-            manufacture a diverse range of garments.Innovative Design &
-            Finishing – Our advanced in-house washing and finishing facilities
-            allow us to create unique textures, washes, and sustainable
-            finishes.Sustainability at the Core – We embrace eco-conscious
-            production, using water-saving technologies and responsible sourcing
-            to reduce our environmental footprint. Flexible Solutions for Brands
-            – Our low MOQ policy ensures that both emerging designers and
-            established labels can access high-quality manufacturing without
-            high-volume constraints. Why Choose AH Denim? At AH Denim, we don’t
-            just follow trends—we set them. Our commitment to quality,
-            innovation, and sustainability ensures that every piece we produce
-            meets the highest industry standards. Whether you're a startup
-            looking for a reliable partner or an established brand seeking a
-            fresh manufacturing perspective, we are here to deliver exceptional
-            results.
-          </p>
+        <section className="px-3 md:px-6 lg:px-12 2xl:px-20 py-16">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-10 items-center lg:justify-between">
+            <div className="w-full lg:w-2/3 xl:w-3/5">
+              <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center lg:text-left font-bold font-serif mb-4 text-[#4D4D4D]">
+                About Us
+              </h2>
+              <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
+                <span className="block mb-3">
+                  About AH Denim: At AH Denim, we are more than just
+                  manufacturers—we are creators, innovators, and problem solvers
+                  in the world of denim and woven apparel. With over two decades
+                  of experience, we specialize in producing high-quality,
+                  fashion-forward garments that meet the evolving needs of
+                  global brands.
+                </span>
+                <span className="block mb-3">
+                  <strong>Our Journey:</strong> What started in 2000 as a
+                  passion for denim craftsmanship has grown into a
+                  state-of-the-art manufacturing facility, delivering
+                  trend-driven, sustainable apparel for men, women, and kids. We
+                  have proudly been exporting to the UK and Dubai for the last
+                  three years, helping brands bring their vision to life.
+                </span>
+                <span className="block mb-3">
+                  <strong>What We Offer:</strong>
+                </span>
+                <ul className="list-disc list-inside mb-3 space-y-2">
+                  <li>
+                    <strong>Expertise in Woven & Denim Apparel:</strong> From
+                    timeless classics to contemporary fashion pieces, we
+                    manufacture a diverse range of garments.
+                  </li>
+                  <li className="hidden 2xl:block">
+                    <strong>Innovative Design & Finishing:</strong> Our advanced
+                    in-house washing and finishing facilities allow us to create
+                    unique textures, washes, and sustainable finishes.
+                  </li>
+                  <li className="hidden 2xl:block">
+                    <strong>Sustainability at the Core:</strong> We embrace
+                    eco-conscious production, using water-saving technologies
+                    and responsible sourcing to reduce our environmental
+                    footprint.
+                  </li>
+                  <li className="hidden 2xl:block">
+                    <strong>Flexible Solutions for Brands:</strong> Our low MOQ
+                    policy ensures that both emerging designers and established
+                    labels can access high-quality manufacturing without
+                    high-volume constraints.
+                  </li>
+                </ul>
+                <span className="hidden 2xl:block">
+                  <strong>Why Choose AH Denim?</strong> At AH Denim, we don’t
+                  just follow trends—we set them. Our commitment to quality,
+                  innovation, and sustainability ensures that every piece we
+                  produce meets the highest industry standards. Whether you're a
+                  startup looking for a reliable partner or an established brand
+                  seeking a fresh manufacturing perspective, we are here to
+                  deliver exceptional results.
+                </span>
+              </p>
+            </div>
+
+            {/* Image Section */}
+            <div className="w-full  sm:w-3/5 md:w-1/2 lg:w-1/3">
+              <img
+                src={AboutImage1}
+                className="h-[70vh] w-full rounded-lg object-cover"
+                alt="AboutUsImage1"
+              />
+            </div>
+          </div>
         </section>
 
         {/* Expo Section */}
-        <section className="px-3 md:px-20 pb-16">
+        <section className="px-3 md:px-6 lg:px-12 2xl:px-20 pb-16">
           <div className="flex flex-col">
             <h2 className="text-[26px] sm:text-3xl text-center 2xl:text-[40px] font-bold font-serif mb-8 pb-2 text-[#4D4D4D]">
               Our Expo
@@ -123,7 +168,7 @@ const AboutUs = () => {
               {/* Expo Content */}
               <div className="grid grid-cols-1  text-[15px] sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 text-sm 2xl:w-[80%]">
                 <div className="p-6 rounded-lg shadow-lg border bg-[#ffffff] ">
-                  <h3 className="text-lg font-bold text-center font-serif">
+                  <h3 className="text-lg font-bold font-serif">
                     Expo Exhibitions
                   </h3>
                   <p className="mt-2  text-justify font-normal">
