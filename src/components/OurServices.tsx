@@ -47,7 +47,7 @@ const OurServices = () => {
 
   return (
     <div className="px-3 md:px-5 py-20 mx-auto">
-      <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-4 font-bold font-serif text-center md:text-left text-[#4D4D4D] ">
+      <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-8 font-bold font-serif text-center  text-[#4D4D4D] ">
         Our Services
       </h1>
       <p className=" mb-12 text-[#4B5563] font-normal">

@@ -47,7 +47,7 @@ const AboutUs = () => {
 
         {/* About Section */}
         <section className="px-3 md:px-20 py-16">
-          <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif mb-2 pb-4 text-[#4D4D4D]">
+          <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center font-bold font-serif mb-5 pb-4 text-[#4D4D4D]">
             About Us
           </h2>
           <p className="leading-relaxed font-normal">
@@ -84,7 +84,7 @@ const AboutUs = () => {
         {/* Expo Section */}
         <section className="px-3 md:px-20 pb-16">
           <div className="flex flex-col">
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif mb-6 pb-2 text-[#4D4D4D]">
+            <h2 className="text-[26px] sm:text-3xl text-center 2xl:text-[40px] font-bold font-serif mb-8 pb-2 text-[#4D4D4D]">
               Our Expo
             </h2>
 
@@ -121,9 +121,9 @@ const AboutUs = () => {
               </div>
 
               {/* Expo Content */}
-              <div className="grid grid-cols-1  text-[15px] sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 mt-10text-sm 2xl:w-[80%]">
+              <div className="grid grid-cols-1  text-[15px] sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-2 gap-6 text-sm 2xl:w-[80%]">
                 <div className="p-6 rounded-lg shadow-lg border bg-[#ffffff] ">
-                  <h3 className="text-lg font-bold font-serif">
+                  <h3 className="text-lg font-bold text-center font-serif">
                     Expo Exhibitions
                   </h3>
                   <p className="mt-2  text-justify font-normal">
