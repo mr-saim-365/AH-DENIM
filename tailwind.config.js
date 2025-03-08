@@ -25,4 +25,11 @@ export default {
     },
   },
   plugins: [],
+
+  corePlugins: {
+    preflight: false,
+  },
+  experimental: {
+    applyComplexClasses: true,
+  },
 };

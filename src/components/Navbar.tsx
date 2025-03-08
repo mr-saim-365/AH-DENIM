@@ -31,6 +31,17 @@ const Navbar = () => {
     window.scrollTo(0, scrollPos);
   }, [open]);
 
+  const handleSectionScroll = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    event.preventDefault(); // Prevent the default link behavior
+
+    const QuestionSection = document.getElementById("Questions");
+    if (QuestionSection) {
+      QuestionSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 w-full backdrop-blur-md z-50 shadow-lg ${
@@ -82,6 +93,9 @@ const Navbar = () => {
             </div>
             <Link to="/AboutUS">About Us</Link>
             <Link to="/ContactUS">Contact Us</Link>
+            <Link to="/Questions" onClick={handleSectionScroll}>
+              FAQ
+            </Link>
           </div>
         </div>
       </div>

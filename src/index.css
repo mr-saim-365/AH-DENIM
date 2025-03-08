@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Aptos';
     src: url('/fonts/Aptos-Regular.woff2') format('woff2'),

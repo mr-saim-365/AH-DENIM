@@ -36,11 +36,15 @@ const Questions = () => {
     },
 
     {
-      question: "What is your production capacity?",
+      question: "How does the washing process affect the durability of denim?",
+      answer:
+        "The washing process can impact denim's durability. Aggressive washing techniques may weaken the fabric, while gentler methods like enzyme or ozone washing preserve the denim's strength. Properly executed, washing enhances the denim's aesthetic without compromising its longevity.",
+    },
+    {
+      question: "Do you ship internationally?",
       answer:
         "Yes, we export worldwide, with a strong presence in the UK, Dubai, and other global markets. We handle logistics efficiently to ensure timely deliveries.",
     },
-
     {
       question: "How long does production take?",
       answer:
@@ -54,26 +58,14 @@ const Questions = () => {
     },
 
     {
-      question: "Do you provide trend information?",
-      answer:
-        "Yes, we have a dedicated team that works on trend and market research. We also have an in-house collection that is available to buy directly from or use as a starting point for your development.",
-    },
-
-    {
       question: "How can I get a quote or place an order?",
       answer:
         "Simply contact us with your requirements, and our team will provide a tailored quote and guide you through the process.",
     },
-
-    {
-      question: "How does the washing process affect the durability of denim?",
-      answer:
-        "The washing process can impact denim's durability. Aggressive washing techniques may weaken the fabric, while gentler methods like enzyme or ozone washing preserve the denim's strength. Properly executed, washing enhances the denim's aesthetic without compromising its longevity.",
-    },
   ];
 
   return (
-    <div className="bg-gray-100">
+    <div id="Questions" className="bg-gray-100">
       <div className="px-3 sm:px-5 pt-10 pb-20 text-[#4D4D4D] lg:w-[75%] 2xl:w-[50%] mx-auto flex flex-col gap-8 items-center">
         <div>
           <h1 className="text-[26px] sm:text-3xl 2xl:text-[40px] my-5 text-center font-bold font-serif text-[#4D4D4D]">
