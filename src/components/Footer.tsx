@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-black text-white pt-12 pb-8 mt-auto">
-      <div className="max-w-[60rem] 2xl:max-w-[90rem] mx-auto px-4 text-[15px] sm:text-[16px]">
+      <div className=" px-10 text-[15px] sm:text-[16px]">
         <div className="flex flex-col gap-12 md:flex-row md:justify-between mb-12">
           <div className="w-full md:w-[30%]">
             <h3 className="text-xl font-bold font-serif mb-4">AH DENIM</h3>
