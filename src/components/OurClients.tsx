@@ -5,7 +5,14 @@ import Client3 from "/images/Client3.jpeg";
 import Client4 from "/images/Client4.jpeg";
 import Client5 from "/images/Client5.jpeg";
 import Client6 from "/images/Client6.jpg";
-const clients = [Client1, Client2, Client3, Client4, Client5, Client6];
+import Client7 from "/images/Client7.jpeg";
+import Client8 from "/images/Client8.jpeg";
+import Client9 from "/images/Client9.jpeg";
+import Client10 from "/images/Client10.jpeg";
+import Client11 from "/images/Client11.jpeg";
+import Client12 from "/images/Client12.jpeg";
+
+const clients = [Client1, Client2, Client3, Client4, Client5, Client6,Client7 , Client8 , Client9 , Client10 , Client11 , Client12];
 
 const OurClients = () => {
   return (

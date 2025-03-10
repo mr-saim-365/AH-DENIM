@@ -15,6 +15,7 @@ import ExpoImage8 from "/images/ExpoImage8.jpeg";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { BsEmojiSmile } from "react-icons/bs";
+import { useLocation } from "react-router-dom";
 
 const images = [
   ExpoImage1,
@@ -42,13 +43,26 @@ const AboutUs = () => {
     return () => clearInterval(interval);
   }, [index]);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
       <div className="text-[15px] sm:text-[16px]">
-
-      <section className="px-3 md:px-6 lg:px-12 2xl:px-20 py-24">
+        <section
+          id="about-us"
+          className="px-3 md:px-6 lg:px-12 2xl:px-20 py-24"
+        >
           <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-10 items-center lg:justify-between">
             <div className="w-full lg:w-2/3 xl:w-3/5">
               <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center  font-bold font-serif mb-4 text-[#4D4D4D]">
@@ -68,10 +82,10 @@ const AboutUs = () => {
                 established fashion leaders. Why Choose AH Denim?Cut-to-Pack
                 Solutions: We manage every stage of production in-house—design,
                 cutting, stitching, washing, finishing, and packaging—ensuring
-                superior quality control and faster turnaround times.
-                Advanced Manufacturing Facilities: Our units are equipped with
-                the latest technology and modern laundry systems, allowing us to
-                deliver precision-crafted garments with intricate detailing and
+                superior quality control and faster turnaround times. Advanced
+                Manufacturing Facilities: Our units are equipped with the latest
+                technology and modern laundry systems, allowing us to deliver
+                precision-crafted garments with intricate detailing and
                 sustainable practices. Sustainability Commitment: We are
                 dedicated to reducing our environmental impact by following
                 eco-friendly washing techniques, minimizing water and energy
@@ -81,8 +95,8 @@ const AboutUs = () => {
                 transparency across all levels of production.Flexible
                 Production: From small-batch orders to large-scale
                 manufacturing, we adapt to your needs—offering flexibility
-                without compromising on quality.Explore our factory in the
-                video below, where we showcase every stage of our advanced
+                without compromising on quality.Explore our factory in the video
+                below, where we showcase every stage of our advanced
                 manufacturing process—highlighting our dedication to quality,
                 compliance, and sustainability. At AH Denim, we combine decades
                 of expertise with modern innovation to redefine the future of
@@ -102,53 +116,60 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="relative mt-[4.2rem] flex items-center justify-center">
+        <section
+          id="our-video"
+          className="relative mt-[4.2rem] flex items-center justify-center"
+        >
           <video className="w-full h-[75vh]" controls>
             <source src={AboutVideo} type="video/mp4" />
           </video>
         </section>
 
-        <section className="bg-black text-white px-8 text-center py-16 my-20">
-      <h2 className="text-2xl md:text-3xl font-bold underline mb-20">OVERVIEW</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Capacity */}
-        <div className="flex flex-col items-center text-center">
-          <div className="text-6xl text-yellow-300">
-          <BsEmojiSmile size={60} /> 
+        <section id="overview" className="px-8 text-center py-16 my-20">
+          <h2 className="text-2xl md:text-3xl font-bold mb-20 text-[#4D4D4D] font-serif">
+            OVERVIEW
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Capacity */}
+            <div className="flex flex-col items-center text-center">
+              <div className="text-6xl text-yellow-300">
+                <BsEmojiSmile size={60} />
+              </div>
+              <h3 className="text-xl font-bold font-serif mt-4">Capacity</h3>
+              <p className="mt-4">
+                We currently have a capacity of 400000 garments per month which
+                is increasing gradually
+              </p>
+            </div>
+
+            {/* Workforce */}
+            <div className="flex flex-col items-center text-center">
+              <div className="text-6xl text-yellow-300">
+                <BsEmojiSmile size={60} />
+              </div>
+              <h3 className="text-xl font-bold font-serif mt-4">Workforce</h3>
+              <p className=" mt-4">A team of 2000 hardworking members</p>
+            </div>
+
+            {/* Revenue */}
+            <div className="flex flex-col items-center text-center">
+              <div className="text-6xl text-yellow-300">
+                <BsEmojiSmile size={60} />
+              </div>
+              <h3 className="text-xl font-bold font-serif mt-4">Revenue</h3>
+              <p className=" mt-4">
+                We are at a revenue of USD 30 Million per year and continue to
+                grow
+              </p>
+            </div>
           </div>
-          <h3 className="text-xl font-bold mt-4">Capacity</h3>
-          <p className="text-gray-400 mt-4">
-            We currently have a capacity of 400000 garments per month which is increasing gradually
-          </p>
-        </div>
-        
-        {/* Workforce */}
-        <div className="flex flex-col items-center text-center">
-          <div className="text-6xl text-yellow-300">
-          <BsEmojiSmile size={60} /> 
-          </div>
-          <h3 className="text-xl font-bold mt-4">Workforce</h3>
-          <p className="text-gray-400 mt-4">
-            A team of 2000 hardworking members
-          </p>
-        </div>
-        
-        {/* Revenue */}
-        <div className="flex flex-col items-center text-center">
-          <div className="text-6xl text-yellow-300">
-            <BsEmojiSmile size={60} /> 
-          </div>
-          <h3 className="text-xl font-bold mt-4">Revenue</h3>
-          <p className="text-gray-400 mt-4">
-            We are at a revenue of USD 30 Million per year and continue to grow
-          </p>
-        </div>
-      </div>
-    </section>
- 
+        </section>
 
         {/* Expo Section */}
-        <section className="px-3 md:px-6 lg:px-12 2xl:px-20 pb-16">
+        <section
+          id="our-expo"
+          className="px-3 md:px-6 lg:px-12 2xl:px-20 pb-16"
+        >
           <div className="flex flex-col">
             <h2 className="text-[26px] sm:text-3xl text-center 2xl:text-[40px] font-bold font-serif mb-8 pb-2 text-[#4D4D4D]">
               Our Expo
