@@ -14,6 +14,7 @@ import ExpoImage8 from "/images/ExpoImage8.jpeg";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { BsEmojiSmile } from "react-icons/bs";
 
 const images = [
   ExpoImage1,
@@ -46,72 +47,47 @@ const AboutUs = () => {
       <Navbar />
 
       <div className="text-[15px] sm:text-[16px]">
-        <section className="relative mt-[4.2rem] flex items-center justify-center">
-          <video className="w-full h-[75vh]" controls>
-            <source src={AboutVideo} type="video/mp4" />
-          </video>
-        </section>
 
-        {/* About Section */}
-        <section className="px-3 md:px-6 lg:px-12 2xl:px-20 py-16">
+      <section className="px-3 md:px-6 lg:px-12 2xl:px-20 py-24">
           <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-10 items-center lg:justify-between">
             <div className="w-full lg:w-2/3 xl:w-3/5">
-              <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center lg:text-left font-bold font-serif mb-4 text-[#4D4D4D]">
+              <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center  font-bold font-serif mb-4 text-[#4D4D4D]">
                 About Us
               </h2>
               <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
-                <span className="block mb-3">
-                  About AH Denim: At AH Denim, we are more than just
-                  manufacturers—we are creators, innovators, and problem solvers
-                  in the world of denim and woven apparel. With over two decades
-                  of experience, we specialize in producing high-quality,
-                  fashion-forward garments that meet the evolving needs of
-                  global brands.
-                </span>
-                <span className="block mb-3">
-                  <strong>Our Journey:</strong> What started in 2000 as a
-                  passion for denim craftsmanship has grown into a
-                  state-of-the-art manufacturing facility, delivering
-                  trend-driven, sustainable apparel for men, women, and kids. We
-                  have proudly been exporting to the UK and Dubai for the last
-                  three years, helping brands bring their vision to life.
-                </span>
-                <span className="block mb-3">
-                  <strong>What We Offer:</strong>
-                </span>
-                <ul className="list-disc list-inside mb-3 space-y-2">
-                  <li>
-                    <strong>Expertise in Woven & Denim Apparel:</strong> From
-                    timeless classics to contemporary fashion pieces, we
-                    manufacture a diverse range of garments.
-                  </li>
-                  <li className="hidden 2xl:block">
-                    <strong>Innovative Design & Finishing:</strong> Our advanced
-                    in-house washing and finishing facilities allow us to create
-                    unique textures, washes, and sustainable finishes.
-                  </li>
-                  <li className="hidden 2xl:block">
-                    <strong>Sustainability at the Core:</strong> We embrace
-                    eco-conscious production, using water-saving technologies
-                    and responsible sourcing to reduce our environmental
-                    footprint.
-                  </li>
-                  <li className="hidden 2xl:block">
-                    <strong>Flexible Solutions for Brands:</strong> Our low MOQ
-                    policy ensures that both emerging designers and established
-                    labels can access high-quality manufacturing without
-                    high-volume constraints.
-                  </li>
-                </ul>
-                <span className="hidden 2xl:block">
-                  <strong>Why Choose AH Denim?</strong> At AH Denim, we don’t
-                  just follow trends—we set them. Our commitment to quality,
-                  innovation, and sustainability ensures that every piece we
-                  produce meets the highest industry standards. Whether you're a
-                  startup looking for a reliable partner or an established brand
-                  seeking a fresh manufacturing perspective, we are here to
-                  deliver exceptional results.
-                </span>
+                Founded in 2000, AH Denim has grown into a leading cut-to-pack
+                manufacturer, specializing in denim and woven garments for men,
+                women, and kids. With two state-of-the-art manufacturing units
+                and a monthly production capacity of 150,000 garments, we
+                provide end-to-end solutions—from design development to final
+                packaging, all under one roof. Our commitment to excellence and
+                innovation drives us to deliver high-quality, trend-focused
+                apparel that meets the demands of today’s fast-moving fashion
+                industry. We work closely with our clients to provide tailored
+                solutions, offering low MOQs to support both emerging brands and
+                established fashion leaders. Why Choose AH Denim?Cut-to-Pack
+                Solutions: We manage every stage of production in-house—design,
+                cutting, stitching, washing, finishing, and packaging—ensuring
+                superior quality control and faster turnaround times.
+                Advanced Manufacturing Facilities: Our units are equipped with
+                the latest technology and modern laundry systems, allowing us to
+                deliver precision-crafted garments with intricate detailing and
+                sustainable practices. Sustainability Commitment: We are
+                dedicated to reducing our environmental impact by following
+                eco-friendly washing techniques, minimizing water and energy
+                consumption, and adhering to ethical manufacturing standards.
+                Compliance & Ethical Practices: We maintain strict compliance
+                protocols to ensure safe working conditions, fair wages, and
+                transparency across all levels of production.Flexible
+                Production: From small-batch orders to large-scale
+                manufacturing, we adapt to your needs—offering flexibility
+                without compromising on quality.Explore our factory in the
+                video below, where we showcase every stage of our advanced
+                manufacturing process—highlighting our dedication to quality,
+                compliance, and sustainability. At AH Denim, we combine decades
+                of expertise with modern innovation to redefine the future of
+                apparel manufacturing. Let us bring your vision to
+                life—responsibly, efficiently, and with unmatched craftsmanship.
               </p>
             </div>
 
@@ -125,6 +101,51 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
+
+        <section className="relative mt-[4.2rem] flex items-center justify-center">
+          <video className="w-full h-[75vh]" controls>
+            <source src={AboutVideo} type="video/mp4" />
+          </video>
+        </section>
+
+        <section className="bg-black text-white px-8 text-center py-16 my-20">
+      <h2 className="text-2xl md:text-3xl font-bold underline mb-20">OVERVIEW</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Capacity */}
+        <div className="flex flex-col items-center text-center">
+          <div className="text-6xl text-yellow-300">
+          <BsEmojiSmile size={60} /> 
+          </div>
+          <h3 className="text-xl font-bold mt-4">Capacity</h3>
+          <p className="text-gray-400 mt-4">
+            We currently have a capacity of 400000 garments per month which is increasing gradually
+          </p>
+        </div>
+        
+        {/* Workforce */}
+        <div className="flex flex-col items-center text-center">
+          <div className="text-6xl text-yellow-300">
+          <BsEmojiSmile size={60} /> 
+          </div>
+          <h3 className="text-xl font-bold mt-4">Workforce</h3>
+          <p className="text-gray-400 mt-4">
+            A team of 2000 hardworking members
+          </p>
+        </div>
+        
+        {/* Revenue */}
+        <div className="flex flex-col items-center text-center">
+          <div className="text-6xl text-yellow-300">
+            <BsEmojiSmile size={60} /> 
+          </div>
+          <h3 className="text-xl font-bold mt-4">Revenue</h3>
+          <p className="text-gray-400 mt-4">
+            We are at a revenue of USD 30 Million per year and continue to grow
+          </p>
+        </div>
+      </div>
+    </section>
+ 
 
         {/* Expo Section */}
         <section className="px-3 md:px-6 lg:px-12 2xl:px-20 pb-16">

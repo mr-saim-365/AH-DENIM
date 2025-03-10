@@ -1,12 +1,11 @@
 import Buyers from "/images/Buyers.jpeg";
-import Client1 from "/images/clients/1.jpeg";
-import Client2 from "/images/clients/2.jpeg";
-import Client3 from "/images/clients/3.jpeg";
-import Client4 from "/images/clients/4.jpeg";
-import Client5 from "/images/clients/5.jpeg";
-import Client6 from "/images/clients/6.jpeg";
-import Client7 from "/images/clients/7.jpeg";
-const clients = [Client1, Client2, Client3, Client4, Client5, Client6, Client7];
+import Client1 from "/images/Client1.jpg";
+import Client2 from "/images/Client2.jpeg";
+import Client3 from "/images/Client3.jpeg";
+import Client4 from "/images/Client4.jpeg";
+import Client5 from "/images/Client5.jpeg";
+import Client6 from "/images/Client6.jpg";
+const clients = [Client1, Client2, Client3, Client4, Client5, Client6];
 
 const OurClients = () => {
   return (
