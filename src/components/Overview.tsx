@@ -36,7 +36,7 @@ const Overview = () => {
           cutting-edge production techniques, and dedication to sustainability.
         </motion.p>
         <motion.a
-          href="#about"
+          href="/AboutUs"
           className="bg-[#222222] text-[#ffffff] md:px-6 py-3 px-4 font-semibold rounded-full transition w-[150px] "
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

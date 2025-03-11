@@ -4,6 +4,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { X } from "lucide-react";
 import logo from "/images/logo2.png";
 import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,14 +32,17 @@ const Navbar = () => {
     window.scrollTo(0, scrollPos);
   }, [open]);
 
-  const handleSectionScroll = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
-    event.preventDefault(); // Prevent the default link behavior
+  const location = useLocation();
+  const navigate = useNavigate();
 
-    const QuestionSection = document.getElementById("Questions");
-    if (QuestionSection) {
-      QuestionSection.scrollIntoView({ behavior: "smooth" });
+  const handleFAQClick = () => {
+    if (location.pathname === "/") {
+      document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
+      }, 500);
     }
   };
 
@@ -93,7 +97,7 @@ const Navbar = () => {
             </div>
             <Link to="/AboutUS">About Us</Link>
             <Link to="/ContactUS">Contact Us</Link>
-            <Link to="/Questions" onClick={handleSectionScroll}>
+            <Link to="/#faq" onClick={handleFAQClick}>
               FAQ
             </Link>
           </div>

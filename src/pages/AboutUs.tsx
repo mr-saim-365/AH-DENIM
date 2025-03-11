@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { motion } from "framer-motion";
+import { BsEmojiSmile } from "react-icons/bs";
 import AboutVideo from "/About Video.mp4";
 import AboutImage1 from "/images/AboutImage1.jpeg";
 import ExpoImage1 from "/images/ExpoImage1.jpeg";
@@ -14,6 +14,11 @@ import ExpoImage8 from "/images/ExpoImage8.jpeg";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const images = [
   ExpoImage1,
@@ -41,77 +46,54 @@ const AboutUs = () => {
     return () => clearInterval(interval);
   }, [index]);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
       <div className="text-[15px] sm:text-[16px]">
-        <section className="relative mt-[4.2rem] flex items-center justify-center">
-          <video className="w-full h-[75vh]" controls>
-            <source src={AboutVideo} type="video/mp4" />
-          </video>
-        </section>
-
         {/* About Section */}
-        <section className="px-3 md:px-6 lg:px-12 2xl:px-20 py-16">
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-10 items-center lg:justify-between">
+        <section
+          id="about-us"
+          className="px-3 md:px-6 lg:px-12 2xl:px-20 py-24"
+        >
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-10 lg:justify-between">
             <div className="w-full lg:w-2/3 xl:w-3/5">
-              <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center lg:text-left font-bold font-serif mb-4 text-[#4D4D4D]">
+              <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center mt-5  font-bold font-serif mb-4 text-[#4D4D4D]">
                 About Us
               </h2>
               <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
-                <span className="block mb-3">
-                  About AH Denim: At AH Denim, we are more than just
-                  manufacturers—we are creators, innovators, and problem solvers
-                  in the world of denim and woven apparel. With over two decades
-                  of experience, we specialize in producing high-quality,
-                  fashion-forward garments that meet the evolving needs of
-                  global brands.
-                </span>
-                <span className="block mb-3">
-                  <strong>Our Journey:</strong> What started in 2000 as a
-                  passion for denim craftsmanship has grown into a
-                  state-of-the-art manufacturing facility, delivering
-                  trend-driven, sustainable apparel for men, women, and kids. We
-                  have proudly been exporting to the UK and Dubai for the last
-                  three years, helping brands bring their vision to life.
-                </span>
-                <span className="block mb-3">
-                  <strong>What We Offer:</strong>
-                </span>
-                <ul className="list-disc list-inside mb-3 space-y-2">
-                  <li>
-                    <strong>Expertise in Woven & Denim Apparel:</strong> From
-                    timeless classics to contemporary fashion pieces, we
-                    manufacture a diverse range of garments.
-                  </li>
-                  <li className="hidden 2xl:block">
-                    <strong>Innovative Design & Finishing:</strong> Our advanced
-                    in-house washing and finishing facilities allow us to create
-                    unique textures, washes, and sustainable finishes.
-                  </li>
-                  <li className="hidden 2xl:block">
-                    <strong>Sustainability at the Core:</strong> We embrace
-                    eco-conscious production, using water-saving technologies
-                    and responsible sourcing to reduce our environmental
-                    footprint.
-                  </li>
-                  <li className="hidden 2xl:block">
-                    <strong>Flexible Solutions for Brands:</strong> Our low MOQ
-                    policy ensures that both emerging designers and established
-                    labels can access high-quality manufacturing without
-                    high-volume constraints.
-                  </li>
-                </ul>
-                <span className="hidden 2xl:block">
-                  <strong>Why Choose AH Denim?</strong> At AH Denim, we don’t
-                  just follow trends—we set them. Our commitment to quality,
-                  innovation, and sustainability ensures that every piece we
-                  produce meets the highest industry standards. Whether you're a
-                  startup looking for a reliable partner or an established brand
-                  seeking a fresh manufacturing perspective, we are here to
-                  deliver exceptional results.
-                </span>
+                Founded in 2000, AH Denim is a leading cut-to-pack manufacturer
+                specializing in denim and woven garments for men, women, and
+                kids. With two state-of-the-art units and a monthly capacity of
+                150,000 garments, we offer end-to-end solutions from design to
+                final packaging. Why Choose AH Denim? Complete In-House
+                Production – Design, cutting, stitching, washing, finishing, and
+                packaging for superior quality and faster turnaround.Advanced
+                Facilities – Precision-crafted garments with modern technology
+                and sustainable practices.Sustainability Focus – Eco-friendly
+                washing techniques, minimal water usage, and ethical
+                manufacturing.Compliance & Ethics – Safe working conditions,
+                fair wages, and transparency. Flexible Production – Low MOQs for
+                startups & large-scale manufacturing for global brands. Explore
+                our factory video to witness our commitment to quality,
+                sustainability, and innovation. Let AH Denim bring your vision
+                to life with efficiency and craftsmanship.
               </p>
             </div>
 
@@ -126,8 +108,76 @@ const AboutUs = () => {
           </div>
         </section>
 
+        <section
+          id="our-video"
+          className="relative mt-[4.2rem] flex items-center justify-center"
+        >
+          <video className="w-full h-[75vh]" controls>
+            <source src={AboutVideo} type="video/mp4" />
+          </video>
+        </section>
+
+        <section
+          ref={ref}
+          id="overview"
+          className="px-8 text-center py-16 my-20"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold mb-20 text-[#4D4D4D] font-serif">
+            OVERVIEW
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Capacity */}
+            <div className="flex flex-col items-center text-center">
+              <div className="text-6xl text-[#222222]">
+                <BsEmojiSmile size={60} />
+              </div>
+              <h3 className="text-xl font-bold font-serif mt-4">Capacity</h3>
+              <p className="mt-4">
+                We currently have a capacity of{" "}
+                <span>
+                  {inView && <CountUp start={0} end={400000} duration={2.5} />}
+                </span>{" "}
+                garments per month which is increasing gradually
+              </p>
+            </div>
+
+            {/* Workforce */}
+            <div className="flex flex-col items-center text-center">
+              <div className="text-6xl text-[#222222]">
+                <BsEmojiSmile size={60} />
+              </div>
+              <h3 className="text-xl font-bold font-serif mt-4">Workforce</h3>
+              <p className=" mt-4">
+                A team of{" "}
+                <span>
+                  {inView && <CountUp start={0} end={2000} duration={2.5} />}
+                </span>{" "}
+                hardworking members
+              </p>
+            </div>
+
+            {/* Revenue */}
+            <div className="flex flex-col items-center text-center">
+              <div className="text-6xl text-[#222222]">
+                <BsEmojiSmile size={60} />
+              </div>
+              <h3 className="text-xl font-bold font-serif mt-4">Revenue</h3>
+              <p className=" mt-4">
+                We are at a revenue of USD{" "}
+                <span>
+                  {inView && <CountUp start={0} end={30} duration={2.5} />}
+                </span>{" "}
+                Million per year and continue to grow
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Expo Section */}
-        <section className="px-3 md:px-6 lg:px-12 2xl:px-20 pb-16">
+        <section
+          id="our-expo"
+          className="px-3 md:px-6 lg:px-12 2xl:px-20 pb-16"
+        >
           <div className="flex flex-col">
             <h2 className="text-[26px] sm:text-3xl text-center 2xl:text-[40px] font-bold font-serif mb-8 pb-2 text-[#4D4D4D]">
               Our Expo

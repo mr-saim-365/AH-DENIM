@@ -6,37 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: 'Aptos';
-    src: url('/fonts/Aptos-Regular.woff2') format('woff2'),
-         url('/fonts/Aptos-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Aptos Narrow';
-    src: url('/fonts/AptosNarrow-Regular.woff2') format('woff2');
-    font-weight: normal;
-  }
-
-  @font-face {
-    font-family: 'Aptos Display';
-    src: url('/fonts/AptosDisplay-Regular.woff2') format('woff2');
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: 'Aptos Mono';
-    src: url('/fonts/AptosMono-Regular.woff2') format('woff2');
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: 'Aptos Serif';
-    src: url('/fonts/AptosSerif-Regular.woff2') format('woff2');
-    font-weight: normal;
-  }
 
 @media (min-width : 768px) and (max-width: 1024px) {
     .container {

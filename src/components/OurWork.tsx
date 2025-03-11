@@ -10,52 +10,22 @@ const OurWork = () => {
             <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center font-bold font-serif text-[#4D4D4D]">
               Who are we
             </h2>
-            <p className="leading-relaxed font-normal text-justify text-sm md:text-[15px]">
-              <span className="block mb-3">
-                <strong>About AH Denim:</strong> AH Denim is a premier denim
-                manufacturer with over 20 years of expertise, exporting
-                high-quality denim to the UK, Dubai, and Europe. With two
-                state-of-the-art manufacturing units and in-house washing and
-                finishing facilities, we ensure precision, innovation, and
-                sustainability.
-              </span>
-              <span className="block mb-3">
-                <strong>Our Manufacturing Strength:</strong> Specializing in
-                woven garments for men, women, and kids, we produce 150,000
-                garments monthly, maintaining high standards of craftsmanship
-                and efficiency.
-              </span>
-              <span className="block mb-3">
-                <strong>What We Offer:</strong>
-              </span>
-              <ul className="list-disc list-inside mb-3 space-y-2">
-                <li>
-                  <strong>Streamlined Communication:</strong> Our efficient
-                  workflow ensures seamless coordination between production
-                  teams and clients.
-                </li>
-                <li className="hidden 2xl:block">
-                  <strong>In-House Fabric & Trims:</strong> We source and manage
-                  fabric availability and certified trims internally, ensuring
-                  consistency and premium quality.
-                </li>
-                <li className="hidden 2xl:block">
-                  <strong>Precision & Innovation:</strong> Our advanced washing
-                  and finishing facilities allow us to create high-end,
-                  sustainable denim products.
-                </li>
-                <li className="hidden 2xl:block">
-                  <strong>Low MOQ Policy:</strong> We enable both emerging and
-                  established brands to bring their vision to life without
-                  high-volume constraints.
-                </li>
-              </ul>
-              <span className="hidden 2xl:block">
-                <strong>Why Choose AH Denim?</strong> With speed, reliability,
-                and sustainability at the core of our operations, we provide
-                brands with a trusted manufacturing solution that aligns with
-                industry-leading standards.
-              </span>
+            <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
+              At AH Denim, we are leaders in crafting premium denim and woven
+              apparel, known for our innovation, quality, and sustainable
+              practices. For over 20 years, we have been delivering
+              fashion-forward garments to top global brands—earning a reputation
+              as a trusted manufacturing partner. We are proud to be a top
+              supplier for Boohoo, consistently providing on-trend, high-quality
+              apparel that meets their fast-paced and ever-evolving demands. Our
+              collaboration with Boohoo reflects our ability to deliver
+              flexibility, speed, and precision without compromising on style or
+              sustainability.With expertise across men’s, women’s, and kids’
+              apparel, we offer low MOQs to support emerging brands while
+              maintaining the capacity to serve industry giants. At AH Denim, we
+              don’t just manufacture garments—we bring your vision to life with
+              care, craftsmanship, and innovation. Let’s create something
+              extraordinary together.
             </p>
           </div>
         </div>

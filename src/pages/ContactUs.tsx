@@ -79,7 +79,7 @@ const ContactUs = () => {
             </div>
             <div className="flex gap-2 items-center text-[#ffffff] font-normal bg-[rgb(20,20,20)] border border-gray-200 p-3 rounded-lg">
               <LuMail size={20} />
-              example@email.com
+              Natalia@ahdenim.net
             </div>
 
             <div className="flex gap-2 items-center border bg-[#ffffff] font-normal text-[#222222] text-sm border-gray-200 p-3 rounded-lg">
