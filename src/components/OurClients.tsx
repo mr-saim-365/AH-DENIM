@@ -24,8 +24,6 @@ const clients = [
   Client9,
   Client10,
   Client11,
-  Client12,
-  Client13,
 ];
 
 const OurClients = () => {

@@ -57,9 +57,10 @@ const AboutUs = () => {
     }
   }, [location]);
 
+  const [startCount, setStartCount] = useState(false);
   const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
+    triggerOnce: false, // This allows the animation to run every time the section enters the viewport
+    threshold: 0.5, // Adjust threshold to control when it starts
   });
 
   return (
@@ -158,7 +159,7 @@ const AboutUs = () => {
 
             {/* Revenue */}
             <div className="flex flex-col items-center text-center">
-              <div className="text-6xl text-[#222222]">
+              <div className="text-6xl text-yellow-300">
                 <BsEmojiSmile size={60} />
               </div>
               <h3 className="text-xl font-bold font-serif mt-4">Revenue</h3>
