@@ -11,8 +11,6 @@ const OurWork = () => {
               Who are we
             </h2>
 
-            <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
-
             <p className="leading-relaxed font-normal text-justify text-sm md:text-[15px]">
               At AH Denim, we are leaders in crafting premium denim and woven
               apparel, known for our innovation, quality, and sustainable
