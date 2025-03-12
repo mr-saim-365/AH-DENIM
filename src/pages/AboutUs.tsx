@@ -70,11 +70,19 @@ const AboutUs = () => {
         {/* About Section */}
         <section
           id="about-us"
-          className="px-3 md:px-6 lg:px-12 2xl:px-20 py-24"
+          className="px-3 md:px-6 lg:px-12 2xl:w-[80%] mt-24 mx-auto"
         >
-          <div className="flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-10 lg:justify-between">
-            <div className="w-full lg:w-2/3 xl:w-3/5">
-              <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] text-center mt-5  font-bold font-serif mb-4 text-[#4D4D4D]">
+          <div className="flex flex-col md:flex-row gap-6 w-[90%] mx-auto ">
+            {/* Image Section */}
+            <div className="w-full  md:w-1/2 lg:w-1/2">
+              <img
+                src={AboutImage1}
+                className="h-[60vh] w-full rounded-lg object-cover"
+                alt="AboutUsImage1"
+              />
+            </div>
+            <div className="w-full  ">
+              <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px]  mt-5 font-bold font-serif mb-4 text-[#4D4D4D]">
                 About Us
               </h2>
               <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
@@ -95,15 +103,6 @@ const AboutUs = () => {
                 sustainability, and innovation. Let AH Denim bring your vision
                 to life with efficiency and craftsmanship.
               </p>
-            </div>
-
-            {/* Image Section */}
-            <div className="w-full  sm:w-3/5 md:w-1/2 lg:w-1/3">
-              <img
-                src={AboutImage1}
-                className="h-[70vh] w-full rounded-lg object-cover"
-                alt="AboutUsImage1"
-              />
             </div>
           </div>
         </section>
