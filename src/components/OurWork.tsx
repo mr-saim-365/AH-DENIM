@@ -12,21 +12,39 @@ const OurWork = () => {
             </h2>
 
             <p className="leading-relaxed font-normal text-justify text-sm md:text-[15px]">
-              At AH Denim, we are leaders in crafting premium denim and woven
-              apparel, known for our innovation, quality, and sustainable
-              practices. For over 20 years, we have been delivering
-              fashion-forward garments to top global brands—earning a reputation
-              as a trusted manufacturing partner. We are proud to be a top
-              supplier for Boohoo, consistently providing on-trend, high-quality
-              apparel that meets their fast-paced and ever-evolving demands. Our
-              collaboration with Boohoo reflects our ability to deliver
-              flexibility, speed, and precision without compromising on style or
-              sustainability.With expertise across men’s, women’s, and kids’
-              apparel, we offer low MOQs to support emerging brands while
-              maintaining the capacity to serve industry giants. At AH Denim, we
-              don’t just manufacture garments—we bring your vision to life with
-              care, craftsmanship, and innovation. Let’s create something
-              extraordinary together.
+              <span className="block mb-3">
+                <strong>About AH Denim:</strong> At AH Denim, we are leaders in
+                crafting premium denim and woven apparel, known for our
+                innovation, quality, and sustainable practices. For over 20
+                years, we have been delivering fashion-forward garments to top
+                global brands—earning a reputation as a trusted manufacturing
+                partner.
+              </span>
+              <span className="block mb-3">
+                <strong>Our Collaboration with Boohoo:</strong> We are proud to
+                be a top supplier for Boohoo, consistently providing on-trend,
+                high-quality apparel that meets their fast-paced and
+                ever-evolving demands. Our collaboration with Boohoo reflects
+                our ability to deliver flexibility, speed, and precision without
+                compromising on style or sustainability.
+              </span>
+              <ul className="list-disc list-inside mb-3 space-y-2">
+                <li>
+                  <strong>Expertise Across All Categories:</strong> We
+                  specialize in men’s, women’s, and kids’ apparel.
+                </li>
+                <li className="hidden 2xl:block">
+                  <strong>Low MOQ Policy:</strong> We support emerging brands
+                  with flexible minimum order quantities while maintaining the
+                  capacity to serve industry giants.
+                </li>
+              </ul>
+              <span className="hidden 2xl:block">
+                <strong>Bringing Your Vision to Life:</strong> At AH Denim, we
+                don’t just manufacture garments—we bring your vision to life
+                with care, craftsmanship, and innovation. Let’s create something
+                extraordinary together.
+              </span>
             </p>
           </div>
         </div>

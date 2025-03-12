@@ -86,22 +86,45 @@ const AboutUs = () => {
                 About Us
               </h2>
               <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
-                Founded in 2000, AH Denim is a leading cut-to-pack manufacturer
-                specializing in denim and woven garments for men, women, and
-                kids. With two state-of-the-art units and a monthly capacity of
-                150,000 garments, we offer end-to-end solutions from design to
-                final packaging. Why Choose AH Denim? Complete In-House
-                Production – Design, cutting, stitching, washing, finishing, and
-                packaging for superior quality and faster turnaround.Advanced
-                Facilities – Precision-crafted garments with modern technology
-                and sustainable practices.Sustainability Focus – Eco-friendly
-                washing techniques, minimal water usage, and ethical
-                manufacturing.Compliance & Ethics – Safe working conditions,
-                fair wages, and transparency. Flexible Production – Low MOQs for
-                startups & large-scale manufacturing for global brands. Explore
-                our factory video to witness our commitment to quality,
-                sustainability, and innovation. Let AH Denim bring your vision
-                to life with efficiency and craftsmanship.
+                <span className="block mb-3">
+                  <strong>Founded in 2000:</strong> AH Denim is a leading
+                  cut-to-pack manufacturer specializing in denim and woven
+                  garments for men, women, and kids. With two state-of-the-art
+                  units and a monthly capacity of 150,000 garments, we offer
+                  end-to-end solutions from design to final packaging.
+                </span>
+                <span className="block mb-3">
+                  <strong>Why Choose AH Denim?</strong>
+                </span>
+                <ul className="list-disc list-inside mb-3 space-y-2">
+                  <li>
+                    <strong>Complete In-House Production:</strong> Design,
+                    cutting, stitching, washing, finishing, and packaging for
+                    superior quality and faster turnaround.
+                  </li>
+                  <li>
+                    <strong>Advanced Facilities:</strong> Precision-crafted
+                    garments with modern technology and sustainable practices.
+                  </li>
+                  <li>
+                    <strong>Sustainability Focus:</strong> Eco-friendly washing
+                    techniques, minimal water usage, and ethical manufacturing.
+                  </li>
+                  <li className="hidden 2xl:block">
+                    <strong>Compliance & Ethics:</strong> Safe working
+                    conditions, fair wages, and transparency.
+                  </li>
+                  <li className="hidden 2xl:block">
+                    <strong>Flexible Production:</strong> Low MOQs for startups
+                    & large-scale manufacturing for global brands.
+                  </li>
+                </ul>
+                <span className="hidden 2xl:block">
+                  <strong>Explore Our Factory Video:</strong> Witness our
+                  commitment to quality, sustainability, and innovation. Let AH
+                  Denim bring your vision to life with efficiency and
+                  craftsmanship.
+                </span>
               </p>
             </div>
           </div>
@@ -119,19 +142,19 @@ const AboutUs = () => {
         <section
           ref={ref}
           id="overview"
-          className="px-8 text-center py-16 my-20"
+          className="px-8 text-center py-16 my-20 text-[#ffffff] bg-black"
         >
-          <h2 className="text-2xl md:text-3xl font-bold mb-20 text-[#4D4D4D] font-serif">
+          <h2 className="text-2xl md:text-3xl font-bold mb-20 font-serif">
             OVERVIEW
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Capacity */}
             <div className="flex flex-col items-center text-center">
-              <div className="text-6xl text-[#222222]">
+              <div className="text-6xl">
                 <BsEmojiSmile size={60} />
               </div>
-              <h3 className="text-xl font-bold font-serif mt-4">Capacity</h3>
-              <p className="mt-4">
+              <h3 className="text-xl font-bold font-serif  mt-4">Capacity</h3>
+              <p className="mt-4 text-gray-400">
                 We currently have a capacity of{" "}
                 <span>
                   {inView && <CountUp start={0} end={400000} duration={2.5} />}
@@ -142,11 +165,11 @@ const AboutUs = () => {
 
             {/* Workforce */}
             <div className="flex flex-col items-center text-center">
-              <div className="text-6xl text-[#222222]">
+              <div className="text-6xl">
                 <BsEmojiSmile size={60} />
               </div>
               <h3 className="text-xl font-bold font-serif mt-4">Workforce</h3>
-              <p className=" mt-4">
+              <p className=" mt-4 text-gray-400">
                 A team of{" "}
                 <span>
                   {inView && <CountUp start={0} end={2000} duration={2.5} />}
@@ -157,11 +180,11 @@ const AboutUs = () => {
 
             {/* Revenue */}
             <div className="flex flex-col items-center text-center">
-              <div className="text-6xl text-[#222222]">
+              <div className="text-6xl">
                 <BsEmojiSmile size={60} />
               </div>
               <h3 className="text-xl font-bold font-serif mt-4">Revenue</h3>
-              <p className=" mt-4">
+              <p className=" mt-4 text-gray-400">
                 We are at a revenue of USD{" "}
                 <span>
                   {inView && <CountUp start={0} end={30} duration={2.5} />}
