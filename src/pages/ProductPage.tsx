@@ -74,8 +74,8 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <div className="flex flex-col gap-5 md:text-[17px] lg:text-lg md:w-[45%] 2xl:w-[55%] mt-5">
-              <h2 className="font-bold md:text-xl 2xl:text-3xl font-serif uppercase mb-5">
+            <div className="flex flex-col gap-5 md:text-[15px] 2xl:text-[17px] md:w-[45%] 2xl:w-[55%] mt-5">
+              <h2 className="font-bold md:text-[18px] 2xl:text-2xl font-serif uppercase mb-5">
                 {product.title}
               </h2>
 
@@ -165,16 +165,16 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <div className="flex flex-col gap-5 text-lg  mt-5 mb-10">
-              <h2 className="font-bold font-serif text-[21px] text-center ">
+            <div className="flex flex-col gap-5 text-[15px]  mt-5 mb-10">
+              <h2 className="font-bold font-serif text-[16px] sm:text-[18px] text-center ">
                 {product.title}
               </h2>
 
-              <div className="uppercase text-[16px] md:text-xl">
+              <div className="uppercase ">
                 <span className="font-bold font-serif ">Fit & Style: </span>
                 {product.fit}
               </div>
-              <div className="text-[16px] md:text-lg">
+              <div>
                 <p
                   className="font-normal mb-5
                 "
