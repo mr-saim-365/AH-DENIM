@@ -154,11 +154,10 @@ const Items = () => {
                           <MdOutlineKeyboardArrowRight size={25} />
                         </button>
                       </div>
-                      <div
-                        key={product.id}
-                        className="p-5 text-center font-normal"
-                      >
-                        <div className="mb-3 text-2xl">{product.disc}</div>
+                      <div key={product.id} className="p-5 text-center">
+                        <h2 className="mb-3 text-lg text-[#111111] font-normal font-serif uppercase">
+                          {product.title}
+                        </h2>
                       </div>
                     </div>
                   );

@@ -58,9 +58,9 @@ const ProductPage = () => {
           />
 
           {/* 🖼️ Image Grid */}
-          <div className="hidden md:flex gap-20 md:px-5 lg:p-12 2xl:p-16">
+          <div className="hidden md:flex gap-20 md:px-5 lg:p-12 2xl:p-16 pb-10">
             <div
-              className={`grid ${
+              className={`grid md:w-[55%] 2xl:w-[45%] ${
                 images.length > 1 ? "grid-cols-2" : "grid-cols-1"
               } gap-8`}
             >
@@ -70,13 +70,74 @@ const ProductPage = () => {
                   key={idx}
                   src={img}
                   alt={`Product Image ${idx}`}
-                  className="md:w-[200px] md:h-[270px] lg:w-[285px] lg:h-[420px] 2xl:w-[410px] 2xl:h-[600px] object-cover shadow-md"
+                  className="md:w-[250px] md:h-[300px] lg:w-[285px] lg:h-[420px] 2xl:w-[410px] 2xl:h-[600px] object-cover shadow-md"
                 />
               ))}
             </div>
-            <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px] mb-5 font-bold font-serif">
-              {product.disc}
-            </h2>
+            <div className="flex flex-col gap-5 md:text-[17px] lg:text-lg md:w-[45%] 2xl:w-[55%] mt-5">
+              <h2 className="font-bold md:text-xl 2xl:text-3xl font-serif uppercase mb-5">
+                {product.title}
+              </h2>
+
+              <div className="uppercase">
+                <span className="font-bold font-serif">Fit & Style: </span>
+                {product.fit}
+              </div>
+              <div>
+                <p
+                  className="font-normal mb-5
+                "
+                >
+                  {product.disc}
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2 mb-4">
+                <h5 className="uppercase tracking-[2px] font-serif">Size</h5>
+                <div></div>
+                <ul className="flex gap-2 font-serif">
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      S
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      M
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      L
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      XL
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <h5 className="text-lg uppercase tracking-[2px] font-serif">
+                  Color
+                </h5>
+                <div>All washes available.</div>
+              </div>
+            </div>
           </div>
 
           <div className="md:hidden flex flex-col items-center gap-4 px-3 sm:px-4">
@@ -104,9 +165,72 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <h2 className="mt-5 text-[26px] sm:text-3xl 2xl:text-[40px] font-bold font-serif">
-              {product.disc}
-            </h2>
+            <div className="flex flex-col gap-5 text-lg  mt-5 mb-10">
+              <h2 className="font-bold font-serif text-[21px] text-center ">
+                {product.title}
+              </h2>
+
+              <div className="uppercase text-[16px] md:text-xl">
+                <span className="font-bold font-serif ">Fit & Style: </span>
+                {product.fit}
+              </div>
+              <div className="text-[16px] md:text-lg">
+                <p
+                  className="font-normal mb-5
+                "
+                >
+                  {product.disc}
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2 mb-4">
+                <h5 className="text-lg uppercase tracking-[2px] font-serif">
+                  Size
+                </h5>
+                <div></div>
+                <ul className="flex gap-2 font-serif">
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      S
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      M
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      L
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
+                      href="#"
+                    >
+                      XL
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <h5 className="text-lg uppercase tracking-[2px] font-serif">
+                  Color
+                </h5>
+                <div>All washes available.</div>
+              </div>
+            </div>
           </div>
         </div>
         <Footer />
