@@ -36,8 +36,6 @@ import image21 from "/images/man/21.jpg";
 import image22 from "/images/man/22.jpg";
 import image23 from "/images/man/23.jpg";
 import image023 from "/images/man/23-02.jpg";
-import image24 from "/images/man/24.jpg";
-import image024 from "/images/man/24-02.jpg";
 import image26 from "/images/man/26.jpg";
 import image026 from "/images/man/26-02.jpg";
 import image27 from "/images/man/27.jpg";
@@ -287,17 +285,9 @@ export const slides = [
         disc: "Upgrade your casual wear with these Distressed Slim Fit Ripped Denim Jeans, designed for a trendy and edgy look. Featuring strategically placed distressed patches with underlay fabric, these jeans offer a worn-in vintage appeal while maintaining durability. The slim fit design ensures a snug yet comfortable feel, perfect for pairing with graphic tees, hoodies, or casual shirts. Crafted from high-quality stretch denim, they provide maximum flexibility and comfort for all-day wear. Whether you're hitting the streets or heading out for a night with friends, these ripped jeans bring effortless style to any outfit.",
         category :"Man"
     },
+
     {
         id: "23",  
-        src: [image24,image024],
-        title: "Classic Denim Workwear Jacket",
-        fit : "Man Relaxed fit with embroidered branding.",
-        disc: "Elevate your wardrobe with this Classic Denim Workwear Jacket, designed for a timeless and versatile look. Crafted from premium heavyweight denim, this jacket offers durability while maintaining a comfortable relaxed fit. The hidden button-up front adds a sleek touch, while the embroidered “Homme” logo on the chest pocket brings a subtle, stylish detail. With contrast stitching and a structured silhouette, this piece is perfect for pairing with jeans, cargo pants, or casual chinos. Whether you're layering over a tee for a laid-back look or styling it for a streetwear vibe, this denim jacket is a must-have essential for any season.",
-        category :"Man"
-    },
-    
-    {
-        id: "24",  
         src: [image26, image026],
         title: "Two-Tone Panel Denim Jeans",
         fit : "Man Slim straight fit with two-tone panel design.",
@@ -305,64 +295,66 @@ export const slides = [
         category :"Man"
     },
     {
-        id: "25", 
+        id: "24", 
         src: [image27],
-        title: "Slide Title Open",
-        disc: "Jacket1",
+        title: "Vintage Washed Cargo Jeans",
+        fit: "Man Relaxed Fit Cargo Pant.",
+        disc: "Upgrade your streetwear game with these vintage-washed cargo jeans. Designed for comfort and style, these relaxed-fit jeans feature large patch pockets for utility and adjustable hem straps for a customizable look. The elastic waistband with a button closure ensures a snug yet flexible fit. Perfect for casual outings or edgy urban wear, these jeans bring a retro vibe with modern versatility. Pair them with a hoodie or a denim jacket for an effortlessly cool aesthetic.",
         category :"Man"
     },
     {
-        id: "26", 
+        id: "25", 
         src: [image28],
-        title: "Slide Title Open",
-        disc: "Jacket1",
+        title: "Vintage Straight-Leg Denim Jeans",
+        fit: "Man Relaxed Fit Straight-Leg Jeans",
+        disc: "Step into timeless fashion with these high-waisted vintage straight-leg jeans. Designed for a relaxed fit, they offer a flattering silhouette while ensuring all-day comfort. The classic five-pocket design and sturdy denim construction add to their retro appeal. The vintage wash gives them a worn-in, edgy look, making them a perfect staple for casual and streetwear outfits. Pair them with a crop top or an oversized jacket for effortless chic styling.",
         category :"Man"
     },
 
     {
-        id: "27", 
+        id: "26", 
         src: [image29],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Man"
     },
     {
-        id: "28", 
+        id: "27", 
         src: [image30],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Man"
     },
     {
-        id: "29", 
+        id: "28", 
         src: [image31],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Man"
     },
     {
-        id: "30", 
+        id: "29", 
         src: [image32],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Man"
     },
     {
-        id: "31", 
+        id: "30", 
         src: [image33],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Man"
     },
     {
-        id: "32", 
+        id: "31", 
         src: [image34],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Man"
     },
     {
-        id: "33", 
+        id: "32", 
         src: [image35],
         title: "Slide Title Open",
         disc: "Jacket1",
@@ -372,14 +364,14 @@ export const slides = [
   
     // Woman Category
     {
-        id: "34", 
+        id: "33", 
         src: [image36],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "35", 
+        id: "34", 
         src: [image37],
         title: "Slide Title Open",
         disc: "Jacket1",
@@ -387,77 +379,77 @@ export const slides = [
     },
 
     {
-        id: "36", 
+        id: "35", 
         src: [image38],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "37", 
+        id: "36", 
         src: [image39],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "38", 
+        id: "37", 
         src: [image40],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "39", 
+        id: "38", 
         src: [image41,image041],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "40", 
+        id: "39", 
         src: [image42],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "41", 
+        id: "40", 
         src: [image43],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "42", 
+        id: "41", 
         src: [image44,image044],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "43", 
+        id: "42", 
         src: [image45],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "44", 
+        id: "43", 
         src: [image46],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "45", 
+        id: "44", 
         src: [image47],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "46", 
+        id: "45", 
         src: [image48,image048],
         title: "Slide Title Open",
         disc: "Jacket1",
@@ -465,91 +457,91 @@ export const slides = [
     },
 
     {
-        id: "47", 
+        id: "46", 
         src: [image49,image049],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "48", 
+        id: "47", 
         src: [image50],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "49", 
+        id: "48", 
         src: [image51],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "50", 
+        id: "49", 
         src: [image052,image052],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "51", 
+        id: "50", 
         src: [image53],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "52", 
+        id: "51", 
         src: [image54,image054],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "53", 
+        id: "52", 
         src: [image55],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "54", 
+        id: "53", 
         src: [image56],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "55", 
+        id: "54", 
         src: [image057,image057],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "56", 
+        id: "55", 
         src: [image58,image058],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "57", 
+        id: "56", 
         src: [image59,image059],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "56", 
+        id: "57", 
         src: [image58,image058],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "57", 
+        id: "58", 
         src: [image59,image059],
         title: "Slide Title Open",
         disc: "Jacket1",
@@ -560,42 +552,42 @@ export const slides = [
     // Kids Category
 
     {
-        id: "58", 
+        id: "59", 
         src: [image60,image061],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "59", 
+        id: "60", 
         src: [image62],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "60", 
+        id: "61", 
         src: [image63,image063],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "61", 
+        id: "62", 
         src: [image64,image064],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "62", 
+        id: "63", 
         src: [image65,image065],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "63", 
+        id: "64", 
         src: [image66,image066],
         title: "Slide Title Open",
         disc: "Jacket1",
@@ -603,35 +595,35 @@ export const slides = [
     },
 
     {
-        id: "64", 
+        id: "65", 
         src: [image67],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "65", 
+        id: "66", 
         src: [image68],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "66", 
+        id: "67", 
         src: [image69,image069],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "67", 
+        id: "68", 
         src: [image70],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "68", 
+        id: "69", 
         src: [image71,image071],
         title: "Slide Title Open",
         disc: "Jacket1",
