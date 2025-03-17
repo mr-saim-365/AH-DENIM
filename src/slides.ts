@@ -10,7 +10,6 @@ import image04 from "/images/man/04-02.jpg";
 import image5 from "/images/man/05.jpg";
 import image05 from "/images/man/05-02.jpg";
 import image7 from "/images/man/07.jpg";
-import image07 from "/images/man/07-02.jpg"
 import image8 from "/images/man/08.jpg";
 import image08 from "/images/man/08-02.jpg";
 import image9 from "/images/man/09.jpg";
@@ -41,56 +40,73 @@ import image24 from "/images/man/24.jpg";
 import image024 from "/images/man/24-02.jpg";
 import image26 from "/images/man/26.jpg";
 import image026 from "/images/man/26-02.jpg";
+import image27 from "/images/man/27.jpg";
+import image28 from "/images/man/28.jpg";
+import image29 from "/images/man/29.jpg";
+import image30 from "/images/man/30.jpg";
+import image31 from "/images/man/31.jpg";
+import image32 from "/images/man/32.jpg";
+import image33 from "/images/man/33.jpg";
+import image34 from "/images/man/34.jpg";
+import image35 from "/images/man/35.jpg";
+import image36 from "/images/man/36.jpg";
+import image036 from "/images/man/36-02.jpg";
+import image37 from "/images/man/37.jpg";
+import image037 from "/images/man/37-02.jpg";
+import image38 from "/images/man/38.jpg";
+import image038 from "/images/man/38-02.jpg";
+import image39 from "/images/man/39.jpg";
 
 // Women Images
 
-import image27 from "/images/woman/01.jpg"
-import image28 from "/images/woman/02.jpg"
-import image29 from "/images/woman/03.jpg"
-import image30 from "/images/woman/04.jpg"
-import image31 from "/images/woman/05.jpg"
-import image32 from "/images/woman/06.jpg"
-import image032 from "/images/woman/06-02.jpg"
-import image33 from "/images/woman/07.jpg"
-import image34 from "/images/woman/08.jpg"
-import image35 from "/images/woman/09.jpg"
-import image035 from "/images/woman/09-02.jpg"
-import image36 from "/images/woman/10.jpg"
-import image37 from "/images/woman/11.jpg"
-import image38 from "/images/woman/12.jpg"
-import image39 from "/images/woman/13.jpg"
-import image039 from "/images/woman/13-02.jpg"
+import image40 from "/images/woman/01.jpg"
+import image41 from "/images/woman/02.jpg"
+import image42 from "/images/woman/03.jpg"
+import image43 from "/images/woman/04.jpg"
+import image44 from "/images/woman/05.jpg"
+import image45 from "/images/woman/06.jpg"
+import image045 from "/images/woman/06-02.jpg"
+import image46 from "/images/woman/07.jpg"
+import image47 from "/images/woman/08.jpg"
+import image48 from "/images/woman/09.jpg"
+import image048 from "/images/woman/09-02.jpg"
+import image49 from "/images/woman/10.jpg"
+import image50 from "/images/woman/11.jpg"
+import image51 from "/images/woman/12.jpg"
+import image52 from "/images/woman/13.jpg"
+import image052 from "/images/woman/13-02.jpg"
+import image53 from "/images/woman/14.jpg"
+import image053 from "/images/woman/14-02.jpg"
+import image54 from "/images/woman/15.jpg"
+import image55 from "/images/woman/16.jpg"
+import image055 from "/images/woman/16-02.jpg"
+import image56 from "/images/woman/17.jpg"
+import image57 from "/images/woman/18.jpg"
+import image057 from "/images/woman/18-02.jpg"
+import image58 from "/images/woman/19.jpg"
+import image59 from "/images/woman/20.jpg"
+import image059 from "/images/woman/20-02.jpg"
+import image60 from "/images/woman/21.jpg"
+import image060 from "/images/woman/21-02.jpg"
+import image61 from "/images/woman/22.jpg"
+import image061 from "/images/woman/22-02.jpg"
+
 // Kids  Images
 
-import image41 from "/images/Kids/01.jpg"
-import image041 from "/images/Kids/01-02.jpg"
-import image42 from "/images/Kids/02.jpg"
-import image042 from "/images/Kids/02-02.jpg"
-import image43 from "/images/Kids/03.jpg"
-import image44 from "/images/Kids/04.jpg"
-import image044 from "/images/Kids/04-02.jpg"
-import image45 from "/images/Kids/05.jpg"
-import image045 from "/images/Kids/05-02.jpg"
-import image46 from "/images/Kids/06.jpg"
-import image47 from "/images/Kids/07.jpg"
-import image047 from "/images/Kids/07-02.jpg"
-import image48 from "/images/Kids/08.jpg"
-import image048 from "/images/Kids/08-02.jpg"
-import image49 from "/images/Kids/09.jpg"
-import image049 from "/images/Kids/09-02.jpg"
-import image50 from "/images/Kids/10.jpg"
-import image050 from "/images/Kids/10-02.jpg"
-import image51 from "/images/Kids/11.jpg"
-import image051 from "/images/Kids/11-02.jpg"
-import image52 from "/images/Kids/12.jpg"
-import image052 from "/images/Kids/12-02.jpg"
-import image53 from "/images/Kids/13.jpg"
-import image053 from "/images/Kids/13-02.jpg"
-import image54 from "/images/Kids/14.jpg"
-import image55 from "/images/Kids/15.jpg"
-import image56 from "/images/Kids/16.jpg"
-import image57 from "/images/Kids/17.jpg"
-import image057 from "/images/Kids/17-02.jpg"
+import image62 from "/images/Kids/01.jpg"
+import image062 from "/images/Kids/01-02.jpg"
+import image63 from "/images/Kids/02.jpg"
+import image64 from "/images/Kids/03.jpg"
+import image064 from "/images/Kids/03-02.jpg"
+import image65 from "/images/Kids/04.jpg"
+import image065 from "/images/Kids/04-02.jpg"
+import image66 from "/images/Kids/05.jpg"
+import image066 from "/images/Kids/05-02.jpg"
+import image67 from "/images/Kids/06.jpg"
+import image067 from "/images/Kids/06-02.jpg"
+import image68 from "/images/Kids/07.jpg"
+import image69 from "/images/Kids/08.jpg"
+
 
 export const slides = [
     {
@@ -136,7 +152,7 @@ export const slides = [
 
     {
         id: "6",  
-        src: [image7,image07],
+        src: [image7],
         title: "Dual-Waistband High-Rise Straight-Leg Jeans",
         fit:"Man High-rise with a straight-leg silhouette with vintage-inspired faded wash.",
         disc: "Upgrade your denim collection with the Dual-Waistband High-Rise Straight-Leg Jeans, a perfect fusion of contemporary style and vintage charm. Designed with a distinctive layered waistband, these jeans add a statement touch to any outfit. The high-rise fit provides excellent support and enhances your silhouette, while the straight-leg cut offers a sleek yet relaxed feel. The faded wash and contrast stitching create an effortlessly worn-in look, making these jeans an ideal choice for casual and street-style ensembles. Pair them with a crop top or an oversized tee for an on-trend, fashion-forward aesthetic.",
@@ -290,22 +306,19 @@ export const slides = [
         disc: "Upgrade your denim collection with these Two-Tone Panel Denim Jeans, designed for a bold yet versatile statement. Crafted from premium heavyweight denim, these jeans feature a unique contrast panel construction, adding depth and dimension to the design. The slim straight fit ensures a tailored look while allowing for easy movement and comfort. Featuring classic five-pocket styling, contrast stitching, and a durable button-fly closure, these jeans blend streetwear edge with workwear functionality. Pair them with a denim jacket, oversized hoodie, or casual tee for a standout look that’s perfect for any occasion.",
         category :"Man"
     },
-    
-  
-    // Woman Category
     {
         id: "25", 
         src: [image27],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "26", 
         src: [image28],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
 
     {
@@ -313,202 +326,299 @@ export const slides = [
         src: [image29],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "28", 
         src: [image30],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "29", 
         src: [image31],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "30", 
-        src: [image32,image032],
+        src: [image32],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "31", 
         src: [image33],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "32", 
         src: [image34],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "33", 
-        src: [image35,image035],
+        src: [image35],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "34", 
-        src: [image36],
+        src: [image36,image036],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "35", 
-        src: [image37],
+        src: [image37,image037],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Woman"
+        category :"Man"
     },
     {
         id: "36", 
-        src: [image38],
+        src: [image38,image038],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Man"
+    },
+    {
+        id: "37", 
+        src: [image39],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Man"
+    },
+    
+  
+    // Woman Category
+    {
+        id: "38", 
+        src: [image40],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "37", 
-        src: [image39,image039],
+        id: "39", 
+        src: [image41],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
+
+    {
+        id: "40", 
+        src: [image42],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "41", 
+        src: [image43],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "42", 
+        src: [image44],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "43", 
+        src: [image45,image045],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "44", 
+        src: [image46],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "45", 
+        src: [image47],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "46", 
+        src: [image48,image048],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "47", 
+        src: [image49],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "48", 
+        src: [image50],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "49", 
+        src: [image51],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "50", 
+        src: [image52,image052],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+
+    {
+        id: "51", 
+        src: [image53,image053],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "52", 
+        src: [image54],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "53", 
+        src: [image55,image055],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "54", 
+        src: [image56],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "55", 
+        src: [image57,image057],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "56", 
+        src: [image58],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "57", 
+        src: [image59,image059],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "58", 
+        src: [image60,image060],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+    {
+        id: "59", 
+        src: [image61,image061],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Woman"
+    },
+
 
     // Kids Category
 
     {
-        id: "38", 
-        src: [image41,image041],
+        id: "60", 
+        src: [image62,image062],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "39", 
-        src: [image42,image042],
+        id: "61", 
+        src: [image63],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "40", 
-        src: [image43],
+        id: "62", 
+        src: [image64,image064],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "41", 
-        src: [image44,image044],
+        id: "63", 
+        src: [image65,image065],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "42", 
-        src: [image45,image045],
+        id: "64", 
+        src: [image66,image066],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "43", 
-        src: [image46],
+        id: "65", 
+        src: [image67,image067],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
 
     {
-        id: "44", 
-        src: [image47,image047],
+        id: "66", 
+        src: [image68],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "45", 
-        src: [image48,image048],
+        id: "67", 
+        src: [image69],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
 
-    {
-        id: "46", 
-        src: [image49,image049],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "47", 
-        src: [image50,image050],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "48", 
-        src: [image51,image051],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "49", 
-        src: [image52,image052],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "50", 
-        src: [image53,image053],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "51", 
-        src: [image54],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "52", 
-        src: [image55],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "53", 
-        src: [image56],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "54", 
-        src: [image57,image057],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
 
     
 ]
