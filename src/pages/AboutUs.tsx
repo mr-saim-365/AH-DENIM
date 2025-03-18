@@ -149,9 +149,9 @@ const AboutUs = () => {
 
         <section
           id="our-video"
-          className="relative mt-[4.2rem] flex items-center justify-center"
+          className="relative mt-0 mb-10 sm:my-10 md:mt-0 lg:mt-10  flex items-center justify-center"
         >
-          <video className="w-full h-[75vh]" controls>
+          <video className="w-full h-[50vh] md:h-[75vh]" controls>
             <source src={AboutVideo} type="video/mp4" />
           </video>
         </section>
