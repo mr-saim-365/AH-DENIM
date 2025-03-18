@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { BsEmojiSmile } from "react-icons/bs";
 import AboutVideo from "/About Video.mp4";
-import AboutImage1 from "/images/AboutImage1.jpeg";
+import AboutUsImage from "/images/AboutUsImage.jpeg";
 import ExpoImage1 from "/images/ExpoImage1.jpeg";
 import ExpoImage2 from "/images/ExpoImage2.jpeg";
 import ExpoImage3 from "/images/ExpoImage3.jpeg";
@@ -70,62 +70,79 @@ const AboutUs = () => {
         {/* About Section */}
         <section
           id="about-us"
-          className="px-3 md:px-6 lg:px-12 2xl:w-[80%] mt-24 mx-auto"
+          className="px-3 md:px-6 lg:px-12 2xl:px-0 2xl:w-[90%] mt-24 mx-auto"
         >
-          <div className="flex flex-col md:flex-row gap-6 w-[90%] mx-auto ">
-            {/* Image Section */}
-            <div className="w-full  md:w-1/2 lg:w-1/2">
-              <img
-                src={AboutImage1}
-                className="h-[60vh] w-full rounded-lg object-cover"
-                alt="AboutUsImage1"
-              />
-            </div>
-            <div className="w-full  ">
+          <div className="flex flex-col md:flex-row gap-20  mx-auto ">
+            <div className="w-full">
               <h2 className="text-[26px] sm:text-3xl 2xl:text-[40px]  mt-5 font-bold font-serif mb-4 text-[#4D4D4D]">
                 About Us
               </h2>
               <p className="leading-relaxed font-normal text-justify text-sm sm:text-base">
                 <span className="block mb-3">
-                  <strong>Founded in 2000:</strong> AH Denim is a leading
-                  cut-to-pack manufacturer specializing in denim and woven
-                  garments for men, women, and kids. With two state-of-the-art
-                  units and a monthly capacity of 150,000 garments, we offer
-                  end-to-end solutions from design to final packaging.
+                  <strong>Founded in 2000:</strong> AH Denim has grown into a
+                  leading cut-to-pack manufacturer, specializing in denim and
+                  woven garments for men, women, and kids. With two
+                  state-of-the-art manufacturing units and a monthly production
+                  capacity of 150,000 garments, we provide end-to-end
+                  solutions—from design development to final packaging, all
+                  under one roof.
                 </span>
                 <span className="block mb-3">
                   <strong>Why Choose AH Denim?</strong>
                 </span>
                 <ul className="list-disc list-inside mb-3 space-y-2">
                   <li>
-                    <strong>Complete In-House Production:</strong> Design,
-                    cutting, stitching, washing, finishing, and packaging for
-                    superior quality and faster turnaround.
+                    <strong> Cut-to-Pack Solutions:</strong> We manage every
+                    stage of production in-house—design, cutting, stitching,
+                    washing, finishing, and packaging—ensuring superior quality
+                    control and faster turnaround times.
                   </li>
                   <li>
-                    <strong>Advanced Facilities:</strong> Precision-crafted
-                    garments with modern technology and sustainable practices.
+                    <strong> Advanced Manufacturing Facilities:</strong> Our
+                    units are equipped with the latest technology and modern
+                    laundry systems, allowing us to deliver precision-crafted
+                    garments with intricate detailing and sustainable practices.
                   </li>
                   <li>
-                    <strong>Sustainability Focus:</strong> Eco-friendly washing
-                    techniques, minimal water usage, and ethical manufacturing.
+                    <strong> Sustainability Commitment:</strong> We are
+                    dedicated to reducing our environmental impact by following
+                    eco-friendly washing techniques, minimizing water and energy
+                    consumption, and adhering to ethical manufacturing
+                    standards.
                   </li>
                   <li className="hidden 2xl:block">
-                    <strong>Compliance & Ethics:</strong> Safe working
-                    conditions, fair wages, and transparency.
+                    <strong>Compliance & Ethical Practices: </strong>We maintain
+                    strict compliance protocols to ensure safe working
+                    conditions, fair wages, and transparency across all levels
+                    of production
                   </li>
                   <li className="hidden 2xl:block">
-                    <strong>Flexible Production:</strong> Low MOQs for startups
-                    & large-scale manufacturing for global brands.
+                    <strong>Flexible Production:</strong> From small-batch
+                    orders to large-scale manufacturing, we adapt to your
+                    needs—offering flexibility without compromising on quality.
                   </li>
                 </ul>
+                <span className="hidden 2xl:block my-2">
+                  <strong>Explore our factory in the video below,</strong> where
+                  we showcase every stage of our advanced manufacturing
+                  process—highlighting our dedication to quality, compliance,
+                  and sustainability.
+                </span>
                 <span className="hidden 2xl:block">
-                  <strong>Explore Our Factory Video:</strong> Witness our
-                  commitment to quality, sustainability, and innovation. Let AH
-                  Denim bring your vision to life with efficiency and
-                  craftsmanship.
+                  <strong> At AH Denim,</strong> we combine decades of expertise
+                  with modern innovation to redefine the future of apparel
+                  manufacturing. Let us bring your vision to life—responsibly,
+                  efficiently, and with unmatched craftsmanship.
                 </span>
               </p>
+            </div>
+            {/* Image Section */}
+            <div className="w-full md:w-1/2 lg:w-1/2">
+              <img
+                src={AboutUsImage}
+                className="h-[60vh] w-full rounded-lg object-cover"
+                alt="AboutUsImage"
+              />
             </div>
           </div>
         </section>

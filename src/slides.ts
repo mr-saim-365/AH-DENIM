@@ -49,63 +49,61 @@ import image32 from "/images/man/32.jpg";
 import image33 from "/images/man/33.jpg";
 import image34 from "/images/man/34.jpg";
 import image35 from "/images/man/35.jpg";
-import image36 from "/images/man/36.jpg";
-import image036 from "/images/man/36-02.jpg";
-import image37 from "/images/man/37.jpg";
-import image037 from "/images/man/37-02.jpg";
-import image38 from "/images/man/38.jpg";
-import image038 from "/images/man/38-02.jpg";
-import image39 from "/images/man/39.jpg";
 
 // Women Images
 
-import image40 from "/images/woman/01.jpg"
-import image41 from "/images/woman/02.jpg"
-import image42 from "/images/woman/03.jpg"
-import image43 from "/images/woman/04.jpg"
-import image44 from "/images/woman/05.jpg"
-import image45 from "/images/woman/06.jpg"
-import image045 from "/images/woman/06-02.jpg"
-import image46 from "/images/woman/07.jpg"
-import image47 from "/images/woman/08.jpg"
-import image48 from "/images/woman/09.jpg"
-import image048 from "/images/woman/09-02.jpg"
-import image49 from "/images/woman/10.jpg"
-import image50 from "/images/woman/11.jpg"
-import image51 from "/images/woman/12.jpg"
-import image52 from "/images/woman/13.jpg"
-import image052 from "/images/woman/13-02.jpg"
-import image53 from "/images/woman/14.jpg"
-import image053 from "/images/woman/14-02.jpg"
-import image54 from "/images/woman/15.jpg"
-import image55 from "/images/woman/16.jpg"
-import image055 from "/images/woman/16-02.jpg"
-import image56 from "/images/woman/17.jpg"
-import image57 from "/images/woman/18.jpg"
-import image057 from "/images/woman/18-02.jpg"
-import image58 from "/images/woman/19.jpg"
-import image59 from "/images/woman/20.jpg"
-import image059 from "/images/woman/20-02.jpg"
-import image60 from "/images/woman/21.jpg"
-import image060 from "/images/woman/21-02.jpg"
-import image61 from "/images/woman/22.jpg"
-import image061 from "/images/woman/22-02.jpg"
+import image36 from "/images/woman/01.jpg"
+import image37 from "/images/woman/02.jpg"
+import image38 from "/images/woman/03.jpg"
+import image39 from "/images/woman/04.jpg"
+import image40 from "/images/woman/05.jpg"
+import image41 from "/images/woman/06.jpg"
+import image041 from "/images/woman/06-02.jpg"
+import image42 from "/images/woman/07.jpg"
+import image43 from "/images/woman/08.jpg"
+import image44 from "/images/woman/09.jpg"
+import image044 from "/images/woman/09-02.jpg"
+import image45 from "/images/woman/10.jpg"
+import image46 from "/images/woman/11.jpg"
+import image47 from "/images/woman/12.jpg"
+import image48 from "/images/woman/13.jpg"
+import image048 from "/images/woman/13-02.jpg"
+import image49 from "/images/woman/14.jpg"
+import image049 from "/images/woman/14-02.jpg"
+import image50 from "/images/woman/15.jpg"
+import image51 from "/images/woman/16.jpg"
+import image052 from "/images/woman/16-02.jpg"
+import image53 from "/images/woman/17.jpg"
+import image54 from "/images/woman/18.jpg"
+import image054 from "/images/woman/18-02.jpg"
+import image55 from "/images/woman/19.jpg"
+import image56 from "/images/woman/20.jpg"
+import image057 from "/images/woman/20-02.jpg"
+import image58 from "/images/woman/21.jpg"
+import image058 from "/images/woman/21-02.jpg"
+import image59 from "/images/woman/22.jpg"
+import image059 from "/images/woman/22-02.jpg"
 
 // Kids  Images
 
-import image62 from "/images/Kids/01.jpg"
-import image062 from "/images/Kids/01-02.jpg"
-import image63 from "/images/Kids/02.jpg"
-import image64 from "/images/Kids/03.jpg"
-import image064 from "/images/Kids/03-02.jpg"
-import image65 from "/images/Kids/04.jpg"
-import image065 from "/images/Kids/04-02.jpg"
-import image66 from "/images/Kids/05.jpg"
-import image066 from "/images/Kids/05-02.jpg"
-import image67 from "/images/Kids/06.jpg"
-import image067 from "/images/Kids/06-02.jpg"
-import image68 from "/images/Kids/07.jpg"
-import image69 from "/images/Kids/08.jpg"
+import image60 from "/images/Kids/01.jpg"
+import image061 from "/images/Kids/01-02.jpg"
+import image62 from "/images/Kids/02.jpg"
+import image63 from "/images/Kids/03.jpg"
+import image063 from "/images/Kids/03-02.jpg"
+import image64 from "/images/Kids/04.jpg"
+import image064 from "/images/Kids/04-02.jpg"
+import image65 from "/images/Kids/05.jpg"
+import image065 from "/images/Kids/05-02.jpg"
+import image66 from "/images/Kids/06.jpg"
+import image066 from "/images/Kids/06-02.jpg"
+import image67 from "/images/Kids/07.jpg"
+import image68 from "/images/Kids/08.jpg"
+import image69 from "/images/Kids/09.jpg"
+import image069 from "/images/Kids/09-02.jpg"
+import image70 from "/images/Kids/10.jpg"
+import image71 from "/images/Kids/11.jpg"
+import image071 from "/images/Kids/11-02.jpg"
 
 
 export const slides = [
@@ -370,37 +368,38 @@ export const slides = [
         disc: "Jacket1",
         category :"Man"
     },
+
+  
+    // Woman Category
     {
         id: "34", 
-        src: [image36,image036],
+        src: [image36],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Man"
+        category :"Woman"
     },
     {
         id: "35", 
-        src: [image37,image037],
+        src: [image37],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Man"
+        category :"Woman"
     },
+
     {
         id: "36", 
-        src: [image38,image038],
+        src: [image38],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Man"
+        category :"Woman"
     },
     {
         id: "37", 
         src: [image39],
         title: "Slide Title Open",
         disc: "Jacket1",
-        category :"Man"
+        category :"Woman"
     },
-    
-  
-    // Woman Category
     {
         id: "38", 
         src: [image40],
@@ -410,12 +409,11 @@ export const slides = [
     },
     {
         id: "39", 
-        src: [image41],
+        src: [image41,image041],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
-
     {
         id: "40", 
         src: [image42],
@@ -432,14 +430,14 @@ export const slides = [
     },
     {
         id: "42", 
-        src: [image44],
+        src: [image44,image044],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "43", 
-        src: [image45,image045],
+        src: [image45],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
@@ -465,9 +463,10 @@ export const slides = [
         disc: "Jacket1",
         category :"Woman"
     },
+
     {
         id: "47", 
-        src: [image49],
+        src: [image49,image049],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
@@ -488,29 +487,28 @@ export const slides = [
     },
     {
         id: "50", 
-        src: [image52,image052],
+        src: [image052,image052],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
-
     {
         id: "51", 
-        src: [image53,image053],
+        src: [image53],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "52", 
-        src: [image54],
+        src: [image54,image054],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "53", 
-        src: [image55,image055],
+        src: [image55],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
@@ -524,14 +522,14 @@ export const slides = [
     },
     {
         id: "55", 
-        src: [image57,image057],
+        src: [image057,image057],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
         id: "56", 
-        src: [image58],
+        src: [image58,image058],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
@@ -544,81 +542,101 @@ export const slides = [
         category :"Woman"
     },
     {
-        id: "58", 
-        src: [image60,image060],
+        id: "56", 
+        src: [image58,image058],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
     {
-        id: "59", 
-        src: [image61,image061],
+        id: "57", 
+        src: [image59,image059],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Woman"
     },
-
+    
 
     // Kids Category
 
     {
+        id: "58", 
+        src: [image60,image061],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Kids"
+    },
+    {
+        id: "59", 
+        src: [image62],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Kids"
+    },
+    {
         id: "60", 
-        src: [image62,image062],
+        src: [image63,image063],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
         id: "61", 
-        src: [image63],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-    {
-        id: "62", 
         src: [image64,image064],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "63", 
+        id: "62", 
         src: [image65,image065],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "64", 
+        id: "63", 
         src: [image66,image066],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Kids"
+    },
+
+    {
+        id: "64", 
+        src: [image67],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
         id: "65", 
-        src: [image67,image067],
-        title: "Slide Title Open",
-        disc: "Jacket1",
-        category :"Kids"
-    },
-
-    {
-        id: "66", 
         src: [image68],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
     {
-        id: "67", 
-        src: [image69],
+        id: "66", 
+        src: [image69,image069],
         title: "Slide Title Open",
         disc: "Jacket1",
         category :"Kids"
     },
-
+    {
+        id: "67", 
+        src: [image70],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Kids"
+    },
+    {
+        id: "68", 
+        src: [image71,image071],
+        title: "Slide Title Open",
+        disc: "Jacket1",
+        category :"Kids"
+    },
 
     
 ]

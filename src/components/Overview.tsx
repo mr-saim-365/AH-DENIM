@@ -1,5 +1,5 @@
-import OverviewImage1 from "/images/image6.jpeg";
-import OverviewImage2 from "/images/image4.jpeg";
+import OverviewImage1 from "/images/OverviewImage1.jpeg";
+import OverviewImage2 from "/images/OverviewImage2.jpeg";
 import { Link } from "react-router-dom";
 
 const Overview = () => {

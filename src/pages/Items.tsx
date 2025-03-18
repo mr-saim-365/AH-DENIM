@@ -155,7 +155,7 @@ const Items = () => {
                         </button>
                       </div>
                       <div key={product.id} className="p-5 text-center">
-                        <h2 className="mb-3 md:text-[15px] 2xl:text-[17px]  text-[#111111] font-normal font-serif uppercase">
+                        <h2 className="mb-3 md:text-[15px] 2xl:text-[17px]  text-[#111111] font-medium font-sans tracking-[2px] uppercase">
                           {product.title}
                         </h2>
                       </div>
