@@ -96,23 +96,31 @@ const ProductPage = () => {
                   Size
                 </span>
                 <div className="flex items-center gap-4">
-                  <div className="relative flex h-[50px] w-[50px] items-center justify-center">
-                  <div className="text-xl font-bold text-black z-50">S</div>
+                  <div className="relative flex  h-[40px] w-[40px] 2xl:h-[50px] 2xl:w-[50px] items-center justify-center">
+                    <div className="text-lg 2xl:text-xl font-bold text-black z-50">
+                      S
+                    </div>
                     <div className="absolute h-full w-full rounded-full bg-blue-100 p-4 shadow-sm shadow-[#00000050] ring-blue-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
                     <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-blue-200 duration-500 peer-checked:scale-[500%]"></div>
                   </div>
-                  <div className="relative flex h-[50px] w-[50px] items-center justify-center">
-                  <div className="text-xl font-bold text-black z-50">M</div>
+                  <div className="relative flex h-[40px] w-[40px] 2xl:h-[50px] 2xl:w-[50px] items-center justify-center">
+                    <div className="text-lg 2xl:text-xl font-bold text-black z-50">
+                      M
+                    </div>
                     <div className="absolute h-full w-full rounded-full bg-pink-100 p-2 shadow-sm shadow-[#00000050] ring-pink-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
                     <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-pink-200 duration-500 peer-checked:scale-[500%]"></div>
                   </div>
-                  <div className="relative flex h-[50px] w-[50px] items-center justify-center">
-                  <div className="text-xl font-bold text-black z-50">L</div>
+                  <div className="relative flex h-[40px] w-[40px] 2xl:h-[50px] 2xl:w-[50px] items-center justify-center">
+                    <div className="text-lg 2xl:text-xl font-bold text-black z-50">
+                      L
+                    </div>
                     <div className="absolute h-full w-full rounded-full bg-purple-100 p-2 shadow-sm shadow-[#00000050] ring-purple-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
                     <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-purple-200 duration-500 peer-checked:scale-[500%]"></div>
                   </div>
-                  <div className="relative flex h-[50px] w-[50px] items-center justify-center">
-                  <div className="text-xl font-bold text-black z-50">XL</div>
+                  <div className="relative flex h-[40px] w-[40px] 2xl:h-[50px] 2xl:w-[50px] items-center justify-center">
+                    <div className="text-lg 2xl:text-xl font-bold text-black z-50">
+                      XL
+                    </div>
                     <div className="absolute h-full w-full rounded-full bg-neutral-100 p-2 shadow-sm shadow-[#00000050] ring-neutral-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
                     <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-neutral-200 duration-500 peer-checked:scale-[500%]"></div>
                   </div>
@@ -152,8 +160,8 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-            <div className="flex flex-col gap-5 text-[15px]  mt-5 mb-10">
-              <h2 className="font-bold font-serif text-[16px] sm:text-[18px] text-center ">
+            <div className="flex flex-col gap-5 text-[15px] mt-5 mb-10">
+              <h2 className="text-[18px] font-sans font-medium mb-5 tracking-[3px] sm:text-[18px] text-center ">
                 {product.title}
               </h2>
 
@@ -170,45 +178,40 @@ const ProductPage = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-2 mb-4">
+              <div className="flex flex-col gap-4 mb-4">
                 <h5 className="text-lg uppercase tracking-[2px] font-serif">
                   Size
                 </h5>
-                <div></div>
-                <ul className="flex gap-2 font-serif">
-                  <li>
-                    <a
-                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
-                      href="#"
-                    >
+                <div className="flex items-center gap-4">
+                  <div className="relative flex h-[40px] w-[40px] items-center justify-center">
+                    <div className="text-[17px] font-bold text-black z-50">
                       S
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
-                      href="#"
-                    >
+                    </div>
+                    <div className="absolute h-full w-full rounded-full bg-blue-100 p-4 shadow-sm shadow-[#00000050] ring-blue-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
+                    <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-blue-200 duration-500 peer-checked:scale-[500%]"></div>
+                  </div>
+                  <div className="relative flex h-[40px] w-[40px] items-center justify-center">
+                    <div className="text-[17px] font-bold text-black z-50">
                       M
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
-                      href="#"
-                    >
+                    </div>
+                    <div className="absolute h-full w-full rounded-full bg-pink-100 p-2 shadow-sm shadow-[#00000050] ring-pink-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
+                    <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-pink-200 duration-500 peer-checked:scale-[500%]"></div>
+                  </div>
+                  <div className="relative flex h-[40px] w-[40px] items-center justify-center">
+                    <div className="text-[17px] font-bold text-black z-50">
                       L
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="border-2 border-[#111] text-[#111] w-8 h-8 text-center  px-3 py-1 hover:bg-[#111] hover:text-[#ffffff] hover:transition-all hover:delay-100"
-                      href="#"
-                    >
+                    </div>
+                    <div className="absolute h-full w-full rounded-full bg-purple-100 p-2 shadow-sm shadow-[#00000050] ring-purple-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
+                    <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-purple-200 duration-500 peer-checked:scale-[500%]"></div>
+                  </div>
+                  <div className="relative flex h-[40px] w-[40px] items-center justify-center">
+                    <div className="text-[17px] font-bold text-black z-50">
                       XL
-                    </a>
-                  </li>
-                </ul>
+                    </div>
+                    <div className="absolute h-full w-full rounded-full bg-neutral-100 p-2 shadow-sm shadow-[#00000050] ring-neutral-400 duration-300 peer-checked:scale-110 peer-checked:ring-2"></div>
+                    <div className="absolute -z-10 h-full w-full scale-0 rounded-full bg-neutral-200 duration-500 peer-checked:scale-[500%]"></div>
+                  </div>
+                </div>
               </div>
 
               <div className="flex flex-col gap-2">

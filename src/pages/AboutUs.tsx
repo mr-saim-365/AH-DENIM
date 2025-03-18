@@ -140,7 +140,7 @@ const AboutUs = () => {
             <div className="w-full md:w-1/2 lg:w-1/2">
               <img
                 src={AboutUsImage}
-                className="h-[60vh] w-full rounded-lg object-cover"
+                className="h-[60vh] md:h-[70vh] w-full rounded-lg object-cover"
                 alt="AboutUsImage"
               />
             </div>
@@ -149,7 +149,7 @@ const AboutUs = () => {
 
         <section
           id="our-video"
-          className="relative mt-0 mb-10 sm:my-10 md:mt-0 lg:mt-10  flex items-center justify-center"
+          className="relative mt-0 mb-10 sm:my-10 md:mt-10  flex items-center justify-center"
         >
           <video className="w-full h-[50vh] md:h-[75vh]" controls>
             <source src={AboutVideo} type="video/mp4" />
