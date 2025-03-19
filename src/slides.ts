@@ -3,6 +3,7 @@ import image1 from "/images/man/01.jpg";
 import image01 from "/images/man/01-02.jpg";
 import image2 from "/images/man/02.jpg";
 import image02 from "/images/man/02-02.jpg";
+import image002 from "/images/man/02-03.jpg";
 import image3 from "/images/man/03.jpg";
 import image03 from "/images/man/03-02.jpg";
 import image4 from "/images/man/04.jpg";
@@ -18,6 +19,7 @@ import image10 from "/images/man/10.jpg";
 import image010 from "/images/man/10-02.jpg";
 import image11 from "/images/man/11.jpg";
 import image011 from "/images/man/11-02.jpg";
+import image0011 from "/images/man/11-03.jpg";
 import image12 from "/images/man/12.jpg";
 import image012 from "/images/man/12-02.jpg";
 import image13 from "/images/man/13.jpg";
@@ -114,7 +116,7 @@ export const slides = [
     },
     {
         id: "2",  
-        src: [image2,image02],
+        src: [image2,image02,image002],
         title: "Vintage Wash Denim Hoodie Jacket",
         fit:"Man relaxed fit with a vintage washed look and chest pockets.",
         disc: "Stay effortlessly cool with this Vintage Wash Denim Hoodie Jacket, a perfect blend of streetwear and classic denim. Crafted from premium washed denim, this jacket boasts a rugged distressed look with contrast stitching for added character. The zip-up closure ensures ease of wear, while the attached hood adds a sporty and contemporary touch. Featuring double chest pockets, this piece is as functional as it is stylish. Pair it with jeans for a bold denim-on-denim look or layer it over a graphic tee for a casual street-ready outfit.",
@@ -180,7 +182,7 @@ export const slides = [
     },
     {
         id: "10",  
-        src: [image11 , image011],
+        src: [image11 , image011 , image0011],
         title: "Vintage Wide-Leg Distressed Jeans",
         fit: "Man Relaxed wide-leg fit with a vintage wash and stitched panel details for a modern touch.",
         disc: "Embrace retro vibes with the Vintage Wide-Leg Distressed Jeans, designed for those who love a laid-back yet stylish aesthetic. These jeans feature a relaxed, wide-leg silhouette that offers both comfort and effortless streetwear appeal. Crafted from classic blue denim with a faded wash, the design includes distressed knee rips and stitched panel detailing for a rugged yet polished look. Perfect for pairing with an oversized tee and sneakers for a casual day out or styling with a crop top and boots for an elevated fashion-forward outfit.",
