@@ -1,5 +1,5 @@
 import ServiceImage1 from "/images/ServiceImage1.jpeg";
-import ServiceImage2 from "/images/ServiceImage2.jpeg";
+import ServiceImage2 from "/images/ServiceImage2.jpg";
 import ServiceImage3 from "/images/ServiceImage3.jpeg";
 import ServiceImage4 from "/images/ServiceImage4.jpeg";
 import ServiceImage5 from "/images/ServiceImage5.jpeg";

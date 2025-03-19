@@ -19,10 +19,10 @@ const Home = () => {
         <Hero />
         <div className="lg:w-[95%] 2xl:w-[90%] mx-auto text-[15px] sm:text-[16px] 2xl:text-[18px] flex flex-col justify-center">
           <OurWork />
-          <WorldAndUs />
+          <MissionandVission />
           <ImageCollage />
           <OurServices />
-          <MissionandVission />
+          <WorldAndUs />
           <Overview />
           <OurClients />
           <Certificates />
