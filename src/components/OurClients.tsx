@@ -12,6 +12,9 @@ import Client10 from "/images/Client10.jpeg";
 import Client11 from "/images/Client11.jpeg";
 import Client12 from "/images/Client12.jpeg";
 import Client13 from "/images/Client13.jpeg";
+import Client14 from "/images/Client14.png";
+import Client15 from "/images/Client15.jpg";
+
 const clients = [
   Client1,
   Client2,
@@ -26,6 +29,8 @@ const clients = [
   Client11,
   Client12,
   Client13,
+  Client14,
+  Client15
 ];
 
 const OurClients = () => {
