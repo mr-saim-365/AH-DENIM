@@ -11,7 +11,7 @@ const OurWork = () => {
               Who are we
             </h2>
 
-            <p className="leading-relaxed font-normal text-justify text-sm md:text-[15px]">
+            <p className="leading-relaxed  text-justify text-sm md:text-[15px]">
               <span className="block mb-3">
                 <strong>About AH Denim</strong> At AH Denim, we specialize in
                 crafting premium denim and woven apparel, recognized for

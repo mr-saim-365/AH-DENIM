@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         bebas: ['Bebas Neue', "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
+        poppins: ['Poppins', 'sans-serif'],
         playfair: ["Playfair Display", "serif"],
         oswald: ["Oswald", "sans-serif"],
         anton: ["Anton", "sans-serif"],
